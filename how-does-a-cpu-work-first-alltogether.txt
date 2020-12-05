@@ -1,0 +1,138 @@
+#title: How does a CPU work? Overview
+#slug: how-does-a-cpu-work
+#date: 2020-09-06 20:53:52 UTC
+#tags: 
+#category: 
+#link: 
+#description: 
+#type: text
+
+
+- Introduction / Overview 
+
+    Every topicn of this course is broken up into two parts: 
+    A part about logic, ideally almost independent from implementation details 
+    and a more practical part handling this very details.
+    
+- Boolean Algebra / Basic Logic Gates (AND,OR,NOT), Examples
+    
+    In this short post we will discover truth tables and learn how to
+    write and interpret them. We will learn about the De Morgan's laws.
+    Also we have a look at the most basic logic gates and why their are usually are not 
+    implemented as such in electronics, having a look at NAND and NOR instead.
+    
+- Binary systems (I) unsigned integer / Combinatorial Logic (I) (Example halfadder / fulladder)
+
+    Here we explain the basic concept of how to count with only two different states at hand.
+    Also we will learn how to sum up two positive integer values in the binary system, derivate
+    the logic needed for a (half/full) adder, to dive into the topic of combinatorial logic
+    
+- Memory (different types) / LUTs , Sinusgenerator example
+
+    In this post (chapter?) we learn, that - in principal - every form of combinatorial logic
+    can be transformed into 'software' by putting it into memory. In a practical example we will
+    show how a DDS sine wave generator use a Look-Up-Table (LUT) to replicate the sine. 
+
+- Binary Systems (II) signed integer
+ 
+    Second part of / about the binary system. In this chapter / post we learn one- and two-
+    complement, endianess and about conversion to hex.
+
+- Combinatorial Logic (II), a (simple) ALU 
+
+    We want close the first series by this second chapter about combinatorial logic.
+    We will use our new knowledge of the signed integer adding a subtract functionality
+    to our adder and also extending the adder to a full ALU 
+    
+- Outline, what comes next. (Register, sequencial logic, etc)
+
+
+
+The Binary System
+=================
+
+All computer we act with on a daily base do not know about the decimal system we are using, based on the ten digits at our hands.
+All they know about are the states ``on`` and ``off``. We build an imaginary circuit with a power source a control light - here an LED (Light Emitting Diode)  - and a switch,
+closing the connection let the light flash. An off light counts as zero, and on light counts as one. Simple as it.We switch the light on
+and get a one.
+
+
+.. image:: ../images/how_does_cpu/lights.png
+    :width: 409px
+    :align: center
+    :height: 555px
+    :alt: A schematic of the imaginary circuit.
+
+
+Now we extend this installation with a second light and switch left to current one. We switch the left light on and the right on. What we get as a result is a '2'.
+Switching the right light on again gets us to 3. Like in our decimal system, the significance of the left light is higher (at least in our example), only the factor differs,
+instead of 10 the factor is 2. We denote the significance with 2^n where n is the position of the light. Every switch is a bit - more exactly the switch is the input and the 
+LED is the output. So with four switches -half a byte - we can count from 0 to 15, while with eight switches - a byte - we can count from 0 to 255. This scheme can be extended as needed.
+
+Exercise
+________
+
+.. image:: ../images/how_does_cpu/example.jpg
+    :align: center
+    :alt: Circuit showing the binary value 9 (unsigned w/ MSB left).
+
+
+A simple adder
+==============
+
+
+
+So now we know what the binary system is and how to count and add in. But if we want also to subtract we are still missing something - the knowledge how negative numbers are mapped in this system /logic. 
+
+One and two's complement
+========================
+The figure below shows an illustration of the range of numbers on a circle.
+the upper plane showing the positive interpreted numbers, the lower plane 
+the negative interpreted numbers.
+
+.. image:: ../images/how_does_cpu/digitcircle.svg
+    :width: 500px
+    :align: center
+    :height: 500px
+    :alt: Unit circle with numbering
+
+
++---------+-----+---------------+--------------+--------------+
+| Binary  | Hex |unsigned       |              |              |
+| value   |     |Interpretation |One complement|Two complement|
++=========+=====+===============+==============+==============+
+|     0000| 00  |  0            |   0          | 0            |
++---------+-----+---------------+--------------+--------------+
+|     0001| 01  |  1            |   1          | 1            |
++---------+-----+---------------+--------------+--------------+
+|     0010| 02  |  2            |   2          | 2            |
++---------+-----+---------------+--------------+--------------+
+|     0011| 03  |  3            |   3          | 3            |
++---------+-----+---------------+--------------+--------------+
+|     0100| 04  |  4            |   4          | 4            |
++---------+-----+---------------+--------------+--------------+
+|     0101| 05  |  5            |   5          | 5            |
++---------+-----+---------------+--------------+--------------+
+|     0110| 06  |  6            |   6          | 6            |
++---------+-----+---------------+--------------+--------------+
+|     0111| 07  |  7            |   7          | 7            |
++---------+-----+---------------+--------------+--------------+
+|     1000| 08  |  8            |   -7         |-8            |
++---------+-----+---------------+--------------+--------------+
+|     1001| 09  |  9            |   -6         |-7            |
++---------+-----+---------------+--------------+--------------+
+|     1010| 0A  |  10           |   -5         |-6            |
++---------+-----+---------------+--------------+--------------+
+|     1011| 0B  |  11           |   -4         |-5            |
++---------+-----+---------------+--------------+--------------+
+|     1100| 0C  |  12           |   -3         |-4            |
++---------+-----+---------------+--------------+--------------+
+|     1101| 0D  |  13           |   -2         |-3            |
++---------+-----+---------------+--------------+--------------+
+|     1110| 0E  |  14           |   -1         |-2            |
++---------+-----+---------------+--------------+--------------+
+|     1111| 0F  |  15           |   -0         |-1            |
++---------+-----+---------------+--------------+--------------+
+
+
+
