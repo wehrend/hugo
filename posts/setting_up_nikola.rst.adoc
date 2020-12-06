@@ -69,16 +69,13 @@ to my liking. Then I found the link:++https://themes.getnikola.com/v8/hyde/++[Ni
 
 The theme can be installed with:
 
-[sub="attributes"]
-----
-nikola theme -i hyde
-----
+    nikola theme -i hyde
 
 After installation the theme needed some tweaking of the about section in the sidebar. So the version shown here diverges
 from the original look. Adjustments were made to the file assets/css/hyde.css in the directory of the freshly installed theme.
 Ideally the changes should be made in an additional file custom.css
 
-image::../images/nikola_hyde.png[Unnamed image]
+image:../images/nikola_hyde.png[Unnamed image]
 
 
 Much better now!

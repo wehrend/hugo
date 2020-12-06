@@ -15,7 +15,7 @@ All they know about are the states `on` and `off`. We build an imaginary circuit
 closing the connection let the light flash. An off light counts as zero, and on light counts as one. Simple as it.We switch the light on
 and get a one.
 
-image::../images/how_does_cpu/lights.png[width=100% title="A schematic of the imaginary circuit."]
+image:../images/how_does_cpu/lights.png[width=100% title="A schematic of the imaginary circuit."]
 
 
 Now we extend this installation with a second light and switch left to current one. We switch the left light on and the right on. What we get as a result is a '2'.
@@ -27,7 +27,7 @@ LED is the output. So with four switches -half a byte - we can count from 0 to 1
 ===  Exercise
 
 
-image::../images/how_does_cpu/example.jpg[width=100% title="showing the binary value 9 (unsigned w/ MSB left)."]
+image:../images/how_does_cpu/example.jpg[width=100% title="showing the binary value 9 (unsigned w/ MSB left)."]
 
 
 

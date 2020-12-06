@@ -22,7 +22,7 @@ respectively one for the inverter.
 = AND
 
 
-The and  operation |and_symbol| also termed as conjunction 
+The and  operation  also termed as conjunction 
 is denoted as 
 
 ["latex","../images/and.svg",imgfmt="svg"]
@@ -39,8 +39,7 @@ $A \land B = Q$
 |================
 
 
-.. |and_symbol| image:: ../images/how_does_cpu/and_gate.png
-        :width: 50 %
+image: ../images/how_does_cpu/and_gate.png[width=50%]
     
 
 
@@ -63,8 +62,7 @@ $A \lor B = Q$
 |================
 
 
-.. image:: ../images/how_does_cpu/or_gate.png
-        :width: 50 %
+image: ../images/how_does_cpu/or_gate.png[width=50%]
   
 NOT (Inverter)
 --------------
@@ -82,8 +80,7 @@ $\overline{A}=\neg A = Q$
 | 1   | 0    
 |=========
 
-.. image:: ../images/how_does_cpu/not_gate.png
-        :width: 50 %
+image: ../images/how_does_cpu/not_gate.png[width=50%]
 
         
 Although boolean algebra on itself is an interesting field, we will only touch the subject briefly here, just enough
