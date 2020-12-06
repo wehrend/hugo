@@ -26,9 +26,7 @@ The and  operation  also termed as conjunction
 is denoted as 
 
 ["latex","../images/and.svg",imgfmt="svg"]
---------------
-$A \land B = Q$
---------------
+\LARGE $A \land B = Q$
 
 |================
 | A   | B   |  Q  
@@ -39,7 +37,7 @@ $A \land B = Q$
 |================
 
 
-image: ../images/how_does_cpu/and_gate.png[width=50%]
+image:../images/how_does_cpu/and_gate.png[width=300]
     
 
 
@@ -49,9 +47,8 @@ The or operation also termed as disjunction
 is denoted as
 
 ["latex","../images/or.svg", imgfmt="svg"]
---------------
-$A \lor B = Q$
---------------
+\LARGE $A \lor B = Q$
+
 
 |================
 | A   | B   |  Q  
@@ -62,7 +59,7 @@ $A \lor B = Q$
 |================
 
 
-image: ../images/how_does_cpu/or_gate.png[width=50%]
+image:../images/how_does_cpu/or_gate.png[width=300]
   
 NOT (Inverter)
 --------------
@@ -70,9 +67,7 @@ The not operation also termed as inversion
 is denoted as 
 
 ["latex","../images/not.svg",imgfmt="svg"]
-------------------------
-$\overline{A}=\neg A = Q$
-------------------------
+\LARGE $\overline{A}=\neg A = Q$
 
 |=========
 | A   | Q    
@@ -80,7 +75,7 @@ $\overline{A}=\neg A = Q$
 | 1   | 0    
 |=========
 
-image: ../images/how_does_cpu/not_gate.png[width=50%]
+image:../images/how_does_cpu/not_gate.png[width=300]
 
         
 Although boolean algebra on itself is an interesting field, we will only touch the subject briefly here, just enough
@@ -88,7 +83,7 @@ to get to the practical side of it. If you are intersted in a more profound view
 literature (sources listed at the end).
 
 The laws of the boolean algebra are shown in the following table:
-
+[width="100%",cols="^2,^4,20,20",options="header"]
 |====================================================================================================================
 |  |                   |  ∧                                         |  ∨                                             
 | 1| commutative law   | p ∧ q = q ∧ p                             | p ∨ q = q ∨ p                                   
@@ -112,9 +107,9 @@ we will discuss the why at the end of this post. But first let me introduce the 
 The NAND gate is denoted as 
 
 ["latex", "../images/nand.svg",imgfmt="svg"]
-------------------------
-$\overline{A \land B} = Q$.
-------------------------
+\LARGE $\overline{A \land B} = Q$.
+
+
 |==================
 | A   | B   |  Q  
 | 0   | 0   |  1  
@@ -127,9 +122,7 @@ $\overline{A \land B} = Q$.
 while the NOR gate is denoted as 
 
 ["latex","../images/nor.svg",imgfmt="svg"]
-------------------------
-$\overline{A \lor B} = Q$.
-------------------------
+\LARGE $\overline{A \lor B} = Q$ .
 
 |==================
 | A   | B   |  Q  

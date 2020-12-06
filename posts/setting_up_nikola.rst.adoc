@@ -18,12 +18,12 @@ First create a directory on our host system, where you want the files stored, e.
 You can pull unoffical images with the most recent version via:
 
 
-    docker pull dragas/nikola
+ docker pull dragas/nikola
 
 and run the image getting a (bash) shell via:
 
 
-    docker run -it --network="host" -v ~/blog:/nikola dragas/nikola
+ docker run -it --network="host" -v ~/blog:/nikola dragas/nikola
 
 
 here the option flag -it stands for interactive - which it does not but it is easy to memorize so, so let it be so.
@@ -38,29 +38,29 @@ link:++https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts
 Now that you have explored the system a bit, you can initiate a basic nikola project via:
 
 
-    nikola init
+ nikola init
 
 
 You will be led through some questions regarding your blog, for destination simply set .
 
 We create a first post with:
 
-    nikola new_page -t "Hello World"
+ nikola new_page -t "Hello World"
 
 
 Write the post on your host system on an editor of your choice it is located in blog/posts/hello-world.rst and then build via:
 
 
-    nikola build
+ nikola build
 
 
 To test the website, start the test server with:
 
-    nikola serve
+ nikola serve
 
 and head your browser to http://localhost:8080[http://localhost:8080] .
 
-image::../images/nikola_default.png[Unnamed image]
+image:../images/nikola_default.png[Unnamed image]
 
 
 This is cool, but surely we want do a bit of styling and customization now, as the current look is pretty standard.
@@ -69,7 +69,7 @@ to my liking. Then I found the link:++https://themes.getnikola.com/v8/hyde/++[Ni
 
 The theme can be installed with:
 
-    nikola theme -i hyde
+ nikola theme -i hyde
 
 After installation the theme needed some tweaking of the about section in the sidebar. So the version shown here diverges
 from the original look. Adjustments were made to the file assets/css/hyde.css in the directory of the freshly installed theme.

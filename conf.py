@@ -157,7 +157,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "hyde"
+THEME = "lanyon"
 
 GLOBAL_CONTEXT={
 	"hyde_subtheme": "theme-base-0b"
