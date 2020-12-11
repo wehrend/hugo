@@ -1,4 +1,16 @@
 
+img {
+    border-radius: 2rem;
+    
+}
+
+div.content.monospaced
+{
+    padding-top: 0rem;
+/*     padding-bottom: 0rem; */
+}
+
+
 /* slight modifications to the css here,
  due to long title*/
 @media (min-width: 48em) {
