@@ -1,0 +1,64 @@
+.. title: How does a CPU work? A first look at digital logic
+.. slug: how-does-a-cpu-work-a-first-look-at-digital-logic
+.. date: 
+.. tags: draft
+.. category:
+.. link:
+.. description:
+.. type: text
+
+=  *Introduction and Overview*
+
+Every topic of this course is broken up into two parts:
+A part about the mathematical side of digital logic,
+ideally almost independent from implementation details
+and a more practical part handling this very details.
+
+
+==  *Boolean Algebra, basic logic gates and their implementation*
+
+
+In this short post we will discover truth tables, boolean notation and learn about
+De Morgan's laws.
+Also we have a look at the most basic logic gates and why their are usually are not
+implemented as such in electronics, having a look at NAND and NOR instead.
+
+
+==  *Binary systems (I) unsigned integer and Combinatorial Logic (I)*
+
+
+Here we explain the basic concept of how to count with only two different states at hand.
+Also we will learn how to sum up two positive integer values in the binary system, derivate
+the logic needed for a full-adder, to dive into the topic of combinatorial logic.
+
+
+==  *First look into Memory and Look-Up-Tables (LUTs)*
+
+
+In this post (chapter?) we learn, that - in principal - every form of combinatorial logic
+can be transformed into 'software' by putting it into memory. In a practical example we will
+show how a DDS sine wave generator use a Look-Up-Table (LUT) to replicate the sine.
+
+
+==  *Binary Systems (II) signed integer*
+
+
+Second part about the binary system. In this post we learn one- and two-
+complement, endianess and about conversion to hex.
+
+
+==  *Combinatorial Logic (II), a simple ALU*
+
+
+We want close the first series by this second chapter about combinatorial logic.
+We will use our new knowledge of the signed integer adding a subtract functionality
+to our adder and also extending the adder to a full ALU
+
+
+==  *Outline, what comes next*
+
+
+In this first course we learned some basics about digital logic. But all these examples
+use only static logic, we are still lacking a concept of how to store digital values.
+We need to learn the concept of registers and sequenzial logic.
+This will be the main topic of the second post series.

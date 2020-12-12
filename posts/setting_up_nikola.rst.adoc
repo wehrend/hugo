@@ -97,4 +97,4 @@ Now, we can simply execute this command by typing
 
  nikola deploy
 
-and the new site is part of the www. 
+and the new site is part of the www.
