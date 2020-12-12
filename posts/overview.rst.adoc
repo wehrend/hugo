@@ -1,6 +1,6 @@
 .. title: How does a CPU work? A first look at digital logic
 .. slug: how-does-a-cpu-work-a-first-look-at-digital-logic
-.. date: 2020-10-18 15:00:00 UTC
+.. date: 
 .. tags: draft
 .. category:
 .. link:
