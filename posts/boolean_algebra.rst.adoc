@@ -1,6 +1,7 @@
 .. title: How does a CPU work? Boolean algebra
 .. slug: how-does-a-cpu-work-boolean-algebra
 .. date: 2020-10-18 15:00:00 UTC
+.. tags: draft
 .. category: 
 .. link: 
 .. description: 
