@@ -20,8 +20,9 @@ img {
 
 div.content.monospaced
 {
+    width: fit-content;
     padding-top: 0rem;
-/*     padding-bottom: 0rem; */
+    padding-bottom: 0rem;
 }
 
 
