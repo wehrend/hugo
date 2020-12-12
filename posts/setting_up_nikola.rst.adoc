@@ -1,4 +1,4 @@
-.. title: Setting up a static Blog with Nikola
+.. title: Setting up a static blog with Nikola
 .. slug: setting-up-a-static-blog-with-nikola
 .. date: 2020-12-12
 .. tags: Web, Nikola
@@ -26,7 +26,7 @@ and run the image getting a (bash) shell via:
  docker run -it --network="host" -v ~/blog:/nikola dragas/nikola
 
 
-here the option flag -it stands for interactive - which it does not but it is easy to memorize so, so let it be so.
+here the option flag -it stands for interactive - which, in fact, it does not but it is easy to memorize so, so let it be so.
 Furthermore we need to add our volume, a storage resource which is shared between the host system and the docker container. So we add
 -v ~/blog for our blog located in our home directory (for linux, on windows systems the paths differ).
 Also we need to add the option --network="host" otherwise we won't be able to access the webpage from our host system, and thus from our browser.
@@ -87,7 +87,7 @@ in th conf.py file. This can look like the following.
 
 DEPLOY_COMMANDS = {
     'default': [
-        'rsync -rav --delete output/ <user>@<server>:/var/www/virtual/<user>/html',
+        'rsync -rav --delete output/ user@server:/var/www/virtual/user/html',
         'rdiff-backup output ~/blog-backup',
     ]
 }
