@@ -406,7 +406,7 @@ COMPILERS = {
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page and posts.
 # Tag pages will still be generated.
-HIDDEN_TAGS = ['mathjax']
+# HIDDEN_TAGS = ['mathjax']
 
 # Only include tags on the tag list/overview page if there are at least
 # TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
@@ -648,7 +648,7 @@ REDIRECTIONS = []
 # in a `nikola deploy` command as you like.
 DEPLOY_COMMANDS = {
     'default': [
-        'rsync -rav --delete output/ wehrend@giclas.uberspace.de:/var/www/virtual/wehrend/html',
+        'rsync -rav --exclude output/drafts --delete output/ wehrend@giclas.uberspace.de:/var/www/virtual/wehrend/html',
         'rdiff-backup output ~/blog-backup',
     ]
 }
@@ -1315,7 +1315,7 @@ USE_TAG_METADATA = True
 # If set to True, a warning is issued if one of the 'draft', 'mathjax'
 # and 'private' tags are found in a post. Useful for checking that
 # migration was successful.
-WARN_ABOUT_TAG_METADATA = True
+WARN_ABOUT_TAG_METADATA = False
 
 # Templates will use those filters, along with the defaults.
 # Consult your engine's documentation on filters if you need help defining
@@ -1337,7 +1337,8 @@ GLOBAL_CONTEXT_FILLER = []
 COMPILERS["asciidoc"] = ['.adoc']
 
 # Add asciidoc files to your POSTS, PAGES
-POSTS = POSTS + (("posts/*.adoc", "posts", "post.tmpl"),)
+POSTS = POSTS + (("posts/*.adoc", "posts", "post.tmpl"),
+                 ("drafts/*.adoc","drafts", "post.tmpl"))
 PAGES = PAGES + (("pages/*.adoc", "pages", "page.tmpl"),)
 
 # You can choose what command to use for processing.
