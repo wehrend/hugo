@@ -1,6 +1,6 @@
 .. title: How does a CPU work? Boolean algebra
 .. slug: how-does-a-cpu-work-boolean-algebra
-.. date: 
+.. date: 2012-12-23
 ...tags: draft
 .. category: 
 .. link: 
@@ -83,7 +83,7 @@ to get to the practical side of it. If you are intersted in a more profound view
 literature (sources listed at the end).
 
 The laws of the boolean algebra are shown in the following table:
-[width="100%",cols="^2,^4,20,20",options="header"]
+[width="100%",cols="2,^4,20,20",options="header"]
 |====================================================================================================================
 |  |                   |  ∧                                         |  ∨                                             
 | 1| commutative law   | p ∧ q = q ∧ p                             | p ∨ q = q ∨ p                                   
@@ -92,7 +92,7 @@ The laws of the boolean algebra are shown in the following table:
 | 4| distributive law  | p ∨ (q ∨ r) = (p ∧ q) ∨ (p ∧ r) = pq ∨ pr | p ∨ (q ∨ r) = (p ∨ q) ∨ (p ∨ r) = (p ∨ q)(p ∨ r)
 | 5| neutral elements  | p ∧ 1 = p                                 | p ∨ 0 = p                                       
 | 6| complem. element  | p ∧ ¬p = 0                                | p ∨ ¬p = 1                                      
-| Source:  Hans-Jochen Bartsch, Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28                           
+4+|    Source:  Hans-Jochen Bartsch, Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28  |
 |====================================================================================================================
 
 
