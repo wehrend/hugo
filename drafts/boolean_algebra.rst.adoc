@@ -25,9 +25,6 @@ respectively one for the inverter.
 The and  operation  also termed as conjunction 
 is denoted as A ∧ B = Q
 
-["latex","../images/and.svg",imgfmt="svg"]
-$A \land B = Q$
-
 [width="50%"]
 |================
 | A   | B   |  Q  
@@ -38,17 +35,10 @@ $A \land B = Q$
 |================
 
 
-image:../images/how_does_cpu/and_gate.png[width=300]
-    
-
-
 = OR 
 
 The or operation also termed as disjunction 
 is denoted as A v B = Q
-
-["latex","../images/or.svg", imgfmt="svg"]
-$A \lor B = Q$
 
 [width="50%"]
 |================
@@ -58,42 +48,41 @@ $A \lor B = Q$
 | 1   | 0   |  1  
 | 1   | 1   |  1  
 |================
-
-
-image:../images/how_does_cpu/or_gate.png[width=300]
   
-NOT (Inverter)
---------------
-The not operation also termed as inversion 
+= NOT 
+The not operation also termed as inversion,
 is denoted as [overline]#A# = &not; A = Q
 
-["latex","../images/not.svg",imgfmt="svg"]
-$\overline{A}=\neg A = Q$
-
 [width="50%"]
-|=========
+|==========
 | A   | Q    
 | 0   | 1    
 | 1   | 0    
 |=========
 
-image:../images/how_does_cpu/not_gate.png[width=300]
+Accordingly the gate-level implementation is also known by the name inverter.
+A whole own post can be filled with this topic, and we will probably also do so 
+in the middle future.
 
-        
-Although boolean algebra on itself is an interesting field, we will only touch the subject briefly here, just enough
-to get to the practical side of it. If you are intersted in a more profound view, providing induction and proof, I refer you to accordingly
-literature (sources listed at the end).
+'''
+
+Although boolean algebra on itself is an interesting field, we will only skim the subject briefly here, just enough
+to get a feeling and understanding how to work with boolean formulas.
+
+[NOTE]
+If you are interested in a more profound view, providing induction and proof, 
+I refer you to accordingly literature (sources listed at the end).
 
 
 The laws of the boolean algebra are shown in the following table:
 [width="100%",cols="2,4^,100a,100a",options="header"]
 |====================================================================================================================
-|  |                   |  ∧                                         |  ∨                                             
+|  |                   |  ∧  (conjunction, AND operator)                                         |  ∨ (disjunction, OR operator)
 | 1| commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p                                          $   |
+$p \land q = q \land p                                              $   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
-$p \lor q = q \lor p                                            $  
+$p \lor q = q \lor p                                                $  
 | 2| associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
 $p \land (q \land r) = (p \land q) \land r = pqr                $  |
@@ -123,18 +112,40 @@ $p \lor \neg p = 1                                              $
 4+|    Source:  Hans-Jochen Bartsch, Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28  |
 |====================================================================================================================
 
-= Implementation on electrical level 
 
-On the implementation level (for an electrical implementation) it is rather uncommon to use OR, AND, and NOT directly,
-we will discuss the why at the end of this post. But first let me introduce the NAND and NOR gates
+You probably know intuitively - or from school-  the first two laws mentioned in the table, 
+the commutative law and the associative laws.
+As you can see, every law can be applied to conjunctions as well as disjunctions without any exceptions.
+
+The commutative law implies that the order of the variables is neutral for the operation and can be swapped without
+changing the result of the operation. 
+
+The associative law implies, that parenthesis are swappable. Conjunctions can be condensed without operator.
+
+The absorptions law is probably not known to you from school, as it is only used in logic and has no counterpart in at least
+school mathmatics.
+
+The distributive law, again, is known from school. It implies that variables / operations outside of paranthesis needs 
+to be applied to all variables in the parenthesis.
+
+The law of neutral elements, again is something special to boolean algebra. The logic one is the correspondent to 'true',
+and so p and true equals 'true', so as the logic zero is 'false' and so p or false equals p.
+
+The complementary law implies, that to every element (variable) p there is a complementary element (variable) [overline]#p#,
+so that the conjunction results in a  logical zero while disjunction results in a logical one.
+
+'''
+
+At this point the author has to leap ahead a bit as some practical issues on the electrical level need some thought on their
+logic level:
+On the implementation level (for an electrical implementation) it is rather uncommon to use AND,OR and NOT directly, instead 
+the inverse functions NAND and NOR are used.
 
 
 = NAND and NOR
 
-The NAND gate is denoted as 
+The NAND gate is denoted as [overline]#A ∧ B# = Q
 
-["latex", "../images/nand.svg",imgfmt="svg"]
-$\overline{A \land B} = Q$
 
 [width="50%"]
 |==================
@@ -146,10 +157,7 @@ $\overline{A \land B} = Q$
 |==================
 
 
-while the NOR gate is denoted as
-
-["latex","../images/nor.svg",imgfmt="svg"]
-$\overline{A \lor B} = Q$ 
+while the NOR gate is denoted as [overline]#A v B# = Q
 
 [width="50%"]
 |==================
@@ -161,12 +169,27 @@ $\overline{A \lor B} = Q$
 |==================
 
 
-As you can see, for those two gates the results are exactly the inverse of their respective 'partner'. 
+As you can see, for those two gates the results are exactly the inverse of their respective 'partner' (NAND <==> AND,NOR <==> OR). 
 
+= The De Morgan theorem
+
+In addition to those merely basic axioms introduced above, there is the **De Morgan theorem**,
+which we need to easily convert between NAND and NOR. For the sake of simplicity we only show for 
+two elements however the theorem  independent from any number of elements / inputs.
+
+["latex", "../images/demorgan_nor.svg",imgfmt="svg"] 
+$\overline{p_1 \lor p_2} = \overline{p_1} \land \overline{p_2}$
+
+["latex", "../images/demorgan_nand.svg",imgfmt="svg"] 
+$\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}$
+
+Now we are finally equipped to continue with the electrical part / description.
+
+== Implementation on electrical level 
 
 Gates of these types can be conversed to 
 
-.. In addition to those merely basic axioms, there is the **De Morgan theorem**
+.. 
 .. 
 .. The De Morgan theorm is heavily used to converse logic between NAND and NOR.
 .. As we will see in the next section, on the implementation level often NAND and NOR gates are used instead 
