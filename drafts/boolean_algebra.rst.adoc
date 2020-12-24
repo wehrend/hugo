@@ -23,11 +23,12 @@ respectively one for the inverter.
 
 
 The and  operation  also termed as conjunction 
-is denoted as 
+is denoted as A ∧ B = Q
 
 ["latex","../images/and.svg",imgfmt="svg"]
-\LARGE $A \land B = Q$
+$A \land B = Q$
 
+[width="50%"]
 |================
 | A   | B   |  Q  
 | 0   | 0   |  0  
@@ -44,12 +45,12 @@ image:../images/how_does_cpu/and_gate.png[width=300]
 = OR 
 
 The or operation also termed as disjunction 
-is denoted as
+is denoted as A v B = Q
 
 ["latex","../images/or.svg", imgfmt="svg"]
-\LARGE $A \lor B = Q$
+$A \lor B = Q$
 
-
+[width="50%"]
 |================
 | A   | B   |  Q  
 | 0   | 0   |  0  
@@ -64,11 +65,12 @@ image:../images/how_does_cpu/or_gate.png[width=300]
 NOT (Inverter)
 --------------
 The not operation also termed as inversion 
-is denoted as 
+is denoted as [overline]#A# = &not; A = Q
 
 ["latex","../images/not.svg",imgfmt="svg"]
-\LARGE $\overline{A}=\neg A = Q$
+$\overline{A}=\neg A = Q$
 
+[width="50%"]
 |=========
 | A   | Q    
 | 0   | 1    
@@ -82,19 +84,44 @@ Although boolean algebra on itself is an interesting field, we will only touch t
 to get to the practical side of it. If you are intersted in a more profound view, providing induction and proof, I refer you to accordingly
 literature (sources listed at the end).
 
+
 The laws of the boolean algebra are shown in the following table:
-[width="100%",cols="2,^4,20,20",options="header"]
+[width="100%",cols="2,4^,100a,100a",options="header"]
 |====================================================================================================================
 |  |                   |  ∧                                         |  ∨                                             
-| 1| commutative law   | p ∧ q = q ∧ p                             | p ∨ q = q ∨ p                                   
-| 2| associative law   | p ∧ (q ∧ r) = (p ∧ q) ∧ r = pqr           | p ∨ (q ∨ r) = (p ∨ q) ∨ r = p ∨ q ∨ r           
-| 3| absorptions law   | p ∧ (p ∨ q) = p                           | p ∨ (p ∧ q) = p                                 
-| 4| distributive law  | p ∨ (q ∨ r) = (p ∧ q) ∨ (p ∧ r) = pq ∨ pr | p ∨ (q ∨ r) = (p ∨ q) ∨ (p ∨ r) = (p ∨ q)(p ∨ r)
-| 5| neutral elements  | p ∧ 1 = p                                 | p ∨ 0 = p                                       
-| 6| complem. element  | p ∧ ¬p = 0                                | p ∨ ¬p = 1                                      
+| 1| commutative law   | 
+["latex", "../images/commut_A.svg",imgfmt="svg"] 
+$p \land q = q \land p                                          $   |
+["latex", "../images/commut_V.svg",imgfmt="svg"] 
+$p \lor q = q \lor p                                            $  
+| 2| associative law   | 
+["latex", "../images/assoc_A.svg",imgfmt="svg"] 
+$p \land (q \land r) = (p \land q) \land r = pqr                $  |
+["latex", "../images/assoc_V.svg",imgfmt="svg"] 
+$p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r        $
+| 3| absorptions law   | 
+["latex", "../images/absorp_A.svg",imgfmt="svg"] 
+$p \land (p \lor q) = p                                         $
+| 
+["latex", "../images/absorp_V.svg",imgfmt="svg"] 
+$p \lor (p \land q) = p                                         $
+| 4| distributive law  | 
+["latex", "../images/distrib_A.svg",imgfmt="svg"] 
+$p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr  $ |
+["latex", "../images/distrib_V.svg",imgfmt="svg"]
+$p \lor (q \lor r) = (p \lor q) \lor (p \lor r) = (p \lor q)(p \lor r)$
+| 5| neutral elements  |
+["latex", "../images/neutral_A.svg",imgfmt="svg"]
+$p \land 1 = p                                                  $ | 
+["latex", "../images/neutral_V.svg",imgfmt="svg"]
+$p \lor 0 = p                                                   $
+| 6| complem. element  | 
+["latex", "../images/comp_A.svg",imgfmt="svg"]
+$p \land \neg p = 0                                             $ |
+["latex", "../images/comp_V.svg",imgfmt="svg"]
+$p \lor \neg p = 1                                              $                                      
 4+|    Source:  Hans-Jochen Bartsch, Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28  |
 |====================================================================================================================
-
 
 = Implementation on electrical level 
 
@@ -107,9 +134,9 @@ we will discuss the why at the end of this post. But first let me introduce the 
 The NAND gate is denoted as 
 
 ["latex", "../images/nand.svg",imgfmt="svg"]
-\LARGE $\overline{A \land B} = Q$.
+$\overline{A \land B} = Q$
 
-
+[width="50%"]
 |==================
 | A   | B   |  Q  
 | 0   | 0   |  1  
@@ -119,11 +146,12 @@ The NAND gate is denoted as
 |==================
 
 
-while the NOR gate is denoted as 
+while the NOR gate is denoted as
 
 ["latex","../images/nor.svg",imgfmt="svg"]
-\LARGE $\overline{A \lor B} = Q$ .
+$\overline{A \lor B} = Q$ 
 
+[width="50%"]
 |==================
 | A   | B   |  Q  
 | 0   | 0   |  1  

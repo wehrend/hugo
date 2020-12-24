@@ -12,11 +12,12 @@
        url('../fonts/alegreya-sans-sc-v12-latin-regular.svg#AlegreyaSansSC') format('svg'); /* Legacy iOS */
 }
 
+span.overline { text-decoration: overline; }
 
-img {
+/*img {
     border-radius: 2rem;
     
-}
+}*/
 
 div.content.monospaced
 {
