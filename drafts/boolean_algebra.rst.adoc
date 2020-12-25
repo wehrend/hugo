@@ -13,14 +13,13 @@ We are starting (the journey) with three very
 simple basic blocks, however, despite its simplicity 
 already are valid instructions of a (hypothetical) CPU:
 
-AND, OR and NOT
+*AND, OR and NOT*
 
 The truth tables of every function is given below for a number of two inputs,
 respectively one for the inverter.
 
 
 = AND
-
 
 The and  operation  also termed as conjunction 
 is denoted as A ∧ B = Q
@@ -34,6 +33,8 @@ is denoted as A ∧ B = Q
 | 1   | 1   |  1  
 |================
 
+
+image:../images/how_does_cpu/and_gate.svg[width=200]
 
 = OR 
 
@@ -49,6 +50,8 @@ is denoted as A v B = Q
 | 1   | 1   |  1  
 |================
   
+image:../images/how_does_cpu/or_gate.svg[width=200]
+
 = NOT 
 The not operation also termed as inversion,
 is denoted as [overline]#A# = &not; A = Q
@@ -60,9 +63,15 @@ is denoted as [overline]#A# = &not; A = Q
 | 1   | 0    
 |=========
 
+image:../images/how_does_cpu/inverter.svg[width=200]
+
 Accordingly the gate-level implementation is also known by the name inverter.
-A whole own post can be filled with this topic, and we will probably also do so 
-in the middle future.
+Despite its seemingly simple funationality there is a lot to say about the inverter 
+for both the logical as well the implementation, so the author will dedicate it an own 
+post in the mid-feature.
+
+//A whole own post can be filled with this topic, and we will probably also do so 
+//in the middle future.
 
 '''
 
@@ -75,36 +84,36 @@ I refer you to accordingly literature (sources listed at the end).
 
 
 The laws of the boolean algebra are shown in the following table:
-[width="100%",cols="2,4^,100a,100a",options="header"]
+[width="100%",cols="4^,100a,100a",options="header"]
 |====================================================================================================================
-|  |                   |  ∧  (conjunction, AND operator)                                         |  ∨ (disjunction, OR operator)
-| 1| commutative law   | 
+|      |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
+| commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p                                              $   |
+$p \land q = q \land p                                                    $   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
-$p \lor q = q \lor p                                                $  
-| 2| associative law   | 
+$p \lor q = q \lor p                                                      $  
+| associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
 $p \land (q \land r) = (p \land q) \land r = pqr                $  |
 ["latex", "../images/assoc_V.svg",imgfmt="svg"] 
 $p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r        $
-| 3| absorptions law   | 
+| absorptions law   | 
 ["latex", "../images/absorp_A.svg",imgfmt="svg"] 
 $p \land (p \lor q) = p                                         $
 | 
 ["latex", "../images/absorp_V.svg",imgfmt="svg"] 
 $p \lor (p \land q) = p                                         $
-| 4| distributive law  | 
+| distributive law  | 
 ["latex", "../images/distrib_A.svg",imgfmt="svg"] 
 $p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr  $ |
 ["latex", "../images/distrib_V.svg",imgfmt="svg"]
 $p \lor (q \lor r) = (p \lor q) \lor (p \lor r) = (p \lor q)(p \lor r)$
-| 5| neutral elements  |
+| neutral elements  |
 ["latex", "../images/neutral_A.svg",imgfmt="svg"]
 $p \land 1 = p                                                  $ | 
 ["latex", "../images/neutral_V.svg",imgfmt="svg"]
 $p \lor 0 = p                                                   $
-| 6| complem. element  | 
+| complem. element  | 
 ["latex", "../images/comp_A.svg",imgfmt="svg"]
 $p \land \neg p = 0                                             $ |
 ["latex", "../images/comp_V.svg",imgfmt="svg"]
@@ -156,6 +165,7 @@ The NAND gate is denoted as [overline]#A ∧ B# = Q
 | 1   | 1   |  0  
 |==================
 
+image:../images/how_does_cpu/nand_gate.svg[width=200]
 
 while the NOR gate is denoted as [overline]#A v B# = Q
 
@@ -168,20 +178,52 @@ while the NOR gate is denoted as [overline]#A v B# = Q
 | 1   | 1   |  0  
 |==================
 
+image:../images/how_does_cpu/nor_gate.svg[width=200]
 
-As you can see, for those two gates the results are exactly the inverse of their respective 'partner' (NAND <==> AND,NOR <==> OR). 
+As you can see, for those two functions the results are exactly the inverse of their respective complement 
+(NAND <==> AND,NOR <==> OR). 
 
 = The De Morgan theorem
 
 In addition to those merely basic axioms introduced above, there is the **De Morgan theorem**,
 which we need to easily convert between NAND and NOR. For the sake of simplicity we only show for 
-two elements however the theorem  independent from any number of elements / inputs.
+two elements however the theorem is independent from any number of elements / inputs.
+
+["latex", "../images/demorgan_nand.svg",imgfmt="svg"] 
+$\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}$
+
+[width="75%"]
+|==========================================================================================
+| A   | B   |[overline]#A# | [overline]#B# |  [overline]#AB# | [overline]#A# v [overline]#B#
+| 0   | 0   |    1         |     1         |          1       | 1
+| 0   | 1   |    1         |     0         |          1       | 1
+| 1   | 0   |    0         |     1         |          1       | 1
+| 1   | 1   |    0         |     0         |          0       | 0
+|===========================================================================================
+
+
+
+
+image:../images/how_does_cpu/de_morgan_nand_equivalence.svg[width=400]
+
 
 ["latex", "../images/demorgan_nor.svg",imgfmt="svg"] 
 $\overline{p_1 \lor p_2} = \overline{p_1} \land \overline{p_2}$
 
-["latex", "../images/demorgan_nand.svg",imgfmt="svg"] 
-$\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}$
+
+[width="75%"]
+|==========================================================================================
+| A   | B   |[overline]#A# | [overline]#B# |  [overline]#AvB# | [overline]#A# [overline]#B#
+| 0   | 0   |    1         |     1         |          1       | 1
+| 0   | 1   |    1         |     0         |          0       | 0
+| 1   | 0   |    0         |     1         |          0       | 0
+| 1   | 1   |    0         |     0         |          0       | 0
+|===========================================================================================
+
+
+image:../images/how_does_cpu/de_morgan_nor_equivalence.svg[width=400]
+
+
 
 Now we are finally equipped to continue with the electrical part / description.
 
