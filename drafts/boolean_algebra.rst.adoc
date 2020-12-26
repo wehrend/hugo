@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-== Boolean Algebra and Basic Logic Gates
+= Boolean Algebra and Basic Logic Gates
 
 We are starting (the journey) with three very 
 simple basic blocks, however, despite its simplicity 
@@ -19,7 +19,7 @@ The truth tables of every function is given below for a number of two inputs,
 respectively one for the inverter.
 
 
-= AND
+=== AND
 
 The and  operation  also termed as conjunction 
 is denoted as A ∧ B = Q
@@ -36,7 +36,7 @@ is denoted as A ∧ B = Q
 
 image:../images/how_does_cpu/and_gate.svg[width=200]
 
-= OR 
+=== OR 
 
 The or operation also termed as disjunction 
 is denoted as A v B = Q
@@ -52,7 +52,7 @@ is denoted as A v B = Q
   
 image:../images/how_does_cpu/or_gate.svg[width=200]
 
-= NOT 
+=== NOT 
 The not operation also termed as inversion,
 is denoted as [overline]#A# = &not; A = Q
 
@@ -151,7 +151,7 @@ On the implementation level (for an electrical implementation) it is rather unco
 the inverse functions NAND and NOR are used.
 
 
-= NAND and NOR
+=== NAND and NOR
 
 The NAND gate is denoted as [overline]#A ∧ B# = Q
 
@@ -183,7 +183,7 @@ image:../images/how_does_cpu/nor_gate.svg[width=200]
 As you can see, for those two functions the results are exactly the inverse of their respective complement 
 (NAND <==> AND,NOR <==> OR). 
 
-= The De Morgan theorem
+== The De Morgan theorem
 
 In addition to those merely basic axioms introduced above, there is the **De Morgan theorem**,
 which we need to easily convert between NAND and NOR. For the sake of simplicity we only show for 
@@ -229,14 +229,21 @@ Now we are finally equipped to continue with the electrical part / description.
 
 == Implementation on electrical level 
 
-Gates of these types can be conversed to 
+[width="100%" cols="a^,a^"]
+|======
+| wire schematic | pass transistor logic 
+|image:../images/how_does_cpu/wire_and.svg[width=400]  | image:../images/how_does_cpu/pass_transistor_and.svg[width=400] 
+| symbolic schematic | real implementation (varying)
+| image:../images/how_does_cpu/and_gate.svg[width=200] ^| [big]#?#
+|======
 
-.. 
-.. 
-.. The De Morgan theorm is heavily used to converse logic between NAND and NOR.
-.. As we will see in the next section, on the implementation level often NAND and NOR gates are used instead 
-.. of the basic gates described before, due to easier realisation.
-
+[width="100%" cols="a^,a^"]
+|======
+| wire schematic | pass transistor logic
+|image:../images/how_does_cpu/wire_or.svg[width=400]  | image:../images/how_does_cpu/pass_transistor_or.svg[width=400]
+| symbolic schematic | real implementation (varying)
+|image:../images/how_does_cpu/or_gate.svg[width=200] ^| [big]#?#
+|======
 
 
 

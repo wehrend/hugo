@@ -55,7 +55,7 @@
   <circle cx="93" cy="50" r="3" style="fill:#ffffff;stroke:#000000" />
   <polyline
      points="30,10 90,50 30,90 30,10 90,50"
-     style="fill:#ffffff;stroke:#000000"
+     style="fill:none;stroke:#000000"
      stroke-width="2px"
      id="polyline5" />
 </svg>
