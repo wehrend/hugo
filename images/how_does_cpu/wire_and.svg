@@ -1,145 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="200.00"
-   height="110.00"
-   viewBox="0.0 0.0 200.0 110.0"
-   viewPort="0 0 200px 110px"
-   version="1.1"
-   id="svg20"
-   sodipodi:docname="wire_and.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <metadata
-     id="metadata26">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs24" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1381"
-     id="namedview22"
-     showgrid="false"
-     inkscape:zoom="4.2002143"
-     inkscape:cx="61.747192"
-     inkscape:cy="-5.9515104"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg20" />
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="1" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,2 L3,1 z" fill="black" />
-    </marker>
-  </defs>
-  <g
-     id="g854"
-     transform="translate(7.1424927,9.0471575)">
-    <g
-       transform="translate(17.380066,-13.332653)"
-       id="g842">
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:2px"
-         cx="10"
-         cy="75"
-         r="15"
-         id="circle2" />
-      <polyline
-         style="fill:none;stroke:#000000;stroke-width:2px"
-         points=" 120,50 150,50, 150,100 10,100, 10,50  10,50 30,50"
-         id="polyline4" />
-       <circle
-         style="fill:black;stroke:#000000;stroke-width:2px"
-         cx="150"
-         cy="50"
-         r="2"
-         id="joint"/>
-      <polyline points="150,50 150,40 160,40" style="fill:none;stroke:black;stroke-width:2px;"/>
-      <circle
-         style="fill:black;stroke:#000000;stroke-width:2px"
-         cx="160"
-         cy="40"
-         r="2"
-         id="circleQ"/>
-      <text
-         style="font-size:11px"
-         x="165"
-         y="40"
-         font-size="11"
-         id="textQ">Q</text>
-      <rect x="146" y="58" width="8" height="18" style="stroke:black;stroke-width:2;fill:white;fill-opacity:1"/>
-      <polygon points="146,85  154,85 150,89  146,85" style="stroke:black;fill:black;"/> 
-      <line x1="146" y1="90" x2="154" y2="90" style="stroke:black;stroke-width:2"/>
-      <line x1="156" y1="86" x2="158" y2="87" style="stroke:black;stroke-width:1" marker-end="url(#arrow)"/>
-      <line x1="156" y1="90" x2="158" y2="91" style="stroke:black;stroke-width:1" marker-end="url(#arrow)"/>
-      <line
-         style="stroke:#000000;stroke-width:2px"
-         x1="10"
-         y1="50"
-         x2="30"
-         y2="50"
-         id="line6" />
-      <text
-         style="font-size:11px"
-         x="45"
-         y="25"
-         font-size="11"
-         id="text8">A</text>
-      <line
-         style="stroke:#000000;stroke-width:2px"
-         x1="30"
-         y1="50"
-         x2="60"
-         y2="35"
-         id="line10" />
-      <line
-         style="stroke:#000000;stroke-width:2px"
-         x1="60"
-         y1="50"
-         x2="90"
-         y2="50"
-         id="line12" />
-      <text
-         style="font-size:11px"
-         x="105"
-         y="25"
-         font-size="11"
-         id="text14">B</text>
-      <line
-         style="stroke:#000000;stroke-width:2px"
-         x1="90"
-         y1="50"
-         x2="120"
-         y2="35"
-         id="line16" />
-      <line
-         style="stroke:#000000;stroke-width:2px"
-         x1="120"
-         y1="50"
-         x2="150"
-         y2="50"
-         id="line18" />
-    </g>
-  </g>
+<svg width="100px" height="100px" viewBox="0.0 0.0 100.00 100.00" viewPort = "0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    
+    <symbol id="diode">
+     <g id="diode" rotate="180">
+        <line x1="10" y1="10" x2="40" y2="10" stroke="black"/>
+        <polygon points="20,5 25,10  20,15 20,5" stroke="black"/>
+        <line x1="25" y1="5" x2="25" y2="15" stroke="black"/>
+     </g>
+    </symbol>
+    <text x="55" y="10" font-size="10">+5V</text>
+    <circle cx="50" cy="8" r="2" style="stroke:black;fill:none" />
+    <line x1="50" y1="10" x2="50" y2="20" style="stroke:black;fill:none"/>
+    <rect x="47" y="20" width="6" height="18" style="stroke:black;fill:none"/>
+    <use href="#diode" x="10" y="40"/>
+    <use href="#diode" x="10" y="60"/>
+    <circle cx="50" cy="50" r="2" style="stroke:black;fill:black"/>
+    <line x1="50" y1="50" x2="70" y2="50" style="stroke:black;fill:none"/>
+    <line x1="50" y1="38" x2="50" y2="70" style="stroke:black;fill:none"/>
+    <text x="10" y="50" font-size="10">A</text>
+    <text x="10" y="70" font-size="10">B</text>
+    <text x="70" y="50" font-size="10">Q</text>
 </svg>
