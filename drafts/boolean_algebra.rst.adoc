@@ -9,15 +9,48 @@
 
 = Boolean Algebra and Basic Logic Gates
 
-We are starting (the journey) with three very 
-simple basic blocks, however, despite its simplicity 
-already are valid instructions of a (hypothetical) CPU:
+We are starting (the journey) with four very 
+basic logic functions (or operations), which despite their simplicity 
+already are valid instructions of a regular CPU:
 
-*AND, OR and NOT*
+*AND, OR, XOR and NOT*
 
-The truth tables of every function is given below for a number of two inputs,
-respectively one for the inverter.
 
+Logical functions - also called operations, the author will use both terms interchangebly here -
+can be described in various ways, most often it is described implicit
+as boolean equation, but it can also be explained explicit in a truth table.
+
+A truth table is a table with the a column for every input and a column for every output.
+So it shows the output respective the outputs of the function for all possible combinations of inputs. 
+Also they can contain columns with intermedite values.
+
+The truth tables shown in this lesson are in general very small and show only compbinations of two inputs,
+although all the functions joining inputs can be expanded to a arbitrary number of inputs.
+
+Boolean equations can be transformed to truth tables and vice versa. Later, we will also introduce 
+https://en.wikipedia.org/wiki/Karnaugh_map[Karnaugh maps], a way to optimize boolean logic in a graphical way.
+
+=== NOT 
+The not operation also termed as inversion,
+is denoted as [overline]#A# = &not; A = Q
+
+
+
+[width="50%"]
+|==========
+| A   | Q    
+| 0   | 1    
+| 1   | 0    
+|=========
+
+image:../images/how_does_cpu/inverter_symbol.svg[width=200]
+
+The not operation is the only one with only one input, it can not be expanded.
+
+Accordingly the gate-level implementation is also known by the name inverter.
+Despite its seemingly simple functionality there is a lot to say about the inverter 
+for both the logical as well the implementation, so the author will dedicate it an own 
+post in the mid-feature.
 
 === AND
 
@@ -34,7 +67,7 @@ is denoted as A ∧ B = Q
 |================
 
 
-image:../images/how_does_cpu/and_gate.svg[width=200]
+image:../images/how_does_cpu/and_symbol.svg[width=200]
 
 === OR 
 
@@ -50,28 +83,28 @@ is denoted as A v B = Q
 | 1   | 1   |  1  
 |================
   
-image:../images/how_does_cpu/or_gate.svg[width=200]
+image:../images/how_does_cpu/or_symbol.svg[width=200]
 
-=== NOT 
-The not operation also termed as inversion,
-is denoted as [overline]#A# = &not; A = Q
+
+=== XOR 
+
+The exclusicve or operation xor which is also termed as antivalence
+is denoted as A ⊕ B = Q
 
 [width="50%"]
-|==========
-| A   | Q    
-| 0   | 1    
-| 1   | 0    
-|=========
+|================
+| A   | B   |  Q  
+| 0   | 0   |  0  
+| 0   | 1   |  1 
+| 1   | 0   |  1  
+| 1   | 1   |  0  
+|================
+  
+image:../images/how_does_cpu/xor_symbol.svg[width=200]
 
-image:../images/how_does_cpu/inverter.svg[width=200]
-
-Accordingly the gate-level implementation is also known by the name inverter.
-Despite its seemingly simple funationality there is a lot to say about the inverter 
-for both the logical as well the implementation, so the author will dedicate it an own 
-post in the mid-feature.
-
-//A whole own post can be filled with this topic, and we will probably also do so 
-//in the middle future.
+There are a lot of important applications for the exclusive-or operation
+as you can expect for a such basic and fundamaental operation, but still
+the situation is a bit different with this operation compared to 'and' and 'or'.
 
 '''
 
@@ -89,9 +122,9 @@ The laws of the boolean algebra are shown in the following table:
 |      |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
 | commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p                                                    $   |
+$p \land q = q \land p                                                      $   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
-$p \lor q = q \lor p                                                      $  
+$p \lor q = q \lor p                                                        $  
 | associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
 $p \land (q \land r) = (p \land q) \land r = pqr                $  |
@@ -153,35 +186,21 @@ the inverse functions NAND and NOR are used.
 
 === NAND and NOR
 
-The NAND gate is denoted as [overline]#A ∧ B# = Q
+The NAND operation is denoted as [overline]#A ∧ B# = Q
+while the NOR operation is denoted as [overline]#A v B# = Q
 
 
-[width="50%"]
-|==================
-| A   | B   |  Q  
-| 0   | 0   |  1  
-| 0   | 1   |  1  
-| 1   | 0   |  1  
-| 1   | 1   |  0  
-|==================
-
-image:../images/how_does_cpu/nand_gate.svg[width=200]
-
-while the NOR gate is denoted as [overline]#A v B# = Q
-
-[width="50%"]
-|==================
-| A   | B   |  Q  
-| 0   | 0   |  1  
-| 0   | 1   |  0  
-| 1   | 0   |  0  
-| 1   | 1   |  0  
-|==================
-
-image:../images/how_does_cpu/nor_gate.svg[width=200]
+[width="100%" cols="a,a"]
+|======
+| NAND | NOR
+|image:../images/how_does_cpu/nand_symbol.svg[width=200] |image:../images/how_does_cpu/nor_symbol.svg[width=200]
+|======
 
 As you can see, for those two functions the results are exactly the inverse of their respective complement 
-(NAND <==> AND,NOR <==> OR). 
+(NAND <==> AND,NOR <==> OR), in that sense the author recommends the construction of the respective truth tables 
+as an exercise to the reader.
+
+
 
 == The De Morgan theorem
 
@@ -229,21 +248,50 @@ Now we are finally equipped to continue with the electrical part / description.
 
 == Implementation on electrical level 
 
-[width="100%" cols="a^,a^"]
+Starting with the inverter in this section of the post (lesson?) we will show the underlying implementation of the logic
+functions discussed above. We will only get a brief overview though as the number of techniques or combinations on them 
+is nearly endless depending on the specific appliance, but in today's circuits it boils all down to CMOS Technology. 
+*CMOS* stands for [underline]#C# omplementary [underline]#M# etal [underline]#O# xid [underline]#S# emiconductor a successor of the prior used NMOS Technology,
+which had the disadvantage of high power consumption.
+
+==== Inverter
+
+[width="100%" cols="a,a"]
 |======
-| wire schematic | pass transistor logic 
-|image:../images/how_does_cpu/wire_and.svg[width=400]  | image:../images/how_does_cpu/pass_transistor_and.svg[width=400] 
-| symbolic schematic | real implementation (varying)
-| image:../images/how_does_cpu/and_gate.svg[width=200] ^| [big]#?#
+2+| image:../images/how_does_cpu/inverter_symbol.svg[width=200,float="right"]
+| NMOS | CMOS
+|image:../images/how_does_cpu/inverter_nmos.svg[width=500] | image:../images/how_does_cpu/inverter_cmos.svg[width=500] 
 |======
 
-[width="100%" cols="a^,a^"]
+The inverter has two different tasks to fullfill
+
+1. Refreshing the signal (level) the inverters gets from the preceeding circuit 
+2. Actually, inverting the signal 
+
+There are also integrated circuits, called buffer or driver, solely dedicated to the first task mentioned, we will discuss that in a later blog post / lesson.
+Here we want to focus only on the logical part of inverting the signal, although for that both functions are equal important, thats why they are combined in one 
+circuit. 
+In the symbol the first task, the refreshing of the signal (level), is indicated by the triangle, while the little circle denotes the actual inverting function.
+
+==== And
+
+[width="100%" cols="^a,^a"]
 |======
-| wire schematic | pass transistor logic
-|image:../images/how_does_cpu/wire_or.svg[width=400]  | image:../images/how_does_cpu/pass_transistor_or.svg[width=400]
-| symbolic schematic | real implementation (varying)
-|image:../images/how_does_cpu/or_gate.svg[width=200] ^| [big]#?#
+2+| image:../images/how_does_cpu/and_symbol.svg[width=200,align="center"]
+| wired logic | CMOS
+|image:../images/how_does_cpu/wire_and.svg[width=500] | image:../images/how_does_cpu/and_cmos.svg[width=500] 
 |======
+
+
+==== Or
+
+[width="100%" cols="^a,^a"]
+|======
+2+| image:../images/how_does_cpu/or_symbol.svg[width=200,align="center"]
+| wired logic | CMOS
+|image:../images/how_does_cpu/wire_or.svg[width=500] | image:../images/how_does_cpu/or_cmos.svg[width=500] 
+|======
+
 
 
 

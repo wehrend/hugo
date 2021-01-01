@@ -787,15 +787,10 @@ respectively one for the inverter.</p></div>
 </div>
 <h1 id="_and">AND</h1>
 <div class="paragraph"><p>The and  operation  also termed as conjunction
-is denoted as</p></div>
-<div class="imageblock latex">
-<div class="content">
-<img src="../images/and.svg" alt="../images/and.svg" />
-</div>
-</div>
+is denoted as A ∧ B = Q</p></div>
 <div class="tableblock">
 <table rules="all"
-width="100%"
+width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
 <col width="33%" />
@@ -830,20 +825,12 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-<div class="paragraph"><p><span class="image">
-<img src="../images/how_does_cpu/and_gate.png" alt="../images/how_does_cpu/and_gate.png" width="300" />
-</span></p></div>
 <h1 id="_or">OR</h1>
 <div class="paragraph"><p>The or operation also termed as disjunction
-is denoted as</p></div>
-<div class="imageblock latex">
-<div class="content">
-<img src="../images/or.svg" alt="../images/or.svg" />
-</div>
-</div>
+is denoted as A v B = Q</p></div>
 <div class="tableblock">
 <table rules="all"
-width="100%"
+width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
 <col width="33%" />
@@ -878,22 +865,14 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-<div class="paragraph"><p><span class="image">
-<img src="../images/how_does_cpu/or_gate.png" alt="../images/how_does_cpu/or_gate.png" width="300" />
-</span></p></div>
 <div class="sect1">
 <h2 id="_not_inverter">NOT (Inverter)</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>The not operation also termed as inversion
-is denoted as</p></div>
-<div class="imageblock latex">
-<div class="content">
-<img src="../images/not.svg" alt="../images/not.svg" />
-</div>
-</div>
+is denoted as <span class="overline">A</span> = &not; A = Q</p></div>
 <div class="tableblock">
 <table rules="all"
-width="100%"
+width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
 <col width="50%" />
@@ -914,66 +893,119 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-<div class="paragraph"><p><span class="image">
-<img src="../images/how_does_cpu/not_gate.png" alt="../images/how_does_cpu/not_gate.png" width="300" />
-</span></p></div>
-<div class="paragraph"><p>Although boolean algebra on itself is an interesting field, we will only touch the subject briefly here, just enough
-to get to the practical side of it. If you are intersted in a more profound view, providing induction and proof, I refer you to accordingly
-literature (sources listed at the end).</p></div>
+<div class="paragraph"><p>Although boolean algebra on itself is an interesting field, we will only skim the subject briefly here, just enough
+to get a feeling and understanding how to work with boolean formulas.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">If you are intersted in a more profound view, providing induction and proof,
+I refer you to accordingly literature (sources listed at the end).</td>
+</tr></table>
+</div>
 <div class="paragraph"><p>The laws of the boolean algebra are shown in the following table:</p></div>
 <div class="tableblock">
 <table rules="all"
 width="100%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<col width="4%" />
-<col width="8%" />
-<col width="43%" />
-<col width="43%" />
+<col width="0%" />
+<col width="1%" />
+<col width="48%" />
+<col width="48%" />
 <thead>
 <tr>
 <th align="left" valign="top">  </th>
 <th align="center" valign="top">                   </th>
-<th align="left" valign="top">  ∧                                         </th>
-<th align="left" valign="top">  ∨</th>
+<th align="left" valign="top">  ∧  (conjunction, AND operator)                                         </th>
+<th align="left" valign="top">  ∨ (disjunction, OR operator)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="center" valign="top"><p class="table">commutative law</p></td>
-<td align="left" valign="top"><p class="table">p ∧ q = q ∧ p</p></td>
-<td align="left" valign="top"><p class="table">p ∨ q = q ∨ p</p></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/commut_A.svg" alt="../images/commut_A.svg" />
+</div>
+</div></div></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/commut_V.svg" alt="../images/commut_V.svg" />
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">2</p></td>
 <td align="center" valign="top"><p class="table">associative law</p></td>
-<td align="left" valign="top"><p class="table">p ∧ (q ∧ r) = (p ∧ q) ∧ r = pqr</p></td>
-<td align="left" valign="top"><p class="table">p ∨ (q ∨ r) = (p ∨ q) ∨ r = p ∨ q ∨ r</p></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/assoc_A.svg" alt="../images/assoc_A.svg" />
+</div>
+</div></div></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/assoc_V.svg" alt="../images/assoc_V.svg" />
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">3</p></td>
 <td align="center" valign="top"><p class="table">absorptions law</p></td>
-<td align="left" valign="top"><p class="table">p ∧ (p ∨ q) = p</p></td>
-<td align="left" valign="top"><p class="table">p ∨ (p ∧ q) = p</p></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/absorp_A.svg" alt="../images/absorp_A.svg" />
+</div>
+</div></div></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/absorp_V.svg" alt="../images/absorp_V.svg" />
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">4</p></td>
 <td align="center" valign="top"><p class="table">distributive law</p></td>
-<td align="left" valign="top"><p class="table">p ∨ (q ∨ r) = (p ∧ q) ∨ (p ∧ r) = pq ∨ pr</p></td>
-<td align="left" valign="top"><p class="table">p ∨ (q ∨ r) = (p ∨ q) ∨ (p ∨ r) = (p ∨ q)(p ∨ r)</p></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/distrib_A.svg" alt="../images/distrib_A.svg" />
+</div>
+</div></div></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/distrib_V.svg" alt="../images/distrib_V.svg" />
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">5</p></td>
 <td align="center" valign="top"><p class="table">neutral elements</p></td>
-<td align="left" valign="top"><p class="table">p ∧ 1 = p</p></td>
-<td align="left" valign="top"><p class="table">p ∨ 0 = p</p></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/neutral_A.svg" alt="../images/neutral_A.svg" />
+</div>
+</div></div></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/neutral_V.svg" alt="../images/neutral_V.svg" />
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">6</p></td>
 <td align="center" valign="top"><p class="table">complem. element</p></td>
-<td align="left" valign="top"><p class="table">p ∧ ¬p = 0</p></td>
-<td align="left" valign="top"><p class="table">p ∨ ¬p = 1</p></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/comp_A.svg" alt="../images/comp_A.svg" />
+</div>
+</div></div></td>
+<td align="left" valign="top"><div><div class="imageblock latex">
+<div class="content">
+<img src="../images/comp_V.svg" alt="../images/comp_V.svg" />
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td colspan="4" align="left" valign="top"><p class="table">Source:  Hans-Jochen Bartsch, Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28</p></td>
@@ -981,21 +1013,22 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div class="paragraph"><p>You probably know intuitivrely - or from school-  the first two laws mentioned in the list,
+the commutative law and the associative laws.</p></div>
+<div class="paragraph"><p>The commutative law implies that the order of the variables is neutral for the operation and can be swapped without
+changing the result of the operation. As you can see, this holds for both conjunctions as well as disjunctions.</p></div>
+<div class="paragraph"><p>The associtive law implies, that paranthesis are swappable also, as you can see, this again, hold for conjunctions,
+as well as disjunctions. Conjunctions can be condensed without operator.</p></div>
 </div>
 </div>
 <h1 id="_implementation_on_electrical_level">Implementation on electrical level</h1>
 <div class="paragraph"><p>On the implementation level (for an electrical implementation) it is rather uncommon to use OR, AND, and NOT directly,
 we will discuss the why at the end of this post. But first let me introduce the NAND and NOR gates</p></div>
 <h1 id="_nand_and_nor">NAND and NOR</h1>
-<div class="paragraph"><p>The NAND gate is denoted as</p></div>
-<div class="imageblock latex">
-<div class="content">
-<img src="../images/nand.svg" alt="../images/nand.svg" />
-</div>
-</div>
+<div class="paragraph"><p>The NAND gate is denoted as <span class="overline">A ∧ B</span> = Q</p></div>
 <div class="tableblock">
 <table rules="all"
-width="100%"
+width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
 <col width="33%" />
@@ -1030,15 +1063,10 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-<div class="paragraph"><p>while the NOR gate is denoted as</p></div>
-<div class="imageblock latex">
-<div class="content">
-<img src="../images/nor.svg" alt="../images/nor.svg" />
-</div>
-</div>
+<div class="paragraph"><p>while the NOR gate is denoted as <span class="overline">A v B</span> = Q</p></div>
 <div class="tableblock">
 <table rules="all"
-width="100%"
+width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
 <col width="33%" />
@@ -1103,7 +1131,7 @@ of the basic gates described before, due to easier realisation.
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2020-12-23 21:34:37 CET
+ 2020-12-24 12:55:06 CET
 </div>
 </div>
 </body>
