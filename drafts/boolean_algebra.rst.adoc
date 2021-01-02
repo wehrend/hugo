@@ -88,7 +88,7 @@ image:../images/how_does_cpu/or_symbol.svg[width=200]
 
 === XOR 
 
-The exclusicve or operation xor which is also termed as antivalence
+The exclusive-or operation xor which is also termed as antivalence
 is denoted as A ⊕ B = Q
 
 [width="50%"]
@@ -122,9 +122,9 @@ The laws of the boolean algebra are shown in the following table:
 |      |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
 | commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p                                                      $   |
+$p \land q = q \land p                                                         $   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
-$p \lor q = q \lor p                                                        $  
+$p \lor q = q \lor p                                                           $  
 | associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
 $p \land (q \land r) = (p \land q) \land r = pqr                $  |
@@ -246,8 +246,45 @@ image:../images/how_does_cpu/de_morgan_nor_equivalence.svg[width=400]
 
 Now we are finally equipped to continue with the electrical part / description.
 
-== Implementation on electrical level 
+= Implementation on electrical level 
 
+In this section we introduce the transistor as the integral component allowing the implementation of the operations introduced
+above. A transistor is a switching element which can be controlled with a control voltage, similar to an electromechanical relay,
+where a small current in a coil builds up a magnetic field which moves the armature to close (or open, depending on the construction) 
+the contacts of the load circuit.
+The type of transistor we want to introduce and use here is a MOSFET (Metal Oxid Semiconductor Field Effect Transistor) - as opposed to classical bipolar transistor.
+As the name suggests a MOSFET is a transistor (or semiconductor) where the load currrent can be controlled by the strength of the electrical field, created on the gate input
+//https://www.power-and-beyond.com/whats-the-difference-between-mosfet-and-bjt-a-909006/
+
+
+image:../images/how_does_cpu/mosfet_model.svg[width=500]
+
+The image above sketches the principal structure of a mosfet on the silicon. Source and drain are both connected to an own n-well, in the p dotted substrate,
+while the gate in between is isolated by a thin silicon dioxide layer. There is a forth connector 'bulk', leading to the substrate, in discrete MOSFETs connected to the source,
+but for now this one is not relevant.
+There is a lot of complex physics behind the workings of a MOSFET all we want to know for now, is that when a voltage is applied to the gate, an electrical field is induced, 
+which creates a chanel between source and drain and allows electrons to flow from source to drain. The higher the gate voltage the bigger  (wider) the channel, the more electrons 
+flowing (until a certain boundary of course). And if the gate voltage is zero, also the channel is non-existent.
+
+image:../images/how_does_cpu/inverter_nmos.svg[width=500]
+
+With the MOSFET element introduced and a single resistor,an element which reduces the current flow, added, we can straight-forward implement an inverter circuit as shown in the image above.
+Source is connected to the ground and Drain is connected to the inverter output and also to the voltage source via a high-impedance resitor. Gate is the input of the inverter.
+When the voltage is set to low on the gate, the MOSFET does not conduct and so the potential available on the output is sufficient for a logic one.
+Whene a voltage is set to the gate,the drain-source path of the MOSFET becomes conductive, the potential available on the output breaks down an drains away via the drain-source path.
+
+
+[width="100%" cols="a,a"]
+|======
+| NMOS NAND | NMOS NOR
+|image:../images/how_does_cpu/nand_nmos.svg[width=500] | image:../images/how_does_cpu/nor_nmos.svg[width=500] 
+|======
+
+Now it becomes clear, why the inverse function of AND and OR on the gate level is simpler than the original function.
+
+
+
+////
 Starting with the inverter in this section of the post (lesson?) we will show the underlying implementation of the logic
 functions discussed above. We will only get a brief overview though as the number of techniques or combinations on them 
 is nearly endless depending on the specific appliance, but in today's circuits it boils all down to CMOS Technology. 
@@ -291,7 +328,7 @@ In the symbol the first task, the refreshing of the signal (level), is indicated
 | wired logic | CMOS
 |image:../images/how_does_cpu/wire_or.svg[width=500] | image:../images/how_does_cpu/or_cmos.svg[width=500] 
 |======
-
+////
 
 
 
