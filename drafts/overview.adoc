@@ -37,7 +37,7 @@ we have a look at the XOR gate. As in the first lesson we'll see first the logic
 part and then its translation into an electrical implementation.
 
 
-==  *1+1 = 2*
+==  *01+01 = 10*
 
 _Binary systems (Part I) and Combinatorial Logic (Part I)_
 

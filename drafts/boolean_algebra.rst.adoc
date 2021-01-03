@@ -9,11 +9,11 @@
 
 = Boolean Algebra and Basic Logic Gates
 
-We are starting (the journey) with four very 
+We are starting (the journey) with three very 
 basic logic functions (or operations), which despite their simplicity 
 already are valid instructions of a regular CPU:
 
-*AND, OR, XOR and NOT*
+*NOT, AND and OR*
 
 
 Logical functions - also called operations, the author will use both terms interchangebly here -
@@ -22,9 +22,9 @@ as boolean equation, but it can also be explained explicit in a truth table.
 
 A truth table is a table with the a column for every input and a column for every output.
 So it shows the output respective the outputs of the function for all possible combinations of inputs. 
-Also they can contain columns with intermedite values.
+Also they can contain columns with intermediate values.
 
-The truth tables shown in this lesson are in general very small and show only compbinations of two inputs,
+The truth tables shown in this lesson are in general very small and show only combinations of two inputs,
 although all the functions joining inputs can be expanded to a arbitrary number of inputs.
 
 Boolean equations can be transformed to truth tables and vice versa. Later, we will also introduce 
@@ -85,7 +85,7 @@ is denoted as A v B = Q
   
 image:../images/how_does_cpu/or_symbol.svg[width=200]
 
-
+////
 === XOR 
 
 The exclusive-or operation xor which is also termed as antivalence
@@ -106,6 +106,8 @@ There are a lot of important applications for the exclusive-or operation
 as you can expect for a such basic and fundamaental operation, but still
 the situation is a bit different with this operation compared to 'and' and 'or'.
 
+////
+
 '''
 
 Although boolean algebra on itself is an interesting field, we will only skim the subject briefly here, just enough
@@ -122,9 +124,9 @@ The laws of the boolean algebra are shown in the following table:
 |      |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
 | commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p                                                         $   |
+$p \land q = q \land p                                                           $   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
-$p \lor q = q \lor p                                                           $  
+$p \lor q = q \lor p                                                             $  
 | associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
 $p \land (q \land r) = (p \land q) \land r = pqr                $  |
@@ -268,67 +270,75 @@ flowing (until a certain boundary of course). And if the gate voltage is zero, a
 
 image:../images/how_does_cpu/inverter_nmos.svg[width=500]
 
+Common used symbols for MOSFET used in electrical schematics as well as some other we need due to course are shown below, some has more then only one, especially the MOSFET has a number 
+of sligthly various symbols reflecting the differences in the physical component.
+
+image:../images/how_does_cpu/symbols.svg[width=500]
+
 With the MOSFET element introduced and a single resistor,an element which reduces the current flow, added, we can straight-forward implement an inverter circuit as shown in the image above.
 Source is connected to the ground and Drain is connected to the inverter output and also to the voltage source via a high-impedance resitor. Gate is the input of the inverter.
 When the voltage is set to low on the gate, the MOSFET does not conduct and so the potential available on the output is sufficient for a logic one.
 Whene a voltage is set to the gate,the drain-source path of the MOSFET becomes conductive, the potential available on the output breaks down an drains away via the drain-source path.
 
+image:../images/how_does_cpu/inverter_cmos.svg[width=500]
 
-[width="100%" cols="a,a"]
-|======
-| NMOS NAND | NMOS NOR
-|image:../images/how_does_cpu/nand_nmos.svg[width=500] | image:../images/how_does_cpu/nor_nmos.svg[width=500] 
-|======
-
-Now it becomes clear, why the inverse function of AND and OR on the gate level is simpler than the original function.
-
-
-
-////
-Starting with the inverter in this section of the post (lesson?) we will show the underlying implementation of the logic
-functions discussed above. We will only get a brief overview though as the number of techniques or combinations on them 
-is nearly endless depending on the specific appliance, but in today's circuits it boils all down to CMOS Technology. 
-*CMOS* stands for [underline]#C# omplementary [underline]#M# etal [underline]#O# xid [underline]#S# emiconductor a successor of the prior used NMOS Technology,
-which had the disadvantage of high power consumption.
-
-==== Inverter
-
-[width="100%" cols="a,a"]
-|======
-2+| image:../images/how_does_cpu/inverter_symbol.svg[width=200,float="right"]
-| NMOS | CMOS
-|image:../images/how_does_cpu/inverter_nmos.svg[width=500] | image:../images/how_does_cpu/inverter_cmos.svg[width=500] 
-|======
-
-The inverter has two different tasks to fullfill
+'''
+On the electrical level inverter has two different tasks to fullfill
 
 1. Refreshing the signal (level) the inverters gets from the preceeding circuit 
 2. Actually, inverting the signal 
 
 There are also integrated circuits, called buffer or driver, solely dedicated to the first task mentioned, we will discuss that in a later blog post / lesson.
 Here we want to focus only on the logical part of inverting the signal, although for that both functions are equal important, thats why they are combined in one 
-circuit. 
+circuit. Of course, the logic signals have to be refreshed also in other logical circuits - like and and or - but in most cases this task is solely handeled by 
+those inverter stages, afterwards or before.
+
+image:../images/how_does_cpu/inverter_symbol.svg[width=200]
+
 In the symbol the first task, the refreshing of the signal (level), is indicated by the triangle, while the little circle denotes the actual inverting function.
 
-==== And
+'''
 
-[width="100%" cols="^a,^a"]
+[width="100%" cols="a,a"]
 |======
-2+| image:../images/how_does_cpu/and_symbol.svg[width=200,align="center"]
-| wired logic | CMOS
-|image:../images/how_does_cpu/wire_and.svg[width=500] | image:../images/how_does_cpu/and_cmos.svg[width=500] 
+| NMOS NAND | NMOS NOR
+|image:../images/how_does_cpu/nand_nmos.svg[width=200] | image:../images/how_does_cpu/nor_nmos.svg[width=500] 
+| # transistor: 2 | # transistor: 2 
 |======
 
+Now it becomes clear, why the inverse function of AND and OR on the gate level is simpler than the original function. 
+Because you have to add an inverter circuit afterwards, increasing the transistor count.
 
-==== Or
 
-[width="100%" cols="^a,^a"]
+One big drawback of the implementation is the high power consumption caused by the pull-up resistor. Let us see if there is a way to
+solve that issue. What if there is transistor labeled PMOS with a complementary structure - p-wells on an n dotted substrate - to our 
+up-to-now used NMOS circuit?
+
+When we use those instead the resistor for the pull-up path we can drastically reduce power dissipation. 
+As you guess this technique, both types of transistor combined, exists and is named CMOS ( Complementary Metal Oxid Semiconductor).
+
+[width="100%" cols="a,a"]
 |======
-2+| image:../images/how_does_cpu/or_symbol.svg[width=200,align="center"]
-| wired logic | CMOS
-|image:../images/how_does_cpu/wire_or.svg[width=500] | image:../images/how_does_cpu/or_cmos.svg[width=500] 
+| CMOS NAND | CMOS NOR 
+|image:../images/how_does_cpu/nand_cmos.svg[width=250] | image:../images/how_does_cpu/nor_cmos.svg[width=500] 
+| # transistor: 4 | # transistor: 4 
 |======
-////
+
+It becomes apparent now where the CMOS technology has its name from:
+As we can see in the implementation of NAND and NOR in CMOS technology, the P circuit above is exactly the complementary of the N circuit below.
+For the inverter this property was just not recognizable due to the symmetry.
+But we can also see the drawback of the CMOS technology: The number of transistors doubles, increasing the effort and complexity of the manuacturing process
+(complexer masks and layouts, more processing steps due to different types of transistors, nmos and pmos both on one wafer) and the integrated circuit as the end product.
+
+However the toolchain, the CMOS process and its related technologies are evolved and matured already since decades, so today it does not matter anymore, in fact
+recently Google even published the https://github.com/google/skywater-pdk[SkyWater Open Source PDK 130], a so-called Process Design Kit offering electrical engineers 
+a tool(chain) to produce designs for Application Specific Integrated Circuits  which then can directly be manufactured using a 130nm process. 
+You can read more about it https://hackaday.com/2020/06/30/your-own-open-source-asic-skywater-pdf-plans-first-130-nm-wafer-in-2020/[here on Hackaday].
+
+That was a first slight look into boolean logic and its implementation on silicon, of course there is a lot more to it than only one reference design, 
+also we did not had a look yet for ESD measurements and protection circuits for the inputs and output.
+
+In the next post we have a look on the exclusive-or (XOR) operation.
 
 
 
