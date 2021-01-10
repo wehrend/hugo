@@ -1,7 +1,7 @@
 .. title: How does a CPU work? Overview
 .. slug: how-does-a-cpu-work-overview
 .. date: 2020-12-20
-.. tags: 
+.. tags: draft
 .. category:
 .. link:
 .. description:
@@ -16,8 +16,15 @@ _Introduction and overview_
 Every topic of this course is broken up into two parts:
 A part about the mathematical side of digital logic,
 ideally almost independent from implementation details
-and a more practical part handling this very details.
-
+and a more concrete part handling this very details.
+In the concrete part we will mostly discuss the implementation
+on an electrical layer, though there are still other solutions
+possible based on https://erik-engheim.medium.com/microprocessors-running-on-air-a47a702dd41f[fluid dynamics], 
+or https://www.photonics.com/Articles/All-Optical_Logic_Gates_Show_Promise_for_Optical/a63226 [optical gates], 
+most computers and logic gates are still based on electronics and semiconductor technology and this will not 
+change with https://www.azom.com/article.aspx?ArticleID=17173[quantum computing], which is mostly tied to / ajunct to
+probability theory. However with quantum computing
+the fundamentals behind which the author describes here will completly change.
 
 ==  *A first look at digital logic*
 

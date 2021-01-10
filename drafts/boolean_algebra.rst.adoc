@@ -250,6 +250,39 @@ Now we are finally equipped to continue with the electrical part / description.
 
 = Implementation on electrical level 
 
+=== The diode
+
+We are beginning the journey with a simplificated circuit desigm for 'and' and 'or' called wired logic.
+This circuit design is so simple it is even not possible to implement an inverter in it.
+
+[width="100%" cols="a,a"]
+|======
+| wired and | wired or
+|image:../images/how_does_cpu/wire_and.svg[width=250] | image:../images/how_does_cpu/wire_or.svg[width=250] 
+| # diodes: 2 | # diodes : 2
+|======
+
+As you can see, this circuit is not to complicate - even laymans in electronc should be able to identify the essential parts
+of - the inputs are connected to a diode, each. A diode is a simple semiconductor which acts as a one-way for electric current.
+Semiconductors are a group of materials (only silicon and germanium are useful here, due to their chemical properties),
+not really conductor but also no insulator. In fact the conductiviy of the material is dependent on the deliberated pollution 
+of their crystall lattice structure with elements of the fifth main group, for an n(egative)-dotted material respectively of the third main group
+for a p(ositive) dotted material. This process is called dotting. For the interested reader https://www.electrical4u.com/semiconductor-physics/[here]
+is a link to all the physical background the author was to lazy to repeat since it is often and better explained on the internet already ;-) .
+
+image:../images/how_does_cpu/diode_structure.svg[width=450] 
+
+All we need to know right know is that a diode consist of one substrate (in most cases today silicon) which becomes n-dotted on one side and p-dotted on the other, 
+forming a pn-junction in between acting as said one-way barrier: It is possible for electrons to rush from n-side to the p-side but not the other way round. 
+
+The second component of the circuits shown above is a resistor, its solely purpose is to reduce the current flowing. 
+For wire-and it is wired as pull-up resistor while for wire-or it is wired as pull down resistor.
+The wire-and only reaches a sufficient high-level if all inputs go high-level. Similar the wire-or only goes low-level if neither of the inputs
+goes high level.To prevent current flowing from pull-up resistor to the output of the previous circuit (wire and) respectively current flowing 
+from one input back to the other input (wire-or), the diodes are in place.
+
+=== The transistor
+
 In this section we introduce the transistor as the integral component allowing the implementation of the operations introduced
 above. A transistor is a switching element which can be controlled with a control voltage, similar to an electromechanical relay,
 where a small current in a coil builds up a magnetic field which moves the armature to close (or open, depending on the construction) 
