@@ -250,10 +250,16 @@ Now we are finally equipped to continue with the electrical part / description.
 
 = Implementation on electrical level 
 
+First we are introducing some common electronic components and their symbols used in 
+electric circuit schematics.
+
+image:../images/how_does_cpu/common_symbols.svg[width=500]
+
 === The diode
 
 We are beginning the journey with a simplificated circuit desigm for 'and' and 'or' called wired logic.
 This circuit design is so simple it is even not possible to implement an inverter in it.
+
 
 [width="100%" cols="a,a"]
 |======
@@ -306,7 +312,7 @@ image:../images/how_does_cpu/inverter_nmos.svg[width=500]
 Common used symbols for MOSFET used in electrical schematics as well as some other we need due to course are shown below, some has more then only one, especially the MOSFET has a number 
 of sligthly various symbols reflecting the differences in the physical component.
 
-image:../images/how_does_cpu/symbols.svg[width=500]
+image:../images/how_does_cpu/mosfet_symbols.svg[width=500]
 
 With the MOSFET element introduced and a single resistor,an element which reduces the current flow, added, we can straight-forward implement an inverter circuit as shown in the image above.
 Source is connected to the ground and Drain is connected to the inverter output and also to the voltage source via a high-impedance resitor. Gate is the input of the inverter.
