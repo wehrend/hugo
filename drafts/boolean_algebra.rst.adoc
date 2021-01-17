@@ -302,10 +302,27 @@ Luckily such a component exists and is introduced in the next section.
 
 === The transistor
 
-A transistor allows the implementation of the operations introduced above and at one go also allows allows the amplifying of the signal. 
+Before we actually introduce the transistor let us do a peek into history. Some of the first computers built were using 
+http://www.historicsimulations.com/ZuseZ3.html[electromechanical relays], 
+whereas others relied on https://www.thoughtco.com/history-of-the-eniac-computer-1991601[vacuum tubes]. 
+The very first one(s) were purely https://www.fourmilab.ch/babbage/[mechanical].
+Here we want to focus on the vacuum tubes - in particular the triode -as black boxes as on the outside the working principal is roughly comparable to that 
+of a standard / classic bipolar transitor.
+
+[width="100%" cols="a,a"]
+|======
+|bipolar junction transistor | vacuum tube (triode)
+|image:../images/how_does_cpu/bjt_structure.svg[width=450] | image:../images/how_does_cpu/triode.svg[width=200]
+|======
+
+
+
+////
+A transistor allows the implementation of the operations introduced above and at one go also allows allows the amplifying of the signal.
 It is a switching element which can be controlled with a control voltage, similar to an electromechanical relay,
 where a small current in a coil builds up a magnetic field which moves the armature to close (or open, depending on the construction) 
 the contacts of the load circuit.
+////
 The type of transistor we want to introduce and use here is a MOSFET (Metal Oxid Semiconductor Field Effect Transistor) - as opposed to classical bipolar transistor.
 As the name suggests a MOSFET is a transistor (or semiconductor) where the load currrent can be controlled by the strength of the electrical field, created on the gate input
 //https://www.power-and-beyond.com/whats-the-difference-between-mosfet-and-bjt-a-909006/
