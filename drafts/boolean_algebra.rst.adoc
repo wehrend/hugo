@@ -300,7 +300,7 @@ What if we had a component capable to amplify the signal, so we could design cir
 Luckily such a component exists and is introduced in the next section.
 
 
-=== The transistor
+=== The classical transistor
 
 Before we actually introduce the transistor let us do a peek into history. Some of the first computers built were using 
 http://www.historicsimulations.com/ZuseZ3.html[electromechanical relays], 
@@ -311,8 +311,10 @@ of a standard / classic bipolar transitor.
 
 [width="100%" cols="a,a"]
 |======
-|bipolar junction transistor | vacuum tube (triode)
-|image:../images/how_does_cpu/bjt_structure.svg[width=450] | image:../images/how_does_cpu/triode.svg[width=200]
+|Bipolar Junction Transistor (BJT) | Triode (certain type of vacuum tube)
+|image:../images/how_does_cpu/bjt_structure.svg[width=450] | image:../images/how_does_cpu/triode.svg[width=300]
+| *>* A current on basis controls the current between collector and emitter     
+| *>* A voltage on grid controls the current between collector and emitter 
 |======
 
 
@@ -323,6 +325,9 @@ It is a switching element which can be controlled with a control voltage, simila
 where a small current in a coil builds up a magnetic field which moves the armature to close (or open, depending on the construction) 
 the contacts of the load circuit.
 ////
+
+=== The MOSFET transistor
+
 The type of transistor we want to introduce and use here is a MOSFET (Metal Oxid Semiconductor Field Effect Transistor) - as opposed to classical bipolar transistor.
 As the name suggests a MOSFET is a transistor (or semiconductor) where the load currrent can be controlled by the strength of the electrical field, created on the gate input
 //https://www.power-and-beyond.com/whats-the-difference-between-mosfet-and-bjt-a-909006/
