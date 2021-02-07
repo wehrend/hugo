@@ -33,12 +33,13 @@ voltage source can differ from an actual battery cell, and also most often is no
 
 An ideal voltage source provides a voltage of a certain level. 
 
-As we can see in below pictures a voltage is just the difference between two potentials.
+As we can see in below shown circuit schematics a voltage is just the difference between two potentials.
 In the first example (left) the junction at the bottom is choosen as reference point, as it 
-is signaled as ground. So the voltage and also potential difference amounts to 1.5V for U_B0,
-but also to 3V for U_A0. Whereas in the example on the right the junction between the battery
-cells is choosen as reference point and ground. So the potentialdifference we measure 
-here are: U_A0 = 1.5V and U_B0 =-1.5V
+is signaled as ground. So the voltage amounts to 1.5V for U_B0 respectively to 3V for U_A0. 
+Whereas in the example on the right the junction between the battery cells is choosen as reference point and ground. 
+The potential differences we measure  here are: U_A0 = 1.5V and U_B0 =-1.5V.
+As a remark dual power supplies like that with - however with a voltage range of 12...15V - are often used for
+applications with op-amps.
 
 [width="100%" cols="a,a"]
 |=====
@@ -46,11 +47,21 @@ here are: U_A0 = 1.5V and U_B0 =-1.5V
 | image:../images/electronic_basics/potential_l.svg[width="250px"] | image:../images/electronic_basics/potential_ll.svg[width="250px"]
 |=====
 
-Expressed in a formula:
 
 ["latex", "../images/electronic_basics/potentialdifference.svg", imgfmt="svg"]
 \large \[U = \phi_{1} - \phi_{0}\]
 
+
+////
+Simple circuit with voltage source and resistor, bridge to next section
+////
+The next image shows the simplest possible circuit: A voltage source with a resistor in series.
+Physically seen every resistor is just a  converter from electrical energy to thermically energy, thus heat. 
+
+Resistors are generally used in circuits to drop the voltage to the desired level, respectively
+limit the current flowing between certail paths of a circuits. We will learn about it in the next section.
+
+image:../images/electronic_basics/resistor_circuit.svg[width="250px"]
 
 
 == Ohm's law and lead resistance 
@@ -85,7 +96,25 @@ This observance leads us to the most important formula you will encounter in an 
 // .Ohm's law
 // :figure-caption: Equation
 
+When we rearrange this equation to its simpler interpretable form, U = R·I, we recognize, that the voltage drop (U) on the Resistor corresponds 
+to the resistance value ( R) times the current flowing thru (I). We did not speak about the current yet and we will postpone this to a later section.
+
 // Todo: write more about / to the ohms law.
+
+////
+Add rules for series and parallel wiring
+////
+In the image below the rules for series and parallel connection of resistors are shown.
+
+image:../images/electronic_basics/resistor_rules.svg[width="500px"]
+
+For the series connection the values simply adds up like we have seen it for the voltage sources,
+while for the parallel connection the rule is not comprehendable on the first sight.
+
+////
+Add explanation for parallel connection
+////
+
 
 So we discovered that the materials differ in their electrical conductivity - which is the reciprocal of the electrical resistance -
 some are good (conductor) some are pretty bad and unusable (non-conductor) but nevertheless useful as dielectric, as we will see in
@@ -111,7 +140,7 @@ increases the resistance while the area counteracts it.
 *Why do we need to know this?*
 
 At this point you may ask why it is important to know this if we can just pull a schematic of our DIY project and realize it with discrete components 
-on a breakout board- the answer is simple scale - it might work for this simple hobbyist example but lack scalibility,costs or reliability.
+on a breakout board- the answer is simple scale - it might work for this simple hobbyist example but lack scalibility,costs and / or reliability.
 
 The further we get down on scale the more important parasitic effects become - we will learn about it in the subsequent sections.
 
@@ -152,7 +181,13 @@ but rather distributed ones - especially in HF but dont get
 me started about HF. Network thingies also - Why do we need this? 
 ////
 
+////
+Electrostatic field and capacitance 
+////
 
+////
+C= Q/U_c , also integral 
+////
 
 === The Capacitor
 
