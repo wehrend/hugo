@@ -74,8 +74,8 @@
     <circle cx="50" cy="50" r="40" style="stroke:black;fill:none;"/>
     <circle cx="90" cy="50" r="2" style="stroke:blue;fill:blue;"/>
     
-    <rect x="80" y="90"  width="2" height="6" style="stroke:none;fill:khaki;"/>
-    <text x="85" y="92" style="font-size:3">valence</text>
-    <text x="85" y="95" style="font-size:3">band / shell</text>
+    <rect x="72" y="90"  width="2" height="8" style="stroke:none;fill:khaki;"/>
+    <text x="76" y="92" style="font-size:5">valence</text>
+    <text x="76" y="97" style="font-size:5">band / shell</text>
      
 </svg>
