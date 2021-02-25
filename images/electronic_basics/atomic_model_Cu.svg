@@ -35,13 +35,13 @@
     
     <!--layer 1-->
     <g id="layer_1" transform="rotate(33 50 50)">
-        <circle cx="50" cy="50" r="16" style="stroke:black;fill:none;"/>
+        <circle cx="50" cy="50" r="16" style="stroke:black;fill:none;opacity:0.7;"/>
         <circle cx="34" cy="50" r="2" style="stroke:blue;fill:blue;"/>
         <circle cx="66" cy="50" r="2" style="stroke:blue;fill:blue;"/>
     </g>
     
     <!--layer 2-->
-    <circle cx="50" cy="50" r="24" style="stroke:black;fill:none;"/>
+    <circle cx="50" cy="50" r="24" style="stroke:black;fill:none;opacity:0.7;"/>
     
     <circle cx="50" cy="26" r="2" style="stroke:blue;fill:blue;"/>
     <circle cx="50" cy="74" r="2" style="stroke:blue;fill:blue;"/>
@@ -56,7 +56,7 @@
     
     <!--layer 3-->
     <g id="layer_3" transform="rotate(-66 50 50)">
-        <circle cx="50" cy="50" r="32" style="stroke:black;fill:none;"/>
+        <circle cx="50" cy="50" r="32" style="stroke:black;fill:none;opacity:0.7;"/>
         
         <circle cx="50" cy="18" r="2" style="stroke:blue;fill:blue;"/>
         <circle cx="50" cy="82" r="2" style="stroke:blue;fill:blue;"/>
@@ -70,8 +70,8 @@
     </g>
     
     <!--layer 4-->
-    <circle cx="50" cy="50" r="40" style="stroke:khaki;stroke-width:6px;fill:none;"/>
-    <circle cx="50" cy="50" r="40" style="stroke:black;fill:none;"/>
+    <circle cx="50" cy="50" r="40" style="stroke:khaki;stroke-width:6px;fill:none;opacity:0.7;"/>
+    <circle cx="50" cy="50" r="40" style="stroke:black;fill:none;opacity:0.6;"/>
     <circle cx="90" cy="50" r="2" style="stroke:blue;fill:blue;"/>
     
     <rect x="72" y="90"  width="2" height="8" style="stroke:none;fill:khaki;"/>

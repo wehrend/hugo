@@ -24,17 +24,36 @@ electrons on the outer shell - also called as valence band - of an atom are hopp
 of an atom to the adjacent one. So essentialy electricity constitutes the movement of electrons through matter.
 In practical application this matter is an electrical circuit, but also for example the lightning discharge 
 occurs, in this case the ionised air can be considered as the (short) circuit.
-////write about it////
 
-The table below shows the atomic model of silicon a semiconductor and copper conductor. Whit its four electrons on the valence band silicon is 
+////
+write about it
+////
+
+The table below shows the atomic models of carbon, silicon, and copper conductor. It will become clear in time 
+why we picked up those elements. The former two belong to the group of semiconductor, while the latter one is 
+an proxy from the group of conductors.
+
+////
+With its four electrons on the valence band silicon is 
 (in its pure non-doped form) neutral with respect to its condcutivity properties - neither a conductor nor an isolator -. Copper 
-on the contrary is excellent conductor, due to its one electron on the valence shell / band.
+on the contrary is excellent conductor, due to its one electron on the valence shell / band. 
+////
 
 [width="100%" cols="a,a"]
 |=====
-| atomic model of a semiconductor | atomic model of a conductor
-| image:../images/electronic_basics/atomic_model_Si.svg[width="250px"]
-| image:../images/electronic_basics/atomic_model_Cu.svg[width="250px"]
+| atomic model of carbon | atomic model of silicon | atomic model of copper 
+| image:../images/electronic_basics/atomic_model_C.svg[width="300px"]
+| image:../images/electronic_basics/atomic_model_Si.svg[width="300px"]
+| image:../images/electronic_basics/atomic_model_Cu.svg[width="300px"]
+2+>|semiconductor | conductor
+|=====
+
+[width="100%" cols="a,a"]
+|=====
+| covalent bonding of carbon | covalent bonding of silicon 
+| image:../images/electronic_basics/covalent_bonding_c.svg[width="400px"]
+| image:../images/electronic_basics/covalent_bonding_si.svg[width="400px"]
+2+>|semiconductor | conductor
 |=====
 
 == Voltage and potential
