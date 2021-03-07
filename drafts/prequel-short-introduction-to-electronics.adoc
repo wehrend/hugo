@@ -27,26 +27,53 @@ occurs, in this case the ionised air can be considered as the (short) circuit.
 
 ////
 write about it
+
+The table below shows the atomic models of carbon, silicon, and copper conductor. The author chooses those elements
+based on their interesting properties. Carbon and silicon belong to the group of semiconductors while copper is known
+as excellent conductor. The conductivity of semiconductors is variable to a wide degree, dependent on its degree of purity and temperature
+
 ////
 
-The table below shows the atomic models of carbon, silicon, and copper conductor. It will become clear in time 
-why we picked up those elements. The former two belong to the group of semiconductor, while the latter one is 
-an proxy from the group of conductors.
+== Conductors...
 
-////
-With its four electrons on the valence band silicon is 
-(in its pure non-doped form) neutral with respect to its condcutivity properties - neither a conductor nor an isolator -. Copper 
-on the contrary is excellent conductor, due to its one electron on the valence shell / band. 
-////
+The first group of elements (or compounds) we will introduce here are the conductors.
+Some important representants of this group are  the elements aluminium and copper
+which both are indispensible for electric transmission lines and power grids.
+
 
 [width="100%" cols="a,a"]
 |=====
-| atomic model of carbon | atomic model of silicon | atomic model of copper 
+2+>| conductor
+| image:../images/electronic_basics/atomic_model_Al.svg[width="300px"]
+| image:../images/electronic_basics/atomic_model_Cu.svg[width="300px"]
+| atomic model of aluminium (13) | atomic model of copper (28)
+| valence shell /free electron(s): 3 (3) | vlalence shell / free electron(s): 1 (1)
+|=====
+
+
+== ...and not so conductors
+
+The second group of elements we want to introduce here are elements which 
+conductivity is (highly) dependent on its purity degree and environment
+factors like temperature. Representants of this group are called semiconductors.
+Carbon and silicon are examples showing up on the periodic table.
+
+[width="100%" cols="a,a"]
+|=====
+2+>| semiconductor 
 | image:../images/electronic_basics/atomic_model_C.svg[width="300px"]
 | image:../images/electronic_basics/atomic_model_Si.svg[width="300px"]
-| image:../images/electronic_basics/atomic_model_Cu.svg[width="300px"]
-2+>|semiconductor | conductor
+| atomic model of carbon (6) | atomic model of silicon (14)
+| valence shell / free electron(s): 4 (0) | valence shell / free electron(s): 4 (0)
 |=====
+
+
+So why does carbon and silicon have so poor conductivity properties compared to copper despite their four electrons 
+on the valence shell electrons? 
+
+The answer lies in the simple fact, that both carbon as well as silicon form a lattice, using up all electrons of the valence
+shell.
+
 
 [width="100%" cols="a,a"]
 |=====
