@@ -17,9 +17,9 @@ here shall be the place for those excursions. This is not meant to be a complete
 existing literature.
 '''
 
-== Electric current and electron mobility
+== Free electrons and electric current
 
-What is electricity? Broadly speaken it is the flow of electrons in a (semi-)conductor. In laymans term you can say,
+What is electricity? Broadly speaken it is the flow of electrons in a conductor. In laymans term you can say,
 electrons on the outer shell - also called as valence band - of an atom are hopping from the valenece band 
 of an atom to the adjacent one. So essentialy electricity constitutes the movement of electrons through matter.
 In practical application this matter is an electrical circuit, but also for example the lightning discharge 
@@ -34,12 +34,19 @@ as excellent conductor. The conductivity of semiconductors is variable to a wide
 
 ////
 
-== Conductors...
+=== Going atomic: Conductors...
 
 The first group of elements (or compounds) we will introduce here are the conductors.
-Some important representants of this group are  the elements aluminium and copper
+Some important representants of this group are the elements aluminium and copper
 which both are indispensible for electric transmission lines and power grids.
+As the table below depicts, both elements have free electrons available on it's valence
+shell, which as described above, are needed to allow the hopping of electrons from one atom 
+to another and thus allow movement of electrons, making the element (in its pure form) a conductor.
 
+Of course in real world there are multiple factors counteracting to the idealized properties
+proposed here. E.g. we have to consider among others that metals oxide when coming in contact 
+with oxygen, which builds up a thin but effectively isolating layer on the surface of the metal,
+preventing a good contact. We might discuss such effects later. For now just let's continue on the topic...
 
 [width="100%" cols="a,a"]
 |=====
@@ -47,16 +54,29 @@ which both are indispensible for electric transmission lines and power grids.
 | image:../images/electronic_basics/atomic_model_Al.svg[width="300px"]
 | image:../images/electronic_basics/atomic_model_Cu.svg[width="300px"]
 | atomic model of aluminium (13) | atomic model of copper (28)
-| valence shell /free electron(s): 3 (3) | vlalence shell / free electron(s): 1 (1)
+| valence shell / free electron(s): 3 (3) | valence shell / free electron(s): 1 (1)
 |=====
 
+image:../images/electronic_basics/simple_circuit.svg[width="400px"]
 
-== ...and not so conductors
+
+["latex", "../images/electronic_basics/elemental_charge.svg", imgfmt="svg"]
+\large \[Q = N \cdot (\pm e)\]
+
+["latex", "../images/electronic_basics/current.svg", imgfmt="svg"]
+\large \[I = \frac{\Delta Q }{\Delta t}\]
+
+
+
+=== ...and not so conductors
 
 The second group of elements we want to introduce here are elements which 
 conductivity is (highly) dependent on its purity degree and environment
 factors like temperature. Representants of this group are called semiconductors.
 Carbon and silicon are examples showing up on the periodic table.
+The author picked those two elements as they have very exciting properties 
+in regards to - but not limited to - conductivity. This is due to the 
+
 
 [width="100%" cols="a,a"]
 |=====
