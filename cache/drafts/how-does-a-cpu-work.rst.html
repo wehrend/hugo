@@ -1,0 +1,170 @@
+<div class="sect1">
+<h2 id="_the_binary_system">The Binary System</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>All computer we act with on a daily base do not know about the decimal system we are using, based on the ten digits at our hands.
+All they know about are the states <span class="monospaced">on</span> and <span class="monospaced">off</span>. We build an imaginary circuit with a power source a control light - here an LED (Light Emitting Diode)  - and a switch,
+closing the connection let the light flash. An off light counts as zero, and on light counts as one. Simple as it.We switch the light on
+and get a one.</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="../images/how_does_cpu/lights.png" alt="../images/how_does_cpu/lights.png" title="A schematic of the imaginary circuit.">
+</span></p></div>
+<div class="paragraph"><p>Now we extend this installation with a second light and switch left to current one. We switch the left light on and the right on. What we get as a result is a <em>2</em>.
+Switching the right light on again gets us to 3. Like in our decimal system, the significance of the left light is higher (at least in our example), only the factor differs,
+instead of 10 the factor is 2. We denote the significance with 2^n where n is the position of the light. Every switch is a bit - more exactly the switch is the input and the
+LED is the output. So with four switches -half a byte - we can count from 0 to 15, while with eight switches - a byte - we can count from 0 to 255. This scheme can be extended as needed.</p></div>
+<div class="sect2">
+<h3 id="_exercise">Exercise</h3>
+<div class="paragraph"><p><span class="image">
+<img src="../images/how_does_cpu/example.jpg" alt="../images/how_does_cpu/example.jpg" title="showing the binary value 9 (unsigned w/ MSB left).">
+</span></p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_simple_adder">A simple adder</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>So now we know what the binary system is and how to count and add in. But if we want also to subtract we are still missing something - the knowledge how negative numbers are mapped in this system /logic.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_one_and_two_8217_s_complement">One and two&#8217;s complement</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The figure below shows an illustration of the range of numbers on a circle.
+the upper plane showing the positive interpreted numbers, the lower plane
+the negative interpreted numbers.</p></div>
+<div class="paragraph"><div class="title">Unit circle with numbering</div><p><span class="image">
+<img src="../images/how_does_cpu/digitcircle.svg" alt="../images/how_does_cpu/digitcircle.svg">
+</span></p></div>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:20%;">
+<col style="width:20%;">
+<col style="width:20%;">
+<col style="width:20%;">
+<col style="width:20%;">
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">Binary</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">Hex</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">unsigned Interpretation</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">One complement</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">Two complement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0000</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">00</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0001</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">01</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0010</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">02</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0011</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">03</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0100</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">04</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0101</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">05</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0110</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">06</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0111</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">07</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1000</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">08</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-7</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1001</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">09</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-6</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1010</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0A</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-5</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1011</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0B</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-4</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1100</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0C</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-3</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1101</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0D</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-2</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1110</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0E</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-1</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1111</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0F</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-0</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">-1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>

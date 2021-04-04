@@ -1,0 +1,26 @@
+<div class="paragraph"><p>While drafting a blog post, part of a series of posts intended to be published in the future,
+I discovered a lack of my tooling in Nikola. When adding mathematical formulas,
+I realized that there is no default-way of rendering images from those math formulas,
+and inserting them as image-tags into the html. Instead math formulas are handled via JS, which I try
+to reduce to an absolute minimum on my site.
+So I started to implement a rather quick-and-dirty plugin to do exactly this transformation, using
+latex and dvipng or dvisvgm.
+Then I come across <a href="https://erikwinter.nl/articles/2020/why-i-built-my-own-shitty-static-site-generator/">this blog post</a>
+where reading about <a href="https://asciidoc.org/">asciidoc</a> written in python and its successor <a href="https://asciidoctor.org/">asciidoctor</a> written
+in ruby supporting different display formats. Ideal for the content I had in mind. So I installed the Nikola plugin asciidoc
+(which is mostly a wrapper to the asciidoc binary called as a subprocess), via</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola plugin -i asciidoc</pre>
+</div></div>
+<div class="paragraph"><p>in my local environment and converted my blogpost(s) first semi-automatically which is, due to the metadata-section from
+Nikola, not the very best idea and continued manually.
+After some frustrations with the paths for the latex filter inside asciidoc it was working.</p></div>
+<div class="paragraph"><p>So as a sample of one of the future blogposts here one or rather two math-equations rendered this way:</p></div>
+<div class="imageblock latex">
+<div class="content">
+<img src="../images/half-adder.svg" alt="../images/half-adder.svg">
+</div>
+</div>
+<div class="paragraph"><p>Just as side-note: It describes a halfadder.</p></div>
+<div class="paragraph"><p><strong>Edit</strong> Improved grammar.</p></div>

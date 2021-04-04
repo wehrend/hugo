@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-= Prequel Introduction to electronics 
+== Prequel Introduction to electronics 
 
 '''
 While I was about to write the implementation part of the boolean algebra post, the basic logic 
@@ -75,15 +75,15 @@ conductivity is (highly) dependent on its purity degree and environment
 factors like temperature. Representants of this group are called semiconductors.
 Carbon and silicon are examples showing up on the periodic table.
 The author picked those two elements as they have very exciting properties 
-in regards to - but not limited to - conductivity. This is due to the 
+in regards to - but not limited to - conductivity.
 
 
 [width="100%" cols="a,a"]
 |=====
-2+>| semiconductor 
+3+>| semiconductor 
 | image:../images/electronic_basics/atomic_model_C.svg[width="300px"]
 | image:../images/electronic_basics/atomic_model_Si.svg[width="300px"]
-| atomic model of carbon (6) | atomic model of silicon (14)
+| atomic model of carbon (6) | atomic model of silicon (14) 
 | valence shell / free electron(s): 4 (0) | valence shell / free electron(s): 4 (0)
 |=====
 
@@ -247,7 +247,7 @@ image:../images/electronic_basics/resistance_measurement_ll.svg[width=550]
 === The Resistor
 
 The electrical component itself comes in all shapes and sizes dependent on the area of application.
-the miniature ones for surface mounted devices technique, used in all higher integrated electronic devices, 
+the miniature ones for surface mounted devices, a technique used in all higher integrated electronic devices, 
 the average 1/4 Watt resistor based on coal with 5 percent tolerance ( in the picture below shown central) 
 and the more precise metal film resistors with 1 percent tolerance (blue, shown right in the picture).
 There are resistors with mechanically adjustable resistance called potentiometer (like the ones shown left in the picture )

@@ -1,0 +1,78 @@
+<div class="paragraph"><p>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.</p></div>
+<div class="paragraph"><p>To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container.
+So I require an almost basic understanding for Docker here.</p></div>
+<div class="paragraph"><p>First create a directory on our host system, where you want the files stored, e.g. <em>blog</em> in your home directory.</p></div>
+<div class="paragraph"><p>You can pull unoffical images with the most recent version via:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>docker pull dragas/nikola</pre>
+</div></div>
+<div class="paragraph"><p>and run the image getting a (bash) shell via:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>docker run -it --network="host" -v ~/blog:/nikola dragas/nikola</pre>
+</div></div>
+<div class="paragraph"><p>here the option flag -it stands for interactive - which, in fact, it does not but it is easy to memorize so, so let it be so.
+Furthermore we need to add our volume, a storage resource which is shared between the host system and the docker container. So we add
+-v ~/blog for our blog located in our home directory (for linux, on windows systems the paths differ).
+Also we need to add the option --network="host" otherwise we won&#8217;t be able to access the webpage from our host system, and thus from our browser.
+If you are interested, check <span class="monospaced"><a href="https://docs.docker.com/engine/reference/run/</span>">Docker run</a></p></div>
+<div class="paragraph"><p>Here you can execute the common bash commands like cd, ls, ps and so on, feel free to test and explore
+<span class="monospaced"><a href="https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je</span>">Basic bash commands</a> :-)</p></div>
+<div class="paragraph"><p>Now that you have explored the system a bit, you can initiate a basic nikola project via:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola init</pre>
+</div></div>
+<div class="paragraph"><p>You will be led through some questions regarding your blog, for destination simply set .</p></div>
+<div class="paragraph"><p>We create a first post with:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola new_page -t "Hello World"</pre>
+</div></div>
+<div class="paragraph"><p>Write the post on your host system on an editor of your choice it is located in blog/posts/hello-world.rst and then build via:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola build</pre>
+</div></div>
+<div class="paragraph"><p>To test the website, start the test server with:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola serve</pre>
+</div></div>
+<div class="paragraph"><p>and head your browser to <a href="http://localhost:8080">http://localhost:8080</a> .</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="../images/nikola_default.png" alt="Unnamed image">
+</span></p></div>
+<div class="paragraph"><p>This is cool, but surely we want do a bit of styling and customization now, as the current look is pretty standard.
+The author&#8217;s preference is a plain and simple style without much unnecessary payload.So I searched for such theme, but they were not
+to my liking. Then I found the <span class="monospaced"><a href="https://themes.getnikola.com/v8/hyde/</span>">Nikola port of Hyde</a></p></div>
+<div class="paragraph"><p>The theme can be installed with:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola theme -i hyde</pre>
+</div></div>
+<div class="paragraph"><p>After installation the theme needed some tweaking of the about section in the sidebar. So the version shown here diverges
+from the original look. Adjustments were made to the file assets/css/hyde.css in the directory of the freshly installed theme.
+Ideally the changes should be made in an additional file custom.css</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="../images/nikola_hyde.png" alt="Unnamed image">
+</span></p></div>
+<div class="paragraph"><p>Much better now!</p></div>
+<div class="paragraph"><p>If we are satified with the result, we can deploy our new static site to web space of our choice. For this we adjust the deploy setting
+in th conf.py file. This can look like the following.</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>DEPLOY_COMMANDS = {
+    'default': [
+        'rsync -rav --delete output/ user@server:/var/www/virtual/user/html',
+        'rdiff-backup output ~/blog-backup',
+    ]
+}</pre>
+</div></div>
+<div class="paragraph"><p>Now, we can simply execute this command by typing</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>nikola deploy</pre>
+</div></div>
+<div class="paragraph"><p>and the new site is part of the www.</p></div>

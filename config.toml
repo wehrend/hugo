@@ -1,0 +1,77 @@
+baseURL = "http://wehrend.uber.space/"
+languageCode = "en-us"
+title = "Curious Interdependent"
+theme = "hugo-theme-stack"
+
+[markup]
+  [markup.asciidocExt]
+    backend = "html5"
+    extensions = ["asciidoctor-latex"]
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = true
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+
+[Params]
+#   description = "Thoughts and contributions of a carbon-based lifeform" # Site Description. Used in meta description
+#   copyright = "Sven Wehrend" # Copyright holder, otherwise will use .Site.Title
+#   schema = true # Enable Schema
+#   twitter_cards = false # Enable Twitter Cards if true
+#  mainSections = ["post"] # Set main page sections
+  [dateFormat]
+    published = "January 02, 2006" # Change the format of dates
+    lastUpdated = "Jan 02, 2006" 
+#   customCSS = ["css/custom.css"] # Include custom CSS files
+#   customJS = ["js/custom.js"] # Include custom JS files
+  #mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
+#   authorbox = true # Show authorbox at bottom of single pages if true
+#   comments = true # Enable comments for all site pages
+#   related = true # Enable Related content for single pages
+#   relatedMax = 5 # Set the maximum number of elements that can be displayed in related block. Optional
+  #mathjax = true # Enable MathJax for all site pages
+  #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
+  #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
+#  hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
+
+[Params.colorScheme]
+    toggle = true
+    default= ["dark"]  
+
+[opengraph]
+    [twitter]
+        # Your Twitter username
+        site = "test"
+        # Available values: summary, summary_large_image
+        card =  ["summary_large_image" ]
+        
+[sidebar]
+    subtitle = "Thoughts and contributions of a carbon-based lifeform"
+        
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = "-150"
+        #pre = "home"
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/pages/about"
+        weight = "-120"
+        #pre = "user"
+    [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
+        weight = "-90"
+        #pre = "none"
+        
+    
+        
