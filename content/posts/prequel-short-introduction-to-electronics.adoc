@@ -62,16 +62,25 @@ preventing a good contact. We might discuss such effects later. For now just let
 | valence shell / free electron(s): 3 (3) | valence shell / free electron(s): 1 (1)
 |=====
 
+The image below shows an electrical charge Q [C] flowing through a wire. Q is a multiple of an elementary charge
+of a single electron e, so in mathematical notation $Q = N \cdot (\pm e)$. As indicated by the 'C' in the brackets,
+Q is measured in Coloumb which is defined as one ampere-second $1C=1As=1A⋅1s$. 
+According to the Bureau International des Poids et Measures in Paris the elementary charge is defined as
+https://www.bipm.org/en/measurement-units/#si-base-units[constant of e = 1.602 176 634 x 10–19 A s] (See The Ampere).
+
+
+image:../images/electronic_basics/wire_crosssection.svg[width="400px"]
+
+Further we want to define the current flowing trough a wire in a direct current (d.c.) circuit as the charge quantity Q 
+over a timespan t as $I = \frac{\Delta Q }{\Delta t}$, and equivalently for an alternate current (a.c.) circuit as 
+$i = \frac{\Delta q}{\Delta t}$.
+
+One sidenote at the end of this section: The technical current direction - plus to minus - is contrary to the real current 
+flow minus to plus.
+
 image:../images/electronic_basics/simple_circuit.svg[width="400px"]
 
-
-// ["latex", "../images/electronic_basics/elemental_charge.svg", imgfmt="svg"]
-\large \[Q = N \cdot (\pm e)\]
-
-// ["latex", "../images/electronic_basics/current.svg", imgfmt="svg"]
-\large \[I = \frac{\Delta Q }{\Delta t}\]
-
-
+That is it so far with the conductors, the next group has some more interesting and compelling properties!
 
 === ...and not so conductors
 
