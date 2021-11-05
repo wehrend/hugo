@@ -1345,4 +1345,6 @@ PAGES = PAGES + (("pages/*.adoc", "pages", "page.tmpl"),)
 # For example, you can replace asciidoc with asciidoctor
 # Or use the full path to the program.
 ASCIIDOC_BINARY = "asciidoc"
-
+# an aditional empty config-file in image dir 
+# is needed to change directory for correct working of latex2img 
+ASCIIDOC_OPTIONS = '--conf-file=/home/sven2/development/blog/images/local_asciidoc.conf'
