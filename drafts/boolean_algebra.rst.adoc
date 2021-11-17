@@ -1,6 +1,6 @@
 .. title: How does a CPU work? Boolean algebra
 .. slug: how-does-a-cpu-work-boolean-algebra
-.. date: 2012-12-23
+.. date: 2020-12-23
 ...tags: draft
 .. category: 
 .. link: 
@@ -124,20 +124,20 @@ The laws of the boolean algebra are shown in the following table:
 |      |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
 | commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p                                                           $   |
+$p \land q = q \land p$   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
 $p \lor q = q \lor p                                                             $  
 | associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
-$p \land (q \land r) = (p \land q) \land r = pqr                $  |
+$p \land (q \land r) = (p \land q) \land r = pqr$  |
 ["latex", "../images/assoc_V.svg",imgfmt="svg"] 
-$p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r        $
+$p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r$
 | absorptions law   | 
 ["latex", "../images/absorp_A.svg",imgfmt="svg"] 
-$p \land (p \lor q) = p                                         $
+$p \land (p \lor q) = p$
 | 
 ["latex", "../images/absorp_V.svg",imgfmt="svg"] 
-$p \lor (p \land q) = p                                         $
+$p \lor (p \land q) = p$
 | distributive law  | 
 ["latex", "../images/distrib_A.svg",imgfmt="svg"] 
 $p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr  $ |
@@ -152,8 +152,10 @@ $p \lor 0 = p                                                   $
 ["latex", "../images/comp_A.svg",imgfmt="svg"]
 $p \land \neg p = 0                                             $ |
 ["latex", "../images/comp_V.svg",imgfmt="svg"]
-$p \lor \neg p = 1                                              $                                      
-4+|    Source:  Hans-Jochen Bartsch, Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28  |
+$p \lor \neg p = 1                                              $ | 
+*Reference* | 
+*Hans-Jochen Bartsch* | 
+*Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28*  |
 |====================================================================================================================
 
 
@@ -299,7 +301,7 @@ So the diodes are a fine component, e.g. useful when protecting parts of the cir
 What if we had a component capable to amplify the signal, so we could design circuits also recovering the signal levels with it?
 Luckily such a component exists and is introduced in the next section.
 
-
+////
 === The classical transistor
 
 Before we actually introduce the transistor let us do a peek into history. Some of the first computers built were using 
@@ -316,7 +318,7 @@ of a standard / classic bipolar transitor.
 | *>* A current on basis controls the current between collector and emitter     
 | *>* A voltage on grid controls the current between collector and emitter 
 |======
-
+////
 
 
 ////
@@ -397,7 +399,9 @@ As you guess this technique, both types of transistor combined, exists and is na
 | # transistor: 4 | # transistor: 4 
 |======
 
-////===From discrete to silicon////
+////
+===From discrete to silicon
+////
 
 It becomes apparent now where the CMOS technology has its name from:
 As we can see in the implementation of NAND and NOR in CMOS technology, the P circuit above is exactly the complementary of the N circuit below.
