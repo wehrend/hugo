@@ -9,7 +9,9 @@
 As there are a lot of important applications for the exclusive-or (XOR) operation
 it is dedicated an own blog post. Two of the most important are:
 
-- An integral part of scrambler respectively descrambler which are an element in transmitters respective receivers
+- XOR operations are often used in a Linear Feedback Shift Registers (LFSR). 
+LFSR are a crucial step  in scrambler / descrambler respectively, 
+which are used in transmitters / receivers
 - Part of an encryption algorithmus
 - Last but not least an important part of a halfadder.
 
@@ -30,11 +32,55 @@ is denoted as A ⊕ B = Q. Its truth table is shown below
 | 1   | 1   |  0  
 |================
   
-image:../images/how_does_cpu/xor_symbol.svg[width=200]
+image:../images/how_does_cpu/xor_symbol.svg[width=800]
 
+[width="100%" cols="a"]
+|======
+| CMOS XOR 
+|image:../images/how_does_cpu/xor_cmos.svg[width=800] 
+| # transistor: 12 
+|======
 
-image:../images/how_does_cpu/xor_cmos.svg[width=800] 
+ 
 
-== Applications
+== Some Applications
 
-////
+=== Linear Feedback Shift Register (LSFR)
+As described above XOR gates are used in Linear Feedback Shift Registers (LFSR).
+LFSR are often used for test pattern generation.
+The author selected a simple example found in a 
+https://www.ti.com/lit/an/scta036a/scta036a.pdf[white paper from Texas Instruments].
+
+image:../images/how_does_cpu/lfsr.svg[width=800]
+
+For this example we need to take a big leap and enter the area of sequential circuits.
+These are circuits which make use of feedback.
+
+[width="50%"]
+|================
+| CLK  | FF1   |  FF2 | FF3  
+| 0    | 1   |  1 | 1  
+| 1    | 0   |  1 | 1
+| 2    | 0   |  0 | 1  
+| 3    | 1   |  0 | 0 
+| 4    | 1   |  0 | 0
+| 5    | 0   | 1  | 0
+| 6    | 1   | 0  | 0
+| 7    | 1   | 1  | 0
+| 8    | 1   | 1  | 1
+|================
+
+=== Halfadder
+In the next blogpost we dive deeper into the halfadder application.
+The halfadder essentialy consists of the two following particular equations
+for sum (making use of the XOR ) and carry (using a simple AND). 
+
+["latex","../images/half-adder.svg",imgfmt="svg", width="80%"]
+\small
+\[
+\begin{array}{c}
+c = x \land y \\
+s = x \oplus y
+\end{array}
+\]
+
