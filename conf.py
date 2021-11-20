@@ -138,6 +138,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/pages/how-does-a-cpu-work-overview.html", "How does a CPU work · Series"),
         ("/archive.html", "Archive"),
         ("/pages/about", "About"),
     ),
