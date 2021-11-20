@@ -44,6 +44,7 @@
     <text x="165" y="72" font-size="6">Q</text>
     
     <!--inverter A-->
+    <rect x="65" y="15" width="27" height="55" style="fill:none;stroke:red;stroke-dasharray:4,2;"/>
     <polyline points="89,10 89,20 79,20 79,35 89,35 89,50 79,50 79,65 89,65 89,135"
             style="stroke:black;stroke-width:1;fill:none;stroke-linecap:round;"/>
     <circle cx="76" cy="27" r="1" style="stroke:black;stroke-width:1;fill:none;"/>
@@ -59,6 +60,7 @@
     <circle cx="89" cy="135" r="1" style="stroke:black;stroke-width:1;fill:black;"/>
     
     <!--inverter B-->
+    <rect x="91" y="75" width="27" height="55" style="fill:none;stroke:red;stroke-dasharray:4,2;"/>
     <line x1="35" y1="100" x2="95" y2="100" style="stroke:black;stroke-width:1;fill:none;"/>
     <circle cx="35" cy="100" r="1" style="stroke:black;stroke-width:1;fill:black;"/>
     <circle cx="95" cy="100" r="1" style="stroke:black;stroke-width:1;fill:black;"/>
