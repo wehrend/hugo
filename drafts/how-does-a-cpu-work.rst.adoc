@@ -1,7 +1,7 @@
 .. title: How does a CPU work?
 .. slug: how-does-a-cpu-work
-.. date: 2012-12-23
-.. tags: draft
+.. date: 2021-11-23
+// .. tags: draft
 .. category:
 .. link:
 .. description:
@@ -30,7 +30,17 @@ LED is the output. So with four switches -half a byte - we can count from 0 to 1
 image:../images/how_does_cpu/example.jpg[title="showing the binary value 9 (unsigned w/ MSB left)."]
 
 
+== Derivation
 
+Let us do some simple calculations with the goal to derive the necessary logic for an adder-unit.
+The addition is done like learned in elementary school, just that this time we add binary numbers.
+The first example works while the second one producesa carry flag besides the (wrong) result.
+
+image:../images/how_does_cpu/addition.svg[width="100%"]
+
+
+image:../images/how_does_cpu/fulladder_array.svg[width="100%"]
+////
 ==  A simple adder
 
 
@@ -46,7 +56,7 @@ the negative interpreted numbers.
 
 .Unit circle with numbering
 image:../images/how_does_cpu/digitcircle.svg[]
-
+////
 |==============================================================
 | Binary  | Hex |unsigned Interpretation |One complement|Two complement
 |     0000| 00  |  0            |   0          | 0            
