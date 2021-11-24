@@ -27,7 +27,7 @@ div.content
 {
     margin-left: 2rem;
     margin-right: 4rem;
-    max-width: 10rem;
+    max-width: 20rem;
 }
 
 
@@ -36,7 +36,10 @@ div.content.monospaced
 
 }
 
-
+div.content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 /* slight modifications to the css here,
  due to long title*/
 @media (min-width: 48em) {
