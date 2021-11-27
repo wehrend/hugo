@@ -109,6 +109,79 @@ c_{out} & = \overline{c_{in}}(A \land B) \lor c_{in}(\overline{A} \land B) \lor 
 
 image:../images/how_does_cpu/fulladder_structure.svg[width="75%"]
 
+== A simpler approach
+
+Instead of the circuit of a fulladder cell, by only considering the both input signals
+without the carry, we evaluate the half-adder cell.
+
+[width="100%",cols="3,3,0,3,3",options="header"]
+|===
+| A | B || c_out | sum
+| 0 | 0 || 0 | 0
+| 0 | 1 || 0 | 1
+| 1 | 0 || 0 | 1
+| 1 | 1 || 1 | 0
+|===
+
+As we can see, the halfadder consists only of the two gates 'AND' and 'XOR'.
+Two halfadder and a separate 'OR'-gate for the carry-signal result in a fulladder.
+
+["latex","../images/half-adder.svg",imgfmt="svg", width="30%"]
+\large
+\[
+\begin{array}{c}
+c = x \land y \\
+s = x \oplus y
+\end{array}
+\]
+
+image:../images/how_does_cpu/halfadder_structure.svg[width="75%"]
+image:../images/how_does_cpu/halfadder2fulladder.svg[width="75%"]
+
+== Carry-Lookahead Adder
+
+To avoid the long delay for the carry signal in the rc-adder, 
+the carry-Lookahead has been developed.
+The signals, (g)enerate and (p)ropagate are defined as follows
+(i being the index of the significance):
+
+["latex","../images/generate_propagate.svg",imgfmt="svg", width="30%"]
+\large
+\[
+\begin{array}{c}
+g_{i} = a_{i} \land b_{i} \\
+p_{i} = a_{i} \lor b_{i} 
+\end{array}
+\]
+
+From these helper signals the next carry-value is calculated:
+
+["latex","../images/carry_lookahead.svg",imgfmt="svg", width="40%"]
+\large
+\[
+c_{i+1} = g_{i} \lor c_{i} \land p_{i} 
+\]
+
+["latex","../images/carry_lookaheads.svg",imgfmt="svg", width="95%"]
+\large
+\[
+\begin{aligned}
+c_{1} & = g_{0} \lor c_{0}p_{0} \\
+c_{2} & = g_{1} \lor (g_{0} \lor c_{0}p_{0})p_{1} = g_{1} \lor g_{0}p_{1} \lor c_{0}p_{0})p_{1} \\
+c_{3} & = g_{2} \lor c_{2}p_{2} = g_{2} \lor (g_{1} \lor g_{0}p_{1} \lor c_{0}p_{0}p_{1})p_{2} \\
+ & = g_{2} \lor g_{1}p_{2} \lor g_{0}p_{1}p_{2} \lor c_{0}p_{0}p_{1})p_{2} \\
+\end{aligned}
+\]
+
+[width="100%",col="a"]
+|===
+| *Ripple-Carry Adder*
+|image:../images/how_does_cpu/fulladder_array.svg[width="100%"]
+| *Carry-Lookahead Adder* 
+|image:../images/how_does_cpu/cla_fulladder_array.svg[width="100%"]
+|===
+
+
 ////
 ==  A simple adder
 
