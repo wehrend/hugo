@@ -24,23 +24,23 @@ instead of 10 the factor is 2. We denote the significance with 2^n where n is th
 LED is the output. So with four switches -half a byte - we can count from 0 to 15, while with eight switches - a byte - we can count from 0 to 255. This scheme can be extended as needed.
 
 |==============================================================
-| Binary  | Hex |unsigned Interpretation |One complement|Two complement
-|     0000| 00  |  0            |   0          | 0            
-|     0001| 01  |  1            |   1          | 1            
-|     0010| 02  |  2            |   2          | 2            
-|     0011| 03  |  3            |   3          | 3            
-|     0100| 04  |  4            |   4          | 4            
-|     0101| 05  |  5            |   5          | 5            
-|     0110| 06  |  6            |   6          | 6            
-|     0111| 07  |  7            |   7          | 7            
-|     1000| 08  |  8            |   -7         |-8            
-|     1001| 09  |  9            |   -6         |-7            
-|     1010| 0A  |  10           |   -5         |-6            
-|     1011| 0B  |  11           |   -4         |-5            
-|     1100| 0C  |  12           |   -3         |-4            
-|     1101| 0D  |  13           |   -2         |-3            
-|     1110| 0E  |  14           |   -1         |-2            
-|     1111| 0F  |  15           |   -0         |-1            
+| Binary  | Hex |unsigned Interpretation 
+|     0000| 00  |  0                       
+|     0001| 01  |  1                      
+|     0010| 02  |  2                      
+|     0011| 03  |  3                      
+|     0100| 04  |  4                      
+|     0101| 05  |  5                       
+|     0110| 06  |  6                       
+|     0111| 07  |  7                       
+|     1000| 08  |  8                      
+|     1001| 09  |  9                     
+|     1010| 0A  |  10               
+|     1011| 0B  |  11         
+|     1100| 0C  |  12             
+|     1101| 0D  |  13          
+|     1110| 0E  |  14       
+|     1111| 0F  |  15      
 |==============================================================
 
 
@@ -169,7 +169,7 @@ c_{i+1} = g_{i} \lor c_{i} \land p_{i}
 c_{1} & = g_{0} \lor c_{0}p_{0} \\
 c_{2} & = g_{1} \lor (g_{0} \lor c_{0}p_{0})p_{1} = g_{1} \lor g_{0}p_{1} \lor c_{0}p_{0})p_{1} \\
 c_{3} & = g_{2} \lor c_{2}p_{2} = g_{2} \lor (g_{1} \lor g_{0}p_{1} \lor c_{0}p_{0}p_{1})p_{2} \\
- & = g_{2} \lor g_{1}p_{2} \lor g_{0}p_{1}p_{2} \lor c_{0}p_{0}p_{1})p_{2} \\
+ & = g_{2} \lor g_{1}p_{2} \lor g_{0}p_{1}p_{2} \lor c_{0}p_{0}p_{1}p_{2} \\
 \end{aligned}
 \]
 
