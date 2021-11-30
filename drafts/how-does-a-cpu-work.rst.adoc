@@ -1,6 +1,6 @@
 .. title: How does a CPU work?
 .. slug: how-does-a-cpu-work
-.. date: 2021-11-23
+.. date: 2021-12-02
 // .. tags: draft
 .. category:
 .. link:
@@ -170,8 +170,21 @@ c_{1} & = g_{0} \lor c_{0}p_{0} \\
 c_{2} & = g_{1} \lor (g_{0} \lor c_{0}p_{0})p_{1} = g_{1} \lor g_{0}p_{1} \lor c_{0}p_{0})p_{1} \\
 c_{3} & = g_{2} \lor c_{2}p_{2} = g_{2} \lor (g_{1} \lor g_{0}p_{1} \lor c_{0}p_{0}p_{1})p_{2} \\
  & = g_{2} \lor g_{1}p_{2} \lor g_{0}p_{1}p_{2} \lor c_{0}p_{0}p_{1}p_{2} \\
+c_{4} & = g_{3} \lor c_{3}p_{3} = g_{3} \lor (g_{2} \lor g_{1}p_{2} \lor g_{0}p_{1}p_{2} \lor c_{0}p_{0}p_{1}p_{2})p_{3} \\
+ & = g_{3} \lor g_{2}p_{3} \lor g_{1}p_{2}p_{3} \lor g_{0}p_{1}p_{2}p_{3} \lor c_{0}p_{0}p_{1}p_{2}p_{3} \\
 \end{aligned}
 \]
+
+[width="100%",col="a"]
+|===
+| *Carry-Lookahead Adder circuit* 
+|image:../images/how_does_cpu/carry_lookahead_circuit.svg[width="100%"]
+|===
+
+As can be seen the circuit complexity increases with the significance.
+The table below shows the total view of these different adder implementations.
+Of course the topic of adders is much broader as displayed here, we only introduced 
+the concepts.
 
 [width="100%",col="a"]
 |===
@@ -181,21 +194,5 @@ c_{3} & = g_{2} \lor c_{2}p_{2} = g_{2} \lor (g_{1} \lor g_{0}p_{1} \lor c_{0}p_
 |image:../images/how_does_cpu/cla_fulladder_array.svg[width="100%"]
 |===
 
-
-////
-==  A simple adder
-
-
-So now we know what the binary system is and how to count and add in. But if we want also to subtract we are still missing something - the knowledge how negative numbers are mapped in this system /logic.
-
-
-==  One and two's complement
-
-
-The figure below shows an illustration of the range of numbers on a circle.
-the upper plane showing the positive interpreted numbers, the lower plane
-the negative interpreted numbers.
-
-.Unit circle with numbering
-image:../images/how_does_cpu/digitcircle.svg[]
-////
+In the next blog post we will have an excursion to memory, seeing
+how bits and bytes are stored in a circuit.

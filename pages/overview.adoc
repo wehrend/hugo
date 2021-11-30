@@ -46,7 +46,7 @@ part and then its translation into an electrical implementation.
 
 ==  *01+01 = 10*
 
-_Binary systems (Part I) and Combinatorial Logic (Part I)_
+_http://wehrend.uber.space/drafts/how-does-a-cpu-work.html[Binary systems (Part I) and Combinatorial Logic (Part I)]_
 
 Here we explain the basic concept of how to count with only two different states at hand.
 Also we will learn how to sum up two positive integer values in the binary system, derivate
