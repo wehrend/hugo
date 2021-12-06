@@ -32,7 +32,7 @@ is denoted as A ⊕ B = Q. Its truth table is shown below
 | 1   | 1   |  0  
 |================
   
-image:../images/how_does_cpu/xor_symbol.svg[width=800]
+image:../images/how_does_cpu/xor_symbol.svg[width=500]
 
 [width="100%" cols="a"]
 |======

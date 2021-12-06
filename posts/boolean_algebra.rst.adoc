@@ -212,7 +212,7 @@ In addition to those merely basic axioms introduced above, there is the **De Mor
 which we need to easily convert between NAND and NOR. For the sake of simplicity we only show for 
 two elements however the theorem is independent from any number of elements / inputs.
 
-["latex", "../images/demorgan_nand.svg",imgfmt="svg"] 
+["latex", "../images/demorgan_nand.svg",imgfmt="svg", width="75%"] 
 $\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}$
 
 [width="75%"]
@@ -230,7 +230,7 @@ $\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}$
 image:../images/how_does_cpu/de_morgan_nand_equivalence.svg[width=400]
 
 
-["latex", "../images/demorgan_nor.svg",imgfmt="svg"] 
+["latex", "../images/demorgan_nor.svg",imgfmt="svg", width="75%"] 
 $\overline{p_1 \lor p_2} = \overline{p_1} \land \overline{p_2}$
 
 

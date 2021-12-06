@@ -27,8 +27,8 @@ After some frustrations with the paths for the latex filter inside asciidoc it w
 
 So as a sample of one of the future blogposts here one or rather two math-equations rendered this way:
 
-["latex","../images/half-adder.svg",imgfmt="svg", width="100%"]
-\large
+["latex","../images/half-adder.svg",imgfmt="svg",width="45%"]
+\small
 \[
 \begin{array}{c}
 c = x \land y \\
