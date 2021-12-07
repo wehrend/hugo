@@ -1,0 +1,63 @@
+.. title: How does a CPU work? Excursion to Memory
+.. slug: how-does-a-cpu-work-memory
+.. date: 2021-12-05
+.. category:
+.. link: 
+.. description: 
+.. type: text
+
+Counters and Memory 
+
+== The classic RS-flipflop
+
+The classic flipflop consists of two Nand gates which outputs are feedback'ed to the complementary 
+gate, as can be seen in the table below. Below the circuit the truth table is given.
+As can be seen the flipflop locks the output to one state, '1' or '0'. 
+If both inputs are set low, the output is undefined (and conforms to the preferred position).
+
+[cols="a,a" width="100%"]
+|===
+| *RS-flipflop structure* | *RS-flipflop symbol*
+|image:../images/how_does_cpu/flipflop_circuit.svg[width="80%"]
+|image:../images/how_does_cpu/flipflop_symbol.svg[width="80%"]
+|===
+
+[width="50%"]
+|===
+|&#773;R | &#773;S || Q | &#773;Q | comments
+| 0  | 0  || 1 | 1 | invalid
+| 0  | 1  || 1 | 0 | Reset
+| 1  | 0  || 0 | 1 | Set
+| 1  | 1  || Q | &#773;Q | --
+|===
+One application of the classic RS-flipflop is to debounce switches.
+
+But for most applications a more evolved flipflop is necessary. Let's have
+a look at the (D)ata-flipflop.
+
+== The D-flipflop
+
+In the D-flipflop the circuit of the RS-flipflop is preceeded by two Nand gates,
+controlled by a clock impulse. Only when the clock is high (i.e. '1') the date applied
+to the (D)ata-input is valid and stored in the RS-fliplop. Otherwise the applied data 
+input is invalid.
+
+[cols="a,a" width="100%"]
+|===
+| *D-flipflop structure* | *D-flipflop symbol*
+|image:../images/how_does_cpu/dflipflop_circuit.svg[width="80%"]
+|image:../images/how_does_cpu/dflipflop_symbol.svg[width="80%"]
+|===
+
+[width="50%"]
+|===
+|Clock   | D | Q | &#773;Q | comments
+| 🠓 >>0  | x  | Q | &#773;Q | no change
+| 🠓 >>0  | 1  | 1 | 0 | Reset
+| 🠑 >>1  | 0  | 0 | 1 | Set
+| 🠑 >>1   | 1  | Q | &#773;Q | -
+|===
+
+////
+== A binary counter
+//// 
