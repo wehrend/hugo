@@ -1,63 +1,109 @@
 .. title: How does a CPU work? Excursion to Memory
 .. slug: how-does-a-cpu-work-memory
-.. date: 2021-12-05
+.. date: 2022-01-09
 .. category:
 .. link: 
 .. description: 
 .. type: text
 
-Counters and Memory 
+== Memory Organization
+In this blog post the author will introduce the different
+types of semiconductor memory. This is a wide field, 
+so the goal here is to focus on the most important ones 
+and draw the differences between the different types.
 
-== The classic RS-flipflop
+=== The Memory hierarchy 
 
-The classic flipflop consists of two Nand gates which outputs are feedback'ed to the complementary 
-gate, as can be seen in the table below. Below the circuit the truth table is given.
-As can be seen the flipflop locks the output to one state, '1' or '0'. 
-If both inputs are set low, the output is undefined (and conforms to the preferred position).
+As in computing all is about performance, we first have a look 
+at the memory hierarchy. As you can see in the pyramid below, memory is 
+ordered in layers. The slowest elements -also the ones with highest 
+latency - are at the bottom of this pyramid, while the fastest ones are 
+shown at the apex.
+Imagine your desk is the actual CPU, with an open book laying in front of your
+eyes. This is the register. Now you read in this book a reference to another book
+in your bookshelf. Your bookshelf is the cache here. The cache itself is again layered.
+Lets say L1-cache is the bookshelf in your room, L2-cache the bookshelf in another room
+and L3-cache books stored in a box in the same room. If you now have a reference
+in your current book (the one on your desk), that refers to a book you do not possess, you need to
+go to the public library. The public library is your RAM. The access times are really high. 
+And lets say the book you need is also not available there, and they must order it from a library 
+in another city. Then you got to the level at the bottom, which is the disk storage unit.
+
+image:../images/how_does_cpu/memhierarchy.svg[width="100%"]
+
+At the bottom is also the low-priced memory (per byte). 
+The higher you go on the hierarchy the costlier the memory becomes.
+In this article we will expand our knowledge about the RAM. 
+Caches are more complex and will eventually be handeled in a future 
+article.
+
+=== RAM and ROM
+The image below shows the overall organization of a ram circuit,
+RAM stand for random access memory, so it means a memory with arbitrary
+access. Simply put, you set an address in and get the data which is stored 
+under the given address location out.The schematic given here also holds for
+Read only memory (ROM). Complementary to ROM, which is persistent, RAM 
+is volatile. So it needs ongoing power supply,otherwise it loses
+its stored data.
+
+image:../images/how_does_cpu/ram_schematic.svg[width="90%"]
+
+As can be seen the main parts apart from the memory itself
+are column- and row-decoder, as well as read / write amplifier.
+The address-decoder just consists of well-known combinatorial logic,
+while the amplifier are a bit more complex.
+The blue dots on the intersection of rows and columns mark the
+placements of the memory cell, depending on the type of memory,
+those differ and are explained in the next section.
+
+==== The different memory cells
+
 
 [cols="a,a" width="100%"]
 |===
-| *RS-flipflop structure* | *RS-flipflop symbol*
-|image:../images/how_does_cpu/flipflop_circuit.svg[width="80%"]
-|image:../images/how_does_cpu/flipflop_symbol.svg[width="80%"]
+| static RAM (SRAM)  | dynamic RAM (DRAM)
+| image:../images/how_does_cpu/sram_nmos.svg[width="100%"] 
+| image:../images/how_does_cpu/dram.svg[width="100%"]
+| transistor # 4 | transistor # 1 
+|image:../images/how_does_cpu/sram_cmos.svg[width="100%"] |
+| transistor # 6 |
 |===
 
-[width="50%"]
+==== The bus cycle
+The bus cycles are highly specific on the chosen CPU and / or implementation, 
+so here we can only show the essentials. 
+For this example to show the fundamentals of read and write
+cycle the author chose the Zilog (R) Z80 processor. We will only have 
+a look onto the surface here and not discuss things like direct memory access (DMA).
+The Z80 is a somewhat simple processor, designed 1976.
+
+*Memory pins*
+[cols="a,a,a",autowidth,options="header"]
 |===
-|&#773;R | &#773;S || Q | &#773;Q | comments
-| 0  | 0  || 1 | 1 | invalid
-| 0  | 1  || 1 | 0 | Reset
-| 1  | 0  || 0 | 1 | Set
-| 1  | 1  || Q | &#773;Q | --
-|===
-One application of the classic RS-flipflop is to debounce switches.
-
-But for most applications a more evolved flipflop is necessary. Let's have
-a look at the (D)ata-flipflop.
-
-== The D-flipflop
-
-In the D-flipflop the circuit of the RS-flipflop is preceeded by two Nand gates,
-controlled by a clock impulse. Only when the clock is high (i.e. '1') the date applied
-to the (D)ata-input is valid and stored in the RS-fliplop. Otherwise the applied data 
-input is invalid.
-
-[cols="a,a" width="100%"]
-|===
-| *D-flipflop structure* | *D-flipflop symbol*
-|image:../images/how_does_cpu/dflipflop_circuit.svg[width="80%"]
-|image:../images/how_does_cpu/dflipflop_symbol.svg[width="80%"]
+| Pin(s)   | Description         | Comment
+| A0 - An  | Address lines / bus | 
+| D0 - Dn  | Data lines / bus    |
+| /CE | Chip Enable (low-active) | Enable the chip; also known as Chip Select (/CS)
+| /OE | Output Enable (low-active) | Enable the data output 
+| /WE | Write Enable (low-active) | Enable write cycle 
 |===
 
-[width="50%"]
+*Zilog Z80 - overview of memory relevant pins*
+[cols="a,a,a" autowidth options="header"]
 |===
-|Clock   | D | Q | &#773;Q | comments
-| 🠓 >>0  | x  | Q | &#773;Q | no change
-| 🠓 >>0  | 1  | 1 | 0 | Reset
-| 🠑 >>1  | 0  | 0 | 1 | Set
-| 🠑 >>1   | 1  | Q | &#773;Q | -
+| Pin(s)   | Description         | Comment
+| Clk      | Clock               |
+| /MREQ    | Memory Request (low-active) |
+| A0 - A7  | Address lines / bus | 
+| D0 - D7  | Data lines / bus    |
+| /M1      | machine cycle 1 (low-active) | instruction fetch cycle
+| /RD | Read (low-active)  | read operation
+| /WR | Write (low-active) | write operation
+| /RFSH | Refresh (low-active) | Refresh for DRAM
+| /WAIT | Wait (low-active) | use wait-cycles
 |===
 
-////
-== A binary counter
-//// 
+
+image:../images/how_does_cpu/m1_cycle.svg[width="80%"] 
+image:../images/how_does_cpu/m2m3_cycle.svg[width="80%"] 
+
