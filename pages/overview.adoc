@@ -52,6 +52,13 @@ Here we explain the basic concept of how to count with only two different states
 Also we will learn how to sum up two positive integer values in the binary system, derivate
 the logic needed for a full-adder, to dive into the topic of combinatorial logic.
 
+==  *There is plenty room in the negative space*
+
+_http://wehrend.uber.space/drafts/how-does-a-cpu-work-signs.html[Binary Systems (Part II) signed integer]_
+
+Second part about the binary system. In this post we learn about one- and two-
+complement and subtraction.
+
 
 ==  *Let me look that up*
 
@@ -62,12 +69,6 @@ can be transformed into 'software' by putting it into memory. In a practical exa
 show how a DDS sine wave generator use a Look-Up-Table (LUT) to replicate the sine.
 
 
-==  *There is plenty room in the negative space*
-
-_Binary Systems (Part II) signed integer_
-
-Second part about the binary system. In this post we learn one- and two-
-complement, endianess and about conversion to hex.
 
 
 ==  *Adding is not all*
