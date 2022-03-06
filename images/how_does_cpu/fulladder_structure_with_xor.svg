@@ -22,7 +22,7 @@
         <text x="47" y="40" font-size="6">&amp;</text>
         <line x1="32" y1="45" x2="45" y2="45" style="fill:none;stroke:black;stroke-width:0.5px;"/>
         <circle cx="34" cy="45" r="0.3" style="stroke:black;stroke-width:1;fill:none;"/>
-        <polyline points="34,45 34,28 45,28" style="fill:none;stroke:black;stroke-width:0.5px;"/>
+        <polyline points="95,60 34,60 34,28 45,28" style="fill:none;stroke:black;stroke-width:0.5px;"/>
         <rect x="68" y="64" width="12" height="18" style="fill:none;stroke:black;stroke-width:0.5px;"/>
         <text x="70" y="70" font-size="6">>=1</text>
         <polyline points="57,44 65,44 65,70 68,70" style="fill:none;stroke:black;stroke-width:0.5px;"/>
@@ -51,6 +51,7 @@
         <text x="38" y="4" font-size="4">c
             <tspan baseline-shift = "sub">in</tspan>
         </text>
+        <text x="96" y="61" font-size="4">xor</text>
     </symbol>
     <use x="20" y="10" href="#fulladder_cell"/>
 </svg>
