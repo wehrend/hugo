@@ -1,6 +1,6 @@
 .. title: How does a CPU work? The swiss knife (Part I)
 .. slug: how-does-a-cpu-work-alu
-.. date: 2022-03-10
+.. date: 2022-03-11
 .. category:
 .. link: 
 .. description: 
