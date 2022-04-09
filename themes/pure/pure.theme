@@ -1,8 +1,0 @@
-[Theme]
-engine = mako
-parent = base
-author = Sven Wehrend
-author_url = na
-license = MIT
-
-
