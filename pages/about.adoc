@@ -1,11 +1,7 @@
-.. title: About
-.. slug: about
-.. date: 2020-12-12
-.. link:
-.. description:
-.. type: text 
-.. pretty_url: True
 
+:title: About
+:slug: about
+:date: 2020-12-12
 
 A simple static blog meant for writing about topics like electronics & computation and - maybe - philosophy.
 
