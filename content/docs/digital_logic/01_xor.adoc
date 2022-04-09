@@ -16,8 +16,8 @@ which are used in transmitters / receivers
 - Last but not least an important part of a halfadder.
 
 ////
-as you can expect for a such basic and fundamental operation, but still
-the situation is a bit different with this operation compared to 'and' and 'or'.
+//as you can expect for a such basic and fundamental operation, but still
+//the situation is a bit different with this operation compared to 'and' and 'or'.
 ////
 
 The exclusive-or operation xor which is also termed as antivalence
@@ -32,7 +32,7 @@ is denoted as A ⊕ B = Q. Its truth table is shown below
 | 1   | 1   |  0  
 |================
   
-image:../images/how_does_cpu/xor_symbol.svg[width=500]
+image:../images/how_does_cpu/xor_symbol.svg[width=250]
 
 [width="100%" cols="a"]
 |======
@@ -80,7 +80,6 @@ The halfadder essentialy consists of the two following particular equations
 for sum (making use of the XOR ) and carry (using a simple AND). 
 
 ["latex","../images/half-adder.svg",imgfmt="svg", width="40%"]
-\small
 \[
 \begin{array}{c}
 c = x \land y \\

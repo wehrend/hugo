@@ -65,7 +65,7 @@ applied to evaluate combinatorial circuits
 . Draw optimized combinatorial circuit 
 
 [cols="a,a",options="header"]
-|===
+|====
 Truth table for fulladder cell | fulladder cell |
 ||
 [width="100%",cols="3,3,3,0,3,3",options="header"]
@@ -81,10 +81,9 @@ Truth table for fulladder cell | fulladder cell |
 ! 1 ! 1 ! 1 !! 1 ! 1
 !===
 |image:../images/how_does_cpu/fulladder_cell.svg[width="100%"] 
-|===
+|====
 
 ["latex","../images/sum-equations.svg",imgfmt="svg", width="100%"]
-\Large
 \[
 \begin{aligned}
 s & = (\overline{c_{in}} \land \overline{A} \land B) \lor (\overline{c_{in}} \land A \land {\overline{B}}) \lor (c_{in} \land \overline{A} \land \overline{B}) \lor (c_{in} \land A \land B) \\
@@ -95,7 +94,6 @@ s & = (\overline{c_{in}} \land \overline{A} \land B) \lor (\overline{c_{in}} \la
 \]
 
 ["latex","../images/carry-equations.svg",imgfmt="svg", width="100%"]
-\Large
 \[
 \begin{aligned}
 c_{out} & = \overline{c_{in}}(A \land B) \lor c_{in}(\overline{A} \land B) \lor c_{in}(A \land \overline{B}) \lor c_{in}(A \land B) \\
@@ -146,7 +144,7 @@ The signals, (g)enerate and (p)ropagate are defined as follows
 (i being the index of the significance):
 
 ["latex","../images/generate_propagate.svg",imgfmt="svg", width="30%"]
-\large
+
 \[
 \begin{array}{c}
 g_{i} = a_{i} \land b_{i} \\
@@ -157,7 +155,6 @@ p_{i} = a_{i} \lor b_{i}
 From these helper signals the next carry-value is calculated:
 
 ["latex","../images/carry_lookahead.svg",imgfmt="svg", width="40%"]
-\large
 \[
 c_{i+1} = g_{i} \lor c_{i} \land p_{i} 
 \]
@@ -175,7 +172,7 @@ c_{4} & = g_{3} \lor c_{3}p_{3} = g_{3} \lor (g_{2} \lor g_{1}p_{2} \lor g_{0}p_
 \end{aligned}
 \]
 
-[width="100%",col="a"]
+[width="250%",col="a"]
 |===
 | *Carry-Lookahead Adder circuit* 
 |image:../images/how_does_cpu/carry_lookahead_circuit.svg[width="100%"]
@@ -186,7 +183,7 @@ The table below shows the total view of these different adder implementations.
 Of course the topic of adders is much broader as displayed here, we only introduced 
 the concepts.
 
-[width="100%",col="a"]
+[width="250%",col="a"]
 |===
 | *Ripple-Carry Adder*
 |image:../images/how_does_cpu/fulladder_array.svg[width="100%"]
