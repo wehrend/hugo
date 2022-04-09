@@ -2,10 +2,13 @@
 :slug: how-does-a-cpu-work-boolean-algebra
 :date: 2020-12-23
 :tags:
+:math:
 :category: 
 :link: 
 :description: 
 :type: text
+
+\[k_{n+1} = n^2 + k_n^2 - k_{n-1}\]
 
 = Boolean Algebra and Basic Logic Gates
 
@@ -36,12 +39,12 @@ is denoted as [overline]#A# = &not; A = Q
 
 
 
-[width="50%"]
+[width="50%" cols="1,1"]
 |==========
 | A   | Q    
 | 0   | 1    
 | 1   | 0    
-|=========
+|==========
 
 image:../images/how_does_cpu/inverter_symbol.svg[width=200]
 
@@ -57,7 +60,7 @@ post in the mid-feature.
 The and  operation  also termed as conjunction 
 is denoted as A ∧ B = Q
 
-[width="50%"]
+[width="50%" cols="1,1,1"]
 |================
 | A   | B   |  Q  
 | 0   | 0   |  0  
@@ -74,7 +77,7 @@ image:../images/how_does_cpu/and_symbol.svg[width=200]
 The or operation also termed as disjunction 
 is denoted as A v B = Q
 
-[width="50%"]
+[width="50%" cols="1,1,1"]
 |================
 | A   | B   |  Q  
 | 0   | 0   |  0  
@@ -119,40 +122,40 @@ I refer you to accordingly literature (sources listed at the end).
 
 
 The laws of the boolean algebra are shown in the following table:
-[width="100%",cols="4^,100a,100a",options="header"]
+[width="120%",cols="40,75a,75a",options="header"]
 |====================================================================================================================
-|      |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
+|   Law   |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
 | commutative law   | 
 ["latex", "../images/commut_A.svg",imgfmt="svg"] 
-$p \land q = q \land p$   |
+\[p \land q = q \land p\]   |
 ["latex", "../images/commut_V.svg",imgfmt="svg"] 
-$p \lor q = q \lor p                                                             $  
+\[p \lor q = q \lor p\]
 | associative law   | 
 ["latex", "../images/assoc_A.svg",imgfmt="svg"] 
-$p \land (q \land r) = (p \land q) \land r = pqr$  |
+\[p \land (q \land r) = (p \land q) \land r = pqr\]  |
 ["latex", "../images/assoc_V.svg",imgfmt="svg"] 
-$p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r$
+\[p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r\]
 | absorptions law   | 
 ["latex", "../images/absorp_A.svg",imgfmt="svg"] 
-$p \land (p \lor q) = p$
+\[p \land (p \lor q) = p\]
 | 
 ["latex", "../images/absorp_V.svg",imgfmt="svg"] 
-$p \lor (p \land q) = p$
+\[p \lor (p \land q) = p\]
 | distributive law  | 
 ["latex", "../images/distrib_A.svg",imgfmt="svg"] 
-$p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr  $ |
+\[p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr\] |
 ["latex", "../images/distrib_V.svg",imgfmt="svg"]
-$p \lor (q \lor r) = (p \lor q) \lor (p \lor r) = (p \lor q)(p \lor r)$
+\[p \lor (q \lor r) = (p \lor q) \lor (p \lor r) = (p \lor q)(p \lor r)\]
 | neutral elements  |
 ["latex", "../images/neutral_A.svg",imgfmt="svg"]
-$p \land 1 = p                                                  $ | 
+\[p \land 1 = p\] | 
 ["latex", "../images/neutral_V.svg",imgfmt="svg"]
-$p \lor 0 = p                                                   $
+\[p \lor 0 = p\]                                                   
 | complem. element  | 
 ["latex", "../images/comp_A.svg",imgfmt="svg"]
-$p \land \neg p = 0                                             $ |
+\[p \land \neg p = 0\] |
 ["latex", "../images/comp_V.svg",imgfmt="svg"]
-$p \lor \neg p = 1                                              $ | 
+\[p \lor \neg p = 1\] | 
 *Reference* | 
 *Hans-Jochen Bartsch* | 
 *Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28*  |
@@ -190,8 +193,8 @@ the inverse functions NAND and NOR are used.
 
 === NAND and NOR
 
-The NAND operation is denoted as [overline]#A ∧ B# = Q
-while the NOR operation is denoted as [overline]#A v B# = Q
+The NAND operation is denoted as \[\overline{A ∧ B} = Q\]
+while the NOR operation is denoted as \[\overline{A v B} = Q\]
 
 
 [width="100%" cols="a,a"]
@@ -213,16 +216,16 @@ which we need to easily convert between NAND and NOR. For the sake of simplicity
 two elements however the theorem is independent from any number of elements / inputs.
 
 ["latex", "../images/demorgan_nand.svg",imgfmt="svg", width="75%"] 
-$\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}$
+\[\overline{p_1 \land p_2} = \overline{p_1} \lor \overline{p_2}\]
 
-[width="75%"]
+[width="100%" cols="a,a,25a,25a,25a,25a"]
 |==========================================================================================
-| A   | B   |[overline]#A# | [overline]#B# |  [overline]#AB# | [overline]#A# v [overline]#B#
+| A   | B   |\[\overline{A}\] | \[\overline{B}\] | \[\overline{AB}\]  |\[\overline{A} \lor \overline{B}\]
 | 0   | 0   |    1         |     1         |          1       | 1
 | 0   | 1   |    1         |     0         |          1       | 1
 | 1   | 0   |    0         |     1         |          1       | 1
 | 1   | 1   |    0         |     0         |          0       | 0
-|===========================================================================================
+|==========================================================================================
 
 
 
@@ -231,17 +234,17 @@ image:../images/how_does_cpu/de_morgan_nand_equivalence.svg[width=400]
 
 
 ["latex", "../images/demorgan_nor.svg",imgfmt="svg", width="75%"] 
-$\overline{p_1 \lor p_2} = \overline{p_1} \land \overline{p_2}$
+\[\overline{p_1 \lor p_2} = \overline{p_1} \land \overline{p_2}\]
 
 
-[width="75%"]
+[width="75%" cols="a,a,25a,25a,25a,25a"]
 |==========================================================================================
-| A   | B   |[overline]#A# | [overline]#B# |  [overline]#AvB# | [overline]#A# [overline]#B#
+| A   | B   |\[\overline{A}\] | \[\overline{B}\] |  \[\overline{AB}\]| \[\overline{A} \lor \overline{B}\]
 | 0   | 0   |    1         |     1         |          1       | 1
 | 0   | 1   |    1         |     0         |          0       | 0
 | 1   | 0   |    0         |     1         |          0       | 0
 | 1   | 1   |    0         |     0         |          0       | 0
-|===========================================================================================
+|==========================================================================================
 
 
 image:../images/how_does_cpu/de_morgan_nor_equivalence.svg[width=400]
@@ -263,7 +266,7 @@ We are beginning the journey with a simplificated circuit design for 'and' and '
 This circuit design is so simple it is even not possible to implement an inverter in it.
 
 
-[width="100%" cols="a,a"]
+[width="100%" cols="100a,100a"]
 |======
 | wired and | wired or
 |image:../images/how_does_cpu/wire_and.svg[width=250] | image:../images/how_does_cpu/wire_or.svg[width=250] 
@@ -302,22 +305,22 @@ What if we had a component capable to amplify the signal, so we could design cir
 Luckily such a component exists and is introduced in the next section.
 
 ////
-=== The classical transistor
-
-Before we actually introduce the transistor let us do a peek into history. Some of the first computers built were using 
-http://www.historicsimulations.com/ZuseZ3.html[electromechanical relays], 
-whereas others relied on https://www.thoughtco.com/history-of-the-eniac-computer-1991601[vacuum tubes]. 
-The very first one(s) were purely https://www.fourmilab.ch/babbage/[mechanical].
-Here we want to focus on the vacuum tubes - in particular the triode -as black boxes as on the outside the working principal is roughly comparable to that 
-of a standard / classic bipolar transitor.
-
-[width="100%" cols="a,a"]
-|======
-|Bipolar Junction Transistor (BJT) | Triode (certain type of vacuum tube)
-|image:../images/how_does_cpu/bjt_structure.svg[width=450] | image:../images/how_does_cpu/triode.svg[width=300]
-| *>* A current on basis controls the current between collector and emitter     
-| *>* A voltage on grid controls the current between collector and emitter 
-|======
+//=== The classical transistor
+//
+//Before we actually introduce the transistor let us do a peek into history. Some of the first computers built were using 
+//http://www.historicsimulations.com/ZuseZ3.html[electromechanical relays], 
+//whereas others relied on https://www.thoughtco.com/history-of-the-eniac-computer-1991601[vacuum tubes]. 
+//The very first one(s) were purely https://www.fourmilab.ch/babbage/[mechanical].
+//Here we want to focus on the vacuum tubes - in particular the triode -as black boxes as on the outside the working principal is roughly comparable to that 
+//of a standard / classic bipolar transitor.
+//
+//[width="100%" cols="a,a"]
+//|======
+//|Bipolar Junction Transistor (BJT) | Triode (certain type of vacuum tube)
+//||image:../images/how_does_cpu/bjt_structure.svg[width=450] | image:../images/how_does_cpu/triode.svg[width=300]
+//| *>* A current on basis controls the current between collector and emitter     
+//| *>* A voltage on grid controls the current between collector and emitter 
+//|======
 ////
 
 
@@ -400,7 +403,7 @@ As you guess this technique, both types of transistor combined, exists and is na
 |======
 
 ////
-===From discrete to silicon
+//===From discrete to silicon
 ////
 
 It becomes apparent now where the CMOS technology has its name from:
