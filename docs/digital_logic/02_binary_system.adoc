@@ -87,11 +87,15 @@ Truth table for fulladder cell | fulladder cell |
 \[
 \begin{aligned}
 s & = (\overline{c_{in}} \land \overline{A} \land B) \lor (\overline{c_{in}} \land A \land {\overline{B}}) \lor (c_{in} \land \overline{A} \land \overline{B}) \lor (c_{in} \land A \land B) \\
-& = \overline{c_{in}}(\overline{A} \land \overline{B) \lor (A \land \overline{B}) \lor c_{in}((\overline{A} \land \overline{B}) \lor (A \land B)) \\
+& = \overline{c_{in}}(\overline{A} \land \overline{B}) \lor (A \land \overline{B}) \lor c_{in}((\overline{A} \land \overline{B}) \lor (A \land B)) \\
 & = \overline{c_{in}}(A \oplus B) \lor c_{in}(\overline{A \oplus B}) \\
 & = A \oplus B \oplus c_{in}
 \end{aligned}
 \]
+
+
+
+
 
 ["latex","../images/carry-equations.svg",imgfmt="svg", width="100%"]
 \[
@@ -125,7 +129,6 @@ As we can see, the halfadder consists only of the two gates 'AND' and 'XOR'.
 Two halfadder and a separate 'OR'-gate for the carry-signal result in a fulladder.
 
 ["latex","../images/half-adder.svg",imgfmt="svg", width="30%"]
-\large
 \[
 \begin{array}{c}
 c = x \land y \\
@@ -144,7 +147,6 @@ The signals, (g)enerate and (p)ropagate are defined as follows
 (i being the index of the significance):
 
 ["latex","../images/generate_propagate.svg",imgfmt="svg", width="30%"]
-
 \[
 \begin{array}{c}
 g_{i} = a_{i} \land b_{i} \\
@@ -160,7 +162,6 @@ c_{i+1} = g_{i} \lor c_{i} \land p_{i}
 \]
 
 ["latex","../images/carry_lookaheads.svg",imgfmt="svg", width="95%"]
-\large
 \[
 \begin{aligned}
 c_{1} & = g_{0} \lor c_{0}p_{0} \\
@@ -175,7 +176,7 @@ c_{4} & = g_{3} \lor c_{3}p_{3} = g_{3} \lor (g_{2} \lor g_{1}p_{2} \lor g_{0}p_
 [width="250%",col="a"]
 |===
 | *Carry-Lookahead Adder circuit* 
-|image:../images/how_does_cpu/carry_lookahead_circuit.svg[width="100%"]
+|image:../images/how_does_cpu/carry_lookahead_circuit.svg[width="120%"]
 |===
 
 As can be seen the circuit complexity increases with the significance.
@@ -186,9 +187,9 @@ the concepts.
 [width="250%",col="a"]
 |===
 | *Ripple-Carry Adder*
-|image:../images/how_does_cpu/fulladder_array.svg[width="100%"]
+|image:../images/how_does_cpu/fulladder_array.svg[width="120%"]
 | *Carry-Lookahead Adder* 
-|image:../images/how_does_cpu/cla_fulladder_array.svg[width="100%"]
+|image:../images/how_does_cpu/cla_fulladder_array.svg[width="120%"]
 |===
 
 In the next blog post we will have an excursion to memory, seeing
