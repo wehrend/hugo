@@ -1,14 +1,15 @@
-:title: How does a CPU work? Boolean algebra
-:slug: how-does-a-cpu-work-boolean-algebra
-:date: 2020-12-23
-:tags:
-:math:
-:category: 
-:link: 
-:description: 
-:type: text
+---
+title: 00_boolean_algebra
+date: 2020-12-23
+tags:
+math:
+category: 
+link: 
+description: 
+type: text
+---
 
-= Boolean Algebra and Basic Logic Gates
+== Boolean Algebra and Basic Logic Gates
 
 We are starting (the journey) with three very 
 basic logic functions (or operations), which despite their simplicity 
@@ -33,7 +34,7 @@ https://en.wikipedia.org/wiki/Karnaugh_map[Karnaugh maps], a way to optimize boo
 
 === NOT 
 The not operation also termed as inversion,
-is denoted as [overline]#A# = &not; A = Q
+is denoted as \[\overline{A} = \neg A = Q\]
 
 
 
@@ -56,7 +57,7 @@ post in the mid-feature.
 === AND
 
 The and  operation  also termed as conjunction 
-is denoted as A ∧ B = Q
+is denoted as \[A \land B = Q\]
 
 [width="50%" cols="1,1,1"]
 |================
@@ -73,7 +74,7 @@ image:../images/how_does_cpu/and_symbol.svg[width=200]
 === OR 
 
 The or operation also termed as disjunction 
-is denoted as A v B = Q
+is denoted as \[A \lor B = Q\]
 
 [width="50%" cols="1,1,1"]
 |================
@@ -123,37 +124,14 @@ The laws of the boolean algebra are shown in the following table:
 [%autowidth cols="40,75a,75a",options="header"]
 |====================================================================================================================
 |   Law   |  ∧  (conjunction, AND operator)               |  ∨ (disjunction, OR operator)
-| commutative law   | 
-["latex", "../images/commut_A.svg",imgfmt="svg"] 
-\[p \land q = q \land p\]   |
-["latex", "../images/commut_V.svg",imgfmt="svg"] 
-\[p \lor q = q \lor p\]
+| commutative law   | \[p \land q = q \land p\]   |\[p \lor q = q \lor p\]
 | associative law   | 
-["latex", "../images/assoc_A.svg",imgfmt="svg"] 
-\[p \land (q \land r) = (p \land q) \land r = pqr\]  |
-["latex", "../images/assoc_V.svg",imgfmt="svg"] 
-\[p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r\]
-| absorptions law   | 
-["latex", "../images/absorp_A.svg",imgfmt="svg"] 
-\[p \land (p \lor q) = p\]
-| 
-["latex", "../images/absorp_V.svg",imgfmt="svg"] 
-\[p \lor (p \land q) = p\]
-| distributive law  | 
-["latex", "../images/distrib_A.svg",imgfmt="svg"] 
-\[p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr\] |
-["latex", "../images/distrib_V.svg",imgfmt="svg"]
+\[p \land (q \land r) = (p \land q) \land r = pqr\]  |\[p \lor (q \lor r) = (p \lor q) \lor r = p \lor q \lor r\]
+| absorptions law   | \[p \land (p \lor q) = p\]| \[p \lor (p \land q) = p\]
+| distributive law  | \[p \lor (q \lor r) = (p \land q) \lor (p \land r) = pq \lor pr\] |
 \[p \lor (q \lor r) = (p \lor q) \lor (p \lor r) = (p \lor q)(p \lor r)\]
-| neutral elements  |
-["latex", "../images/neutral_A.svg",imgfmt="svg"]
-\[p \land 1 = p\] | 
-["latex", "../images/neutral_V.svg",imgfmt="svg"]
-\[p \lor 0 = p\]                                                   
-| complem. element  | 
-["latex", "../images/comp_A.svg",imgfmt="svg"]
-\[p \land \neg p = 0\] |
-["latex", "../images/comp_V.svg",imgfmt="svg"]
-\[p \lor \neg p = 1\] | 
+| neutral elements  | \[p \land 1 = p\] | \[p \lor 0 = p\]                                                   
+| complem. element  |  \[p \land \neg p = 0\] | \[p \lor \neg p = 1\] | 
 *Reference* | 
 *Hans-Jochen Bartsch* | 
 *Taschenbuch Mathematischer Formeln, 20. Auflage, p. 27- 28*  |

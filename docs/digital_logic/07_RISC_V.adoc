@@ -1,11 +1,12 @@
-:title: How does a CPU work? A RISC-V Processor
-:slug: how-does-a-cpu-work-riscv
-:date: 2022-03-21
-:tags: draft
-:category:
-:link:
-:description:
-:type: text
+---
+title: 07_RISC-V
+date: 2022-03-21
+tags: draft
+category:
+link:
+description:
+type: text
+---
 
 == Digital design meets computer architecture
 
@@ -43,7 +44,7 @@ loop:
 ----
 Register-type: Instruction [dest. reg] [reg1] [reg2]
 
-Load / Store-type:  Instruction [dest. reg] [byte offset(reg1)] *
+Load / Store-type:  Instruction [dest. reg] [byte offset(reg1)] 
 
 Branch-type: Instruction [dest. reg] [reg1] [dest. label]
 

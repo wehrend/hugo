@@ -22,13 +22,13 @@ on an electrical layer, though there are still other solutions
 possible based on https://erik-engheim.medium.com/microprocessors-running-on-air-a47a702dd41f[fluid dynamics], 
 or https://www.photonics.com/Articles/All-Optical_Logic_Gates_Show_Promise_for_Optical/a63226[optical gates], 
 most computers and logic gates are still based on electronics and semiconductor technology and this will not 
-change with https://www.azom.com/article.aspx?ArticleID=17173[quantum computing], which is mostly tied to / ajunct to
+change with https://www.azom.com/article.aspx?ArticleID=17173[quantum computing], which is mostly tied to / adjunct to
 probability theory. However with quantum computing
 the fundamentals behind which the author describes here will completly change.
 
 ==  *A first look at digital logic*
 
-_https://wehrend.uber.space/posts/how-does-a-cpu-work-boolean-algebra.html[Boolean Algebra, basic logic gates and their implementation]_
+_https://wehrend.uber.space/docs/digital_logic/00_boolean_algebra/[Boolean Algebra, basic logic gates and their implementation]_
 
 In this lesson we will discover truth tables, boolean notation and learn about
 De Morgan's laws.
@@ -37,7 +37,7 @@ implemented as such in electronics, having a look at NAND and NOR instead.
 
 ==  *You have to choose!*
 
-_https://wehrend.uber.space/posts/how-does-a-cpu-work-xor.html[A complex gate: XOR]_
+_https://wehrend.uber.space/docs/digital_logic/01_xor/[A complex gate: XOR]_
 
 Another CPU instrucion and as a side-note and preparation for the next topic, 
 we have a look at the XOR gate. As in the first lesson we'll see first the logic 
@@ -46,7 +46,7 @@ part and then its translation into an electrical implementation.
 
 ==  *01+01 = 10*
 
-_http://wehrend.uber.space/drafts/how-does-a-cpu-work.html[Binary systems (Part I) and Combinatorial Logic (Part I)]_
+_http://wehrend.uber.space/docs/digital_logic/02_binary_system/[Binary systems (Part I) and Combinatorial Logic (Part I)]_
 
 Here we explain the basic concept of how to count with only two different states at hand.
 Also we will learn how to sum up two positive integer values in the binary system, derivate
@@ -54,7 +54,7 @@ the logic needed for a full-adder, to dive into the topic of combinatorial logic
 
 ==  *There is plenty room in the negative space*
 
-_http://wehrend.uber.space/drafts/how-does-a-cpu-work-signs.html[Binary Systems (Part II) signed integer]_
+_http://wehrend.uber.space/docs/digital_logic/03_signs/[Binary Systems (Part II) signed integer]_
 
 Second part about the binary system. In this post we learn about one- and two-
 complement and subtraction.
@@ -62,11 +62,10 @@ complement and subtraction.
 
 ==  *Adding is not all*
 
-_https://wehrend.uber.space/drafts/how-does-a-cpu-work-alu.html[Binary Systems (Part II) signed integer]_[_Combinatorial Logic (Part II), a simple ALU_]
+_http://wehrend.uber.space/docs/digital_logic/04_alu/[Combinatorial Logic (Part II), a simple ALU]_
 
 We want close the first series by this second chapter about combinatorial logic.
-We will use our new knowledge of the signed integer adding a subtract functionality
-to our adder and also extending the adder to a full ALU
+We will extend the adder to a simple ALU
 
 
 ==  *Outline, what comes next*

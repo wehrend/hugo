@@ -1,11 +1,12 @@
-:title: How does a CPU work?
-:slug: how-does-a-cpu-work
-:date: 2021-12-02
-:tags: 
-:category:
-:link:
-:description:
-:type: text
+---
+title: 02_binary_system
+date: 2021-12-02
+tags: 
+category:
+link:
+description:
+type: text
+---
 
 ==  The Binary System
 
