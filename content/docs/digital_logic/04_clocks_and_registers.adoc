@@ -1,10 +1,10 @@
-.. title: How does a CPU work? Clocks, flipflops and registers
-.. slug: how-does-a-cpu-work-misc
-.. date: 2021-12-28
-.. category:
-.. link: 
-.. description: 
-.. type: text
+// :title: How does a CPU work? Clocks, flipflops and registers
+:slug: how-does-a-cpu-work-misc
+:date: 2021-12-28
+:category:
+:link: 
+:description: 
+:type: text
 
 == Clocks, Flipflops and registers
 In this blog post the author will introduce multiple elements needed at a later 
@@ -21,11 +21,11 @@ to get correct results. This is known as synchronous.
 Most, if not all designs used nowadays are synchronous, 
 due to a lower design complexity.
 
-[cols="a" width="100%"]
-|===
-| *Register-Transfer-Level*
-|image:../images/how_does_cpu/rtl_scheme.svg[width="80%"]
-|===
+
+*Register-Transfer-Level*
+
+
+image:../images/how_does_cpu/rtl_scheme.svg[width="100%"]
 
 The blue parts in the image above are showing registers where the values are 
 stored, we will see later how those are implemented, lets first have a look 
