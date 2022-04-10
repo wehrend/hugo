@@ -1,12 +1,12 @@
-.. title: Setting up a static blog with Nikola
-.. slug: setting-up-a-static-blog-with-nikola
-.. date: 2020-12-12
-.. tags: Web, Nikola
-.. category:
-.. link:
-.. description: How to setup Nikola (on Docker)
-.. type: text
-
+---
+title: Setting up a static blog with Nikola
+date: 2020-12-12
+tags: Web, Nikola
+category:
+link:
+description: How to setup Nikola (on Docker)
+type: text
+---
 
 I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
 
@@ -30,10 +30,10 @@ here the option flag -it stands for interactive - which, in fact, it does not bu
 Furthermore we need to add our volume, a storage resource which is shared between the host system and the docker container. So we add
 -v ~/blog for our blog located in our home directory (for linux, on windows systems the paths differ).
 Also we need to add the option --network="host" otherwise we won't be able to access the webpage from our host system, and thus from our browser.
-If you are interested, check ++https://docs.docker.com/engine/reference/run/++[Docker run]
+If you are interested, check https://docs.docker.com/engine/reference/run/[Docker run]
 
 Here you can execute the common bash commands like cd, ls, ps and so on, feel free to test and explore
-++https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je++[Basic bash commands] :-)
+https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je[Basic bash commands] :-)
 
 Now that you have explored the system a bit, you can initiate a basic nikola project via:
 
@@ -60,12 +60,12 @@ To test the website, start the test server with:
 
 and head your browser to http://localhost:8080[http://localhost:8080] .
 
-image:../images/nikola_default.png[Unnamed image]
+image:../nikola_default.png[Unnamed image]
 
 
 This is cool, but surely we want do a bit of styling and customization now, as the current look is pretty standard.
 The author's preference is a plain and simple style without much unnecessary payload.So I searched for such theme, but they were not
-to my liking. Then I found the ++https://themes.getnikola.com/v8/hyde/++[Nikola port of Hyde]
+to my liking. Then I found the https://themes.getnikola.com/v8/hyde/[Nikola port of Hyde]
 
 The theme can be installed with:
 
@@ -75,7 +75,7 @@ After installation the theme needed some tweaking of the about section in the si
 from the original look. Adjustments were made to the file assets/css/hyde.css in the directory of the freshly installed theme.
 Ideally the changes should be made in an additional file custom.css
 
-image:../images/nikola_hyde.png[Unnamed image]
+image:../nikola_hyde.png[Unnamed image]
 
 Much better now!
 

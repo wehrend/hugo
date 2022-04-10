@@ -1,10 +1,12 @@
-// :title: How does a CPU work? Clocks, flipflops and registers
-:slug: how-does-a-cpu-work-misc
-:date: 2021-12-28
-:category:
-:link: 
-:description: 
-:type: text
+
+---
+title: 05_Clocks, flipflops and registers
+date: 2022-03-12
+category:
+link: 
+description: 
+type: text
+---
 
 == Clocks, Flipflops and registers
 In this blog post the author will introduce multiple elements needed at a later 

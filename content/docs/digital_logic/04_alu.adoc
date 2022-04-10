@@ -1,12 +1,13 @@
-:title: How does a CPU work? The swiss knife (Part I)
-:slug: how-does-a-cpu-work-alu
-:date: 2022-03-11
-:category:
-:link: 
-:description: 
-:type: text
+---
+title: 04_ALU
+date: 2022-03-11
+category:
+link: 
+description: 
+type: text
+---
 
-= The ALU, the swiss knife of every cpu
+== The ALU, the swiss knife of every cpu
 
 Today the author wants to introduce an important part of every cpu:
 The arithmetic logic unit (ALU), we already know about some functions
@@ -99,39 +100,23 @@ image:../images/how_does_cpu/mux_ptl.svg[width="65%"]
 // in one of the posts before. 
 ////
 
-==== Overflow
+==== Overflow Detection
 
-The last 1-bit ALU cell has another output 'overflow', to indicate an overflow
-of the addition of two integer values. It is only active for Additions. The derivation of 
-the circuit from the truth table is left as exercise for the inclined reader.
+The last 1-bit ALU cell in the chain has another output 'overflow', to indicate an overflow
+of the addition of two integer values. But instead of the propagated solution from Henessey and Patterson,
+the author wants introduce an alternative implementation 
+to find https://www.geeksforgeeks.org/overflow-in-arithmetic-addition-in-binary-number-system/[here].
 
 image:../images/how_does_cpu/1bit_alu_cell_with_overflow.svg[width="120%"]
 
-[options="header"]
-|==================
-| binvert=0| Yn | Bn | An | OF
-| 0 | 0 | 0 | 0 | 0 
-| 0 | 0 | 0 | 1 | 0
-| 0 | 0 | 1 | 0 | 1
-| 0 | 0 | 1 | 1 | 1
-| 0 | 1 | 0 | 0 | 1
-| 0 | 1 | 0 | 1 | 1
-| 0 | 1 | 1 | 0 | 1
-| 0 | 1 | 1 | 1 | 1
-|==================
+For a two's complement interpretation overflow occurs in two cases:
 
-[options="header"]
-|==================
-| binvert=1| Yn | Bn | An | OF
-| 1 | 0 | 0 | 0 | 0 
-| 1 | 0 | 0 | 1 | 0
-| 1 | 0 | 1 | 0 | 0
-| 1 | 0 | 1 | 1 | 0
-| 1 | 1 | 0 | 0 | 0
-| 1 | 1 | 0 | 1 | 0
-| 1 | 1 | 1 | 0 | 0
-| 1 | 1 | 1 | 1 | 0
-|==================
+1. Two positive numbers are added, the result becomes negative
+2. Two negative number are added, the result becomes positive
+
+To detect this a simple xor with the inputs of carry-in and carry-out is sufficient.
+
+image:../images/how_does_cpu/1bit_alu_cell_with_xor.svg[width="120%"]
 
 ////
 // ==== Extending the ALU

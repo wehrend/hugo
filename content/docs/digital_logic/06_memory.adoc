@@ -1,10 +1,11 @@
-:title: How does a CPU work? Excursion to Memory
-:slug: how-does-a-cpu-work-memory
-:date: 2022-03-20
-:category:
-:link: 
-:description: 
-:type: text
+---
+title: 06_Memory
+date: 2022-03-20
+category:
+link: 
+description: 
+type: text
+---
 
 == Memory Organization
 In this blog post the author will introduce the different

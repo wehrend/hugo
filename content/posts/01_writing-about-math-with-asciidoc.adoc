@@ -1,11 +1,12 @@
-.. title: Writing about math with Asciidoc
-.. slug: writing-about-math-with-asciidoc
-.. date: 2020-12-12 21:34:53 UTC
-.. tags: 
-.. category: 
-.. link: 
-.. description: 
-.. type: text
+---
+title: Writing about math with Asciidoc
+date: 2020-12-12
+tags: 
+category: 
+link: 
+description: 
+type: text
+---
 
 While drafting a blog post, part of a series of posts intended to be published in the future,
 I discovered a lack of my tooling in Nikola. When adding mathematical formulas, 
@@ -28,7 +29,6 @@ After some frustrations with the paths for the latex filter inside asciidoc it w
 So as a sample of one of the future blogposts here one or rather two math-equations rendered this way:
 
 ["latex","../images/half-adder.svg",imgfmt="svg",width="45%"]
-\small
 \[
 \begin{array}{c}
 c = x \land y \\
