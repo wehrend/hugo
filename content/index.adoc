@@ -1,0 +1,17 @@
+---
+title: Agenda 
+date: 2022-04-15
+tags: 
+category: 
+link: 
+description: 
+type: text
+---
+
+_So, you want to learn about electronics, digital logic and how a cpu 
+is able to do what she is doing?_
+
+_We'll get you started here_
+
+image:../agenda.png[Syllabus]
+ 
