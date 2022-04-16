@@ -1,5 +1,5 @@
 ---
-title: 01_XOR
+title: 02_XOR
 date: 2021-11-08
 category:
 link: 

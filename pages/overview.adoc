@@ -26,9 +26,14 @@ change with https://www.azom.com/article.aspx?ArticleID=17173[quantum computing]
 probability theory. However with quantum computing
 the fundamentals behind which the author describes here will completly change.
 
+==  *Combinatorial Logic*
+_https://wehrend.uber.space/docs/digital_logic/00_combinatorial_logic[Introduction to Combinatorial Logic]_
+
+Short introduction to combinatorial logic,and its various description models.
+
 ==  *A first look at digital logic*
 
-_https://wehrend.uber.space/docs/digital_logic/00_boolean_algebra/[Boolean Algebra, basic logic gates and their implementation]_
+_https://wehrend.uber.space/docs/digital_logic/01_boolean_algebra/[Boolean Algebra, basic logic gates and their implementation]_
 
 In this lesson we will discover truth tables, boolean notation and learn about
 De Morgan's laws.
@@ -37,7 +42,7 @@ implemented as such in electronics, having a look at NAND and NOR instead.
 
 ==  *You have to choose!*
 
-_https://wehrend.uber.space/docs/digital_logic/01_xor/[A complex gate: XOR]_
+_https://wehrend.uber.space/docs/digital_logic/02_xor/[A complex gate: XOR]_
 
 Another CPU instrucion and as a side-note and preparation for the next topic, 
 we have a look at the XOR gate. As in the first lesson we'll see first the logic 
@@ -46,7 +51,7 @@ part and then its translation into an electrical implementation.
 
 ==  *01+01 = 10*
 
-_http://wehrend.uber.space/docs/digital_logic/02_binary_system/[Binary systems (Part I) and Combinatorial Logic (Part I)]_
+_http://wehrend.uber.space/docs/digital_logic/03_binary_system/[Binary systems (Part I) and Combinatorial Logic (Part I)]_
 
 Here we explain the basic concept of how to count with only two different states at hand.
 Also we will learn how to sum up two positive integer values in the binary system, derivate
@@ -54,7 +59,7 @@ the logic needed for a full-adder, to dive into the topic of combinatorial logic
 
 ==  *There is plenty room in the negative space*
 
-_http://wehrend.uber.space/docs/digital_logic/03_signs/[Binary Systems (Part II) signed integer]_
+_http://wehrend.uber.space/docs/digital_logic/04_signs/[Binary Systems (Part II) signed integer]_
 
 Second part about the binary system. In this post we learn about one- and two-
 complement and subtraction.
@@ -62,7 +67,7 @@ complement and subtraction.
 
 ==  *Adding is not all*
 
-_http://wehrend.uber.space/docs/digital_logic/04_alu/[Combinatorial Logic (Part II), a simple ALU]_
+_http://wehrend.uber.space/docs/digital_logic/05_alu/[Combinatorial Logic (Part II), a simple ALU]_
 
 We want close the first series by this second chapter about combinatorial logic.
 We will extend the adder to a simple ALU

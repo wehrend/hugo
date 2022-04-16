@@ -1,6 +1,6 @@
 
 ---
-title: 05_Clocks, flipflops and registers
+title: 11_Clocks, flipflops and registers
 date: 2022-03-12
 category:
 link: 

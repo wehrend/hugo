@@ -1,5 +1,5 @@
 ---
-title: 00_boolean_algebra
+title: 01_boolean_algebra
 date: 2020-12-23
 tags:
 math:
