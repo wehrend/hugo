@@ -8,7 +8,7 @@
         <g id="mux01">
             <text x="-5" y="15" font-size="4">A</text>
             <text x="-5" y="28" font-size="4">B</text>
-            <polyline points="13,5 13,10"  style="fill:none;stroke:blue;stroke-width:0.5px;"/>
+            <polyline points="13,5 13,10"  style="fill:none;stroke:lightskyblue;stroke-width:0.5px;"/>
             <rect x="10" y="10" rx="5" ry="5" width="6" height="20" style="fill:none;stroke:black;stroke-width:0.5px;"/>
             <polyline points="-2,14 10,14"  style="fill:none;stroke:black;stroke-width:0.5px;"/>
             <polyline points="-2,26 10,26"  style="fill:none;stroke:black;stroke-width:0.5px;"/>
@@ -20,7 +20,7 @@
     </defs>
     <line x1="25" y1="8" x2="25" y2="15" style="fill:none;stroke:black;stroke-width:0.7px;"/>
     <text x="25" y="7" font-size="4">Sel</text>
-    <polyline points="20,10 30,15 30,35 20,40 20,10 30,15" style="fill:skyblue;stroke:black;stroke-width:0.5px;"/>
+    <polyline points="20,10 30,15 30,35 20,40 20,10 30,15" style="fill:lightskyblue;stroke:black;stroke-width:0.5px;"/>
     <text x="21" y="26" font-size="4">Mux</text>
     <line x1="10" y1="18" x2="20" y2="18" style="fill:none;stroke:black;stroke-width:0.7px;"/>
     <text x="5" y="19" font-size="4">A</text>
