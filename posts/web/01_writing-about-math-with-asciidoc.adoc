@@ -5,7 +5,7 @@ tags:
 category: 
 link: 
 description: 
-type: text
+type: blog
 ---
 
 While drafting a blog post, part of a series of posts intended to be published in the future,

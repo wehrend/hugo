@@ -8,8 +8,8 @@
         <marker id="endarrow" markerWidth="4" markerHeight="3" refX="0" refY="1.5" orient="auto" markerUnits="strokeWidth">
             <polygon points="0 0, 4 1.5, 0 3" fill="black" />
         </marker>
-        <marker id="endarrowblue" markerWidth="4" markerHeight="3" refX="0" refY="1.5" orient="auto" markerUnits="strokeWidth">
-            <polygon points="0 0, 4 1.5, 0 3" fill="lightskyblue" />
+        <marker id="endarrowlightskyblue" markerWidth="4" markerHeight="3" refX="0" refY="1.5" orient="auto" markerUnits="strokeWidth">
+            <polygon points="0 0, 4 1.5, 0 3" fill="lightskylightskyblue" />
         </marker>
     </defs>
     <symbol id="alu_cell">
@@ -42,16 +42,16 @@
     <use x="30" y="150" href="#alu_cell"/>
     <line x1="48" y1="130" x2="48" y2="140" style="fill:none;stroke:black;" marker-end="url(#endarrow)"/>
     <rect x="43" y="180" width="15" height="8" style="fill:white;stroke:none;"/>
-    <text x="75" y="8" font-size="4" style="fill:lightskyblue">Operation</text>
-    <polyline points="80,10 80,145" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;"/>
-    <polyline points="80,15 60,15 60,21" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;" marker-end="url(#endarrowblue)"/>
-    <circle cx="80" cy="15" r="0.5" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;"/>
-    <polyline points="80,55 60,55 60,61" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;" marker-end="url(#endarrowblue)"/>
-    <circle cx="80" cy="55" r="0.5" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;"/>
-     <polyline points="80,95 60,95 60,101" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;" marker-end="url(#endarrowblue)"/>
-     <circle cx="80" cy="95" r="0.5" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;"/>
-    <polyline points="80,150 80,155 60,155 60,160" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;"  marker-end="url(#endarrowblue)"/>
+    <text x="75" y="8" font-size="4" style="fill:lightskylightskyblue">Operation</text>
+    <polyline points="80,10 80,145" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;"/>
+    <polyline points="80,15 60,15 60,21" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;" marker-end="url(#endarrowlightskyblue)"/>
+    <circle cx="80" cy="15" r="0.5" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;"/>
+    <polyline points="80,55 60,55 60,61" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;" marker-end="url(#endarrowlightskyblue)"/>
+    <circle cx="80" cy="55" r="0.5" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;"/>
+     <polyline points="80,95 60,95 60,101" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;" marker-end="url(#endarrowlightskyblue)"/>
+     <circle cx="80" cy="95" r="0.5" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;"/>
+    <polyline points="80,150 80,155 60,155 60,160" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;"  marker-end="url(#endarrowlightskyblue)"/>
     <line x1="48" y1="140" x2="48" y2="150" style="fill:none;stroke:black;stroke-width:0.5px;stroke-dasharray:1,1" />
-    <line x1="80" y1="140" x2="80" y2="150" style="fill:none;stroke:lightskyblue;stroke-width:0.5px;stroke-dasharray:1,1" />
+    <line x1="80" y1="140" x2="80" y2="150" style="fill:none;stroke:lightskylightskyblue;stroke-width:0.5px;stroke-dasharray:1,1" />
 />
 </svg>

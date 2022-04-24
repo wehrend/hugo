@@ -5,7 +5,7 @@ tags: ["Web", "Nikola"]
 category:
 link:
 description: How to setup Nikola (on Docker)
-type: text
+type: blog
 ---
 
 I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.

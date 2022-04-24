@@ -1,11 +1,12 @@
-:title: How does a CPU work? Overview
-:slug: how-does-a-cpu-work-overview
-:date: 2020-12-20
-:tags: draft
-:category:
-:link:
-:description:
-:type: text
+---
+title: How does a CPU work? Overview
+
+date: 2020-12-20
+tags: draft
+category:
+link:
+description:
+---
 
 = How does a CPU work - Table of contents
 
