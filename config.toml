@@ -5,21 +5,22 @@ theme = "hugo-book"
 
 [[menu.before]]
   name = "Blog"
-  url = "https://wehrend.uber.space/posts/"
+  url = "/posts/web/"
   weight = 10
 
   
 [[menu.before]]
   name = "Digital Logic"
-  url = "https://wehrend.uber.space/pages/overview/"
+  url = "/pages/overview/"
   weight = 20
-  
+
   
 [[menu.after]]
   name = "About"
-  url = "https://wehrend.uber.space/pages/about/"
+  url = "/pages/about/"
   weight = 10
 
+  
 [[frontmatter]]
     date = "filename"
   

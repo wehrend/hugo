@@ -1,7 +1,8 @@
-
-:title: About
-:slug: about
-:date: 2020-12-12
+---
+title: About
+slug: about
+date: 2020-12-12
+---
 
 A simple static blog meant for writing about topics like electronics & computation and - maybe - philosophy.
 

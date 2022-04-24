@@ -174,24 +174,24 @@ c_{4} & = g_{3} \lor c_{3}p_{3} = g_{3} \lor (g_{2} \lor g_{1}p_{2} \lor g_{0}p_
 \end{aligned}
 \]
 
-[width="250%",col="a"]
-|===
-| *Carry-Lookahead Adder circuit* 
-|image:../images/how_does_cpu/carry_lookahead_circuit.svg[width="120%"]
-|===
+
+*Carry-Lookahead Adder circuit* 
+
+image:../images/how_does_cpu/carry_lookahead_circuit.svg[width="120%"]
+
 
 As can be seen the circuit complexity increases with the significance.
 The table below shows the total view of these different adder implementations.
 Of course the topic of adders is much broader as displayed here, we only introduced 
 the concepts.
 
-[width="250%",col="a"]
-|===
-| *Ripple-Carry Adder*
-|image:../images/how_does_cpu/fulladder_array.svg[width="120%"]
-| *Carry-Lookahead Adder* 
-|image:../images/how_does_cpu/cla_fulladder_array.svg[width="120%"]
-|===
+*Ripple-Carry Adder*
 
-In the next blog post we will have an excursion to memory, seeing
-how bits and bytes are stored in a circuit.
+image:../images/how_does_cpu/fulladder_array.svg[width="120%"]
+
+*Carry-Lookahead Adder* 
+
+image:../images/how_does_cpu/cla_fulladder_array.svg[width="120%"]
+
+
+In the next blog post we will see, how to extend the range of numbers to the negative space.
