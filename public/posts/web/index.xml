@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Interdependent</title>
+    <link>http://localhost:1313/posts/web/</link>
+    <description>Recent content in Blog on Interdependent</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Apr 2022 12:17:41 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving to Hugo</title>
+      <link>http://localhost:1313/posts/web/02_moving-to-hugo/</link>
+      <pubDate>Fri, 15 Apr 2022 12:17:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/02_moving-to-hugo/</guid>
+      <description>Since one week my blog is build on the static-site-generator Hugo. I wanted to move to Hugo far earlier, due to the wide variety of themes. However this required the move from Asciidoc to Asciidoctor, and I experienced a few problems with the integration of Asciidoctor into my existing workflow. As the approach of rendering the latex-equations in the asciidoc-documents no loger worked, I decided to move on to client-based rendering of formulas, like done in KaTex and Mathjax.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a static blog with Nikola</title>
+      <link>http://localhost:1313/posts/web/00_setting_up_nikola/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/00_setting_up_nikola/</guid>
+      <description>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
+ To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
+ First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
+    </item>
+    
+    <item>
+      <title>Writing about math with Asciidoc</title>
+      <link>http://localhost:1313/posts/web/01_writing-about-math-with-asciidoc/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/01_writing-about-math-with-asciidoc/</guid>
+      <description>While drafting a blog post, part of a series of posts intended to be published in the future, I discovered a lack of my tooling in Nikola. When adding mathematical formulas, I realized that there is no default-way of rendering images from those math formulas, and inserting them as image-tags into the html. Instead math formulas are handled via JS, which I try to reduce to an absolute minimum on my site.</description>
+    </item>
+    
+  </channel>
+</rss>

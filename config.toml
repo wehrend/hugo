@@ -1,6 +1,6 @@
 baseURL = "http://wehrend.uber.space/"
 languageCode = "en-us"
-title = "Interdependent"
+title = "Interdependent - Sven Wehrend"
 theme = "hugo-book"
 
 [[menu.before]]

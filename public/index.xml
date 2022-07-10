@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interdependent - Sven Wehrend</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Interdependent - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agenda</title>
+      <link>http://localhost:1313/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/</guid>
+      <description>So, you want to learn about electronics, digital logic and how a cpu is able to do what she is doing?
+ We’ll get you started here
+ - no title specified@page { } table { border-collapse:collapse; border-spacing:0; empty-cells:show } td, th { vertical-align:top; font-size:10pt;} h1, h2, h3, h4, h5, h6 { clear:both;} p { white-space: nowrap; } ol, ul { margin:0; padding:0;} li { list-style: none; margin:0; padding:0;} /* &#34;</description>
+    </item>
+    
+  </channel>
+</rss>
