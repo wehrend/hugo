@@ -8,8 +8,7 @@ description:
 type: text
 ---
 
-_So, you want to learn about electronics, digital logic and how a cpu 
-is able to do what she is doing?_
+_So, you want to learn about electronics, digital logic and how a cpu is able to do what she is doing?_
 
 _We'll get you started here_
 

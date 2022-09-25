@@ -5,6 +5,10 @@ category:
 link: 
 description: 
 type: text
+menu:
+  docs:
+    parent: "digital_logic"
+    weight: 30
 ---
 
 == Memory Organization

@@ -1,11 +1,14 @@
-
 ---
-title: 11_Clocks, flipflops and registers
+title: 11_Clocks_flipflops_and_registers
 date: 2022-03-12
 category:
-link: 
-description: 
+link:
+description:
 type: text
+menu:
+  docs:
+    parent: "digital_logic_2"
+    weight: 10
 ---
 
 == Clocks, Flipflops and registers
@@ -16,7 +19,7 @@ stage.
 === Register-Transfer-Level needs a clock source
 As for now we only learned about combinatiorial logic, which works
 without any clock source - every signal is just delayed by the 
-time it needs to travel thru the circuit. This is known as asynchronous. 
+time it needs to travel through the circuit. This is known as asynchronous.
 But for more sophisticated tasks, sequential circuits, having registers 
 storing the input and output signals are necessary 
 to get correct results. This is known as synchronous.

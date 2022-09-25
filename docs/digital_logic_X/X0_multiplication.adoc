@@ -2,10 +2,15 @@
 title: X0_multiplication
 date: 2022-04-24
 category:
-link: 
-description: 
+link:
+description:
 tags: draft
 type: text
+menu:
+  docs:
+    parent: "digital_logic_3"
+    identifier: "x0_multiplication"
+    weight: 35
 ---
 
 == Multiplication and Divsion
