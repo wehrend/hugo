@@ -3,10 +3,15 @@ title: 01_boolean_algebra
 date: 2020-12-23
 tags:
 math:
-category: 
-link: 
-description: 
+category:
+link:
+description:
 type: text
+menu:
+  docs:
+    parent: "digital_logic"
+    identifier: "01_boolean_algebra"
+    weight: 5
 ---
 
 == Boolean Algebra and Basic Logic Gates
@@ -229,7 +234,7 @@ image:../images/how_does_cpu/de_morgan_nor_equivalence.svg[width=400]
 
 Now we are finally equipped to continue with the electrical part / description.
 
-= Implementation on electrical level 
+== Implementation on electrical level
 
 First we are introducing some common electronic components and their symbols used in 
 electric circuit schematics.

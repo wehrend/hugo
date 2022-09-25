@@ -6,6 +6,10 @@ category:
 link:
 description:
 type: text
+menu:
+  docs:
+    parent: "digital_logic"
+    weight: 35
 ---
 
 == Digital design meets computer architecture

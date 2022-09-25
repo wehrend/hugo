@@ -2,13 +2,105 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/docs/</loc>
+    <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic_x/</loc>
+    <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/draft/</loc>
+    <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</loc>
+    <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/00_combinatorial_logic/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2022-04-15T12:17:41+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/web/</loc>
+    <lastmod>2022-04-15T12:17:41+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
+    <lastmod>2022-04-15T12:17:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/web/02_moving-to-hugo/</loc>
+    <lastmod>2022-04-15T12:17:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web/</loc>
+    <lastmod>2022-04-15T12:17:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/agenda/</loc>
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/07_risc_v/</loc>
+    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/06_memory/</loc>
+    <lastmod>2022-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic_2/</loc>
+    <lastmod>2022-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic_2/11_clocks_and_registers/</loc>
+    <lastmod>2022-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/05_alu/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/04_signs/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/03_binary_system/</loc>
+    <lastmod>2021-12-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/02_xor/</loc>
+    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/digital_logic/01_boolean_algebra/</loc>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/pages/overview/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/about/</loc>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nikola/</loc>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/web/00_setting_up_nikola/</loc>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/web/01_writing-about-math-with-asciidoc/</loc>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/drafts/alu2/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/docs/digital_logic_2/images/how_does_cpu/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/drafts/</loc>
   </url>
 </urlset>

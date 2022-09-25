@@ -8,9 +8,14 @@ theme = "hugo-book"
   url = "/posts/web/"
   weight = 10
 
-  
 [[menu.before]]
-  name = "Digital Logic"
+  name = ""
+  url = "/docs/"
+  weight = 10
+
+
+[[menu.before]]
+  name = "Digital Logic 1 (Overview)"
   url = "/pages/overview/"
   weight = 20
 
@@ -33,11 +38,17 @@ theme = "hugo-book"
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
-  BookToC = true
+  BookToC = false
 
-  
+
 [security]
   enableInlineShortcodes = false
   [security.exec]
     allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
     osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+
+[markup.asciidocext]
+    extensions = ["asciidoctor"]
+    workingFolderCurrent = true
+    trace = true
+    verbose = true

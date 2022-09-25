@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Logic X on Interdependent - Sven Wehrend</title>
+    <link>http://localhost:1313/docs/digital_logic_x/</link>
+    <description>Recent content in Digital Logic X on Interdependent - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/docs/digital_logic_x/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X0_multiplication</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</guid>
+      <description>Multiplication and Divsion Multiplication operations can be implemented in very different ways: Slow, as a serial operation, controlled by a micro program or fast in dedicated hardware.
+The division is a more complex operation, and will be discussed in another post.
+Shift left and shift left For integer numbers that are unsigned.
+For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
+    </item>
+    
+  </channel>
+</rss>
