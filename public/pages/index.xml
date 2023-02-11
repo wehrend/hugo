@@ -14,7 +14,7 @@
       
       <guid>http://localhost:1313/pages/overview/</guid>
       <description>Introduction and overview Introduction and overview
-Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
+ Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
     </item>
     
     <item>
@@ -24,8 +24,9 @@ Every topic of this course is broken up into two parts: A part about the mathema
       
       <guid>http://localhost:1313/pages/about/</guid>
       <description>A simple static blog meant for writing about topics like electronics &amp;amp; computation and - maybe - philosophy.
-Dear reader of my humble blog , I am Sven Wehrend, a scanner personality born 1987, interested in a wide range of different topics reaching from technology over psychology to spirituality.
-I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Master).</description>
+  Dear reader of my humble blog , I am Sven Wehrend, a scanner personality born 1987, interested in a wide range of different topics reaching from technology over psychology to spirituality.
+ I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Master).
+  </description>
     </item>
     
   </channel>

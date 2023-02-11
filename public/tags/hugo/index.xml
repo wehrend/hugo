@@ -6,7 +6,17 @@
     <description>Recent content in Hugo on Interdependent - Sven Wehrend</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Apr 2022 12:17:41 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Separating blog and content</title>
+      <link>http://localhost:1313/posts/web/03_separate_form_and_content/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/03_separate_form_and_content/</guid>
+      <description>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
+ In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &amp;#39;hugo&amp;#39; and then do a clone of the repo hugo_content.</description>
+    </item>
+    
     <item>
       <title>Moving to Hugo</title>
       <link>http://localhost:1313/posts/web/02_moving-to-hugo/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in draft on Interdependent - Sven Wehrend</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/draft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X2_cordic</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x2_cordic/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x2_cordic/</guid>
+      <description>The CORDIC algoritm and direct digital synthesis (DDS) The CORDIC (which stands for &amp;#34;coordinate rotation digital computer&amp;#34;) algorithm, was developed in 1956 by Jack.E. Volder, to replace the analog resolvers used for missiles navigation by digital computation on digital computer. The algorithm turned out to be very successfull, today it can be found in every pocket calculator, doing the computation of the trigonometrical functions sinus, cosinus and tangens. But the algorithm is not limited to that it can also calculate logarithmic and exponential functions, given the needed modifications.</description>
+    </item>
+    
     <item>
       <title>X0_multiplication</title>
       <link>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</link>
@@ -14,9 +23,8 @@
       
       <guid>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</guid>
       <description>Multiplication and Divsion Multiplication operations can be implemented in very different ways: Slow, as a serial operation, controlled by a micro program or fast in dedicated hardware.
-The division is a more complex operation, and will be discussed in another post.
-Shift left and shift left For integer numbers that are unsigned.
-For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
+ The division is a more complex operation, and thus will be discussed in another post. Also for multiplication we set the scope to unsigned integer numbers.
+ Shift left and shift right For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
     </item>
     
     <item>
@@ -25,7 +33,7 @@ For multipliers that are powers of two, the operation is very simple and can be 
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/docs/digital_logic/07_risc_v/</guid>
-      <description>Digital design meets computer architecture RISC vs CISC and The RISC-V architecture Existing processor types can be classified by their instruction type set: Reduced instruction set computer (RISC), Complex instruction set computer (CISC) and hybrid forms. While mini processors like ARM for embedded systems mostly utilise reduced instruction sets,todays workstation and Server Architectures (x86, x86_64) are hybrids of RISC and CISC. The idea of a reduced instruction set is to avoid big complex instructions and multiple different addressing modes (as those typically used in x86 architectures).</description>
+      <description>Digital design meets computer architecture   RISC vs CISC and The RISC-V architecture Existing processor types can be classified by their instruction type set: Reduced instruction set computer (RISC), Complex instruction set computer (CISC) and hybrid forms. While mini processors like ARM for embedded systems mostly utilise reduced instruction sets,todays workstation and Server Architectures (x86, x86_64) are hybrids of RISC and CISC. The idea of a reduced instruction set is to avoid big complex instructions and multiple different addressing modes (as those typically used in x86 architectures).</description>
     </item>
     
     <item>
@@ -35,7 +43,7 @@ For multipliers that are powers of two, the operation is very simple and can be 
       
       <guid>http://localhost:1313/pages/overview/</guid>
       <description>Introduction and overview Introduction and overview
-Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
+ Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
     </item>
     
   </channel>

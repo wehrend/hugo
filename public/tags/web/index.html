@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.51ec391e39b63618d166093a4f905ba9e1a20daca0c556d10a1777fcbc12047c.js" integrity="sha256-Uew5Hjm2NhjRZgk6T5BbqeGiDaygxVbRChd3/LwSBHw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.7c6b5ee222efc769ccbbec613246d8421daa1ff5b1e678fa03ba92b7ab6427c4.js" integrity="sha256-fGte4iLvx2nMu&#43;xhMkbYQh2qH/Wx5nj6A7qSt6tkJ8Q=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/web/index.xml" title="Interdependent - Sven Wehrend" />
 <!--
 Made with Book Theme
@@ -95,6 +95,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic_x/x2_cordic/" class="">X2_cordic</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -339,6 +352,63 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/web/04_odoo_hacks/">Odoo hacks: Remove Lock-Button from Odoo v12</a>
+    </h2>
+    
+  <h5>April 22, 2023</h5>
+
+
+
+  
+
+  
+  <div>
+    
+      <a href="/tags/web/">Web</a>, 
+      <a href="/tags/odoo/">Odoo</a>
+  </div>
+  
+
+
+
+
+    <p>Today I want to introduce a solution for a usability-problem I had in Odoo recently. In Odoo 12 there is a lock button next to the edit / save button, and you have to click both to (1) unlock the page and (2) make it editable. This should be done in one step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking) and Manufacturing Orders (class MrpProduction). The solution requires an xml and a javascript-file as well as a dedicated web-controller.
+        <a href="/posts/web/04_odoo_hacks/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/web/03_separate_form_and_content/">Separating blog and content</a>
+    </h2>
+    
+  <h5>February 4, 2023</h5>
+
+
+
+  
+
+  
+  <div>
+    
+      <a href="/tags/web/">Web</a>, 
+      <a href="/tags/hugo/">Hugo</a>
+  </div>
+  
+
+
+
+
+    <p>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
+ In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &#39;hugo&#39; and then do a clone of the repo hugo_content.
+        <a href="/posts/web/03_separate_form_and_content/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/web/02_moving-to-hugo/">Moving to Hugo</a>
     </h2>
     
@@ -388,8 +458,8 @@ https://github.com/alex-shpak/hugo-book
 
 
     <p>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
-To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
-First create a directory on our host system, where you want the files stored, e.g. &#39;blog&#39; in your home directory.
+ To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
+ First create a directory on our host system, where you want the files stored, e.g. &#39;blog&#39; in your home directory.
         <a href="/posts/web/00_setting_up_nikola/">...</a>
       
     </p>
@@ -405,7 +475,7 @@ First create a directory on our host system, where you want the files stored, e.
   <div class="flex flex-wrap justify-between">
 
 
-Last update: September 25, 2022 
+Last update: April 22, 2023 
 
 
 </div>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Today I want to introduce a solution for a usability-problem I had in Odoo recently. In Odoo 12 there is a lock button next to the edit / save button, and you have to click both to (1) unlock the page and (2) make it editable. This should be done in one step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking) and Manufacturing Orders (class MrpProduction). The solution requires an xml and a javascript-file as well as a dedicated web-controller.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Odoo hacks: Remove Lock-Button from Odoo v12" />
+<meta property="og:description" content="Today I want to introduce a solution for a usability-problem I had in Odoo recently. In Odoo 12 there is a lock button next to the edit / save button, and you have to click both to (1) unlock the page and (2) make it editable. This should be done in one step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking) and Manufacturing Orders (class MrpProduction). The solution requires an xml and a javascript-file as well as a dedicated web-controller." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/web/04_odoo_hacks/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-22T00:00:00+00:00" />
+
+<title>Odoo hacks: Remove Lock-Button from Odoo v12 | Interdependent - Sven Wehrend</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.7c6b5ee222efc769ccbbec613246d8421daa1ff5b1e678fa03ba92b7ab6427c4.js" integrity="sha256-fGte4iLvx2nMu&#43;xhMkbYQh2qH/Wx5nj6A7qSt6tkJ8Q=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Interdependent - Sven Wehrend</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/docs/" target="_blank" rel="noopener">
+        
+      </a>
+  </li>
+  
+  <li>
+    <a href="/posts/web/" target="_blank" rel="noopener">
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="/pages/overview/" target="_blank" rel="noopener">
+        Digital Logic 1 (Overview)
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Digital Logic X</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic_x/x2_cordic/" class="">X2_cordic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic_x/x0_multiplication/" class="">X0_multiplication</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Digital Logic</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/00_combinatorial_logic/" class="">00_combinatorial_logic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/07_risc_v/" class="">07_RISC-V</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/06_memory/" class="">06_Memory</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/05_alu/" class="">05_ALU</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/04_signs/" class="">04_Signs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/03_binary_system/" class="">03_binary_system</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/02_xor/" class="">02_XOR</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic/01_boolean_algebra/" class="">01_boolean_algebra</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Digital Logic 2</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/digital_logic_2/11_clocks_and_registers/" class="">11_Clocks_flipflops_and_registers</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/pages/about/" target="_blank" rel="noopener">
+        About
+      </a>
+  </li>
+  
+  <li>
+    <a href="/docs/digital_logic_2/images/how_does_cpu/" >
+        Digital Logic 2
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Odoo hacks: Remove Lock-Button from Odoo v12</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><div class="paragraph">
+<p>Today I want to introduce a solution for a usability-problem I had in Odoo recently.
+In Odoo 12 there is a lock button next to the edit / save button, and you have to click
+both to (1) unlock the page and (2) make it editable. This should be done in one
+step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking)
+and Manufacturing Orders (class MrpProduction). The solution requires an xml and a javascript-file
+as well as a dedicated web-controller. The soliution is presented below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../odoo_hacks.png" alt="Odoo Hacks"/></span></p>
+</div>
+<div class="listingblock">
+<div class="title">/static/src/xml/trigger_toggle.xml</div>
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;openerp&gt;
+    &lt;data&gt;
+        &lt;template id=&#34;assets_backend&#34; name=&#34;trigger_toggle assets&#34; inherit_id=&#34;web.assets_backend&#34;&gt;
+            &lt;xpath expr=&#34;.&#34; position=&#34;inside&#34;&gt;
+                &lt;script type=&#34;text/javascript&#34; src=&#34;/nm_data_stock/static/src/js/trigger_toggle.js&#34;/&gt;
+            &lt;/xpath&gt;
+        &lt;/template&gt;
+    &lt;/data&gt;
+&lt;/openerp&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The code is pretty self-explanatory. We use the xml file to add the script. Dont forget to add it in the manifest-file.
+The javascript functions _onEdit and _onSave are functions from the core webclient (to be more precise web.FormController),
+and we add some simple url-parsing and an ajax-RPC-call to both functions.</p>
+</div>
+<div class="listingblock">
+<div class="title">static/src/js/trigger_toggle.js</div>
+<div class="content">
+<pre class="highlight"><code class="language-js" data-lang="js">odoo.define(&#39;nm_data_stock.trigger_toggle&#39;, function(require){
+&#39;use strict&#39;;
+
+var ajax = require(&#39;web.ajax&#39;)
+var FormController = require(&#39;web.FormController&#39;);
+
+var triggerButton = FormController.include({
+
+    _onEdit: function () {
+        // wait for potential pending changes to be saved (done with widgets
+        // allowing to edit in readonly)
+        this.mutex.getUnlockedDef().then(this._setMode.bind(this, &#39;edit&#39;));
+        const url = new URL(this.$el.context.baseURI)
+        const parsedHash = new URLSearchParams(url.hash.substring(1))
+        const id = parsedHash.get(&#39;id&#39;)
+        const model = parsedHash.get(&#39;model&#39;)
+        if (model.toString() == &#39;mrp.production&#39; || model.toString() == &#39;stock.picking&#39;)
+        {
+            console.log(&#39;OnEdit &#39;+ id + &#39; &#39;+ model);
+            ajax.jsonRpc(&#39;/web/webclient/trigger_toggle&#39;, &#39;call&#39;,  {&#39;id&#39;: id,&#39;model&#39;: model,&#39;button_state&#39;: &#39;edit&#39;} )
+        }
+    },
+
+    _onSave: function (ev) {
+        ev.stopPropagation(); // Prevent x2m lines to be auto-saved
+        var self = this;
+        this._disableButtons();
+        const url = new URL(this.$el.context.baseURI)
+        const parsedHash = new URLSearchParams(url.hash.substring(1))
+        const id = parsedHash.get(&#39;id&#39;)
+        const model = parsedHash.get(&#39;model&#39;)
+        if (model.toString() == &#39;mrp.production&#39; || model.toString() == &#39;stock.picking&#39;)
+        {
+            console.log(&#39;OnSave &#39;+ id + &#39; &#39;+ model);
+            ajax.jsonRpc(&#39;/web/webclient/trigger_toggle&#39;, &#39;call&#39;,  {&#39;id&#39;: id, &#39;model&#39;: model,&#39;button_state&#39;: &#39;save&#39;} )
+        }
+        this.saveRecord().always(function () {
+        self._enableButtons();
+        });
+
+    },
+})
+
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Below is shown the webcontroller as endpoint for the ajax-RPC-call shown above…​</p>
+</div>
+<div class="paragraph">
+<p>controllers/main.py</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from odoo import http
+from odoo import api,fields
+from urllib import parse
+class ToggleController(http.Controller):
+    @http.route(&#39;/web/webclient/trigger_toggle&#39;, type=&#39;json&#39;, auth=&#34;none&#34;)
+    def trigger_toggle(self, **kw):
+        id = kw.get(&#39;id&#39;)
+        model = kw.get(&#39;model&#39;)
+        if model and id:
+            print(model)
+            obj = http.request.env[model].browse(int(id))
+            return obj.sudo().trigger_toggle(kw.get(&#39;button_state&#39;))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Last but not least the implementation in the both classes.</p>
+</div>
+<div class="paragraph">
+<p>models/stock.py</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">class StockPicking(models.Model):
+    &#34;&#34;&#34;Inherit class StockPicking from module stock.&#34;&#34;&#34;
+
+    def trigger_toggle(self, state):
+        if state==&#39;edit&#39;:
+            self.is_locked = False
+        if state==&#39;save&#39;:
+            self.is_locked = True
+
+class MrpProduction(models.Model):
+    &#34;&#34;&#34;Inherit class MrpProduction&#34;&#34;&#34;
+
+    def trigger_toggle(self, state):
+        if state==&#39;edit&#39;:
+            self.is_locked = False
+        if state==&#39;save&#39;:
+            self.is_locked = True</code></pre>
+</div>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+Last update: April 22, 2023 
+
+
+</div>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+        
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

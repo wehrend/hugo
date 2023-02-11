@@ -6,7 +6,26 @@
     <description>Recent content on Interdependent - Sven Wehrend</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Apr 2022 12:17:41 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Odoo hacks: Remove Lock-Button from Odoo v12</title>
+      <link>http://localhost:1313/posts/web/04_odoo_hacks/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/04_odoo_hacks/</guid>
+      <description>Today I want to introduce a solution for a usability-problem I had in Odoo recently. In Odoo 12 there is a lock button next to the edit / save button, and you have to click both to (1) unlock the page and (2) make it editable. This should be done in one step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking) and Manufacturing Orders (class MrpProduction). The solution requires an xml and a javascript-file as well as a dedicated web-controller.</description>
+    </item>
+    
+    <item>
+      <title>Separating blog and content</title>
+      <link>http://localhost:1313/posts/web/03_separate_form_and_content/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/03_separate_form_and_content/</guid>
+      <description>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
+ In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &amp;#39;hugo&amp;#39; and then do a clone of the repo hugo_content.</description>
+    </item>
+    
     <item>
       <title>Moving to Hugo</title>
       <link>http://localhost:1313/posts/web/02_moving-to-hugo/</link>
@@ -23,8 +42,8 @@
       
       <guid>http://localhost:1313/posts/web/00_setting_up_nikola/</guid>
       <description>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
-To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
-First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
+ To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
+ First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
     </item>
     
     <item>

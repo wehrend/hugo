@@ -14,8 +14,8 @@
       
       <guid>http://localhost:1313/posts/web/00_setting_up_nikola/</guid>
       <description>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
-To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
-First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
+ To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
+ First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
     </item>
     
   </channel>

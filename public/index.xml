@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interdependent - Sven Wehrend</title>
+    <title>Agenda on Interdependent - Sven Wehrend</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Interdependent - Sven Wehrend</description>
+    <description>Recent content in Agenda on Interdependent - Sven Wehrend</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Odoo hacks: Remove Lock-Button from Odoo v12</title>
+      <link>http://localhost:1313/posts/web/04_odoo_hacks/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/04_odoo_hacks/</guid>
+      <description>Today I want to introduce a solution for a usability-problem I had in Odoo recently. In Odoo 12 there is a lock button next to the edit / save button, and you have to click both to (1) unlock the page and (2) make it editable. This should be done in one step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking) and Manufacturing Orders (class MrpProduction). The solution requires an xml and a javascript-file as well as a dedicated web-controller.</description>
+    </item>
+    
+    <item>
+      <title>X2_cordic</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x2_cordic/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x2_cordic/</guid>
+      <description>The CORDIC algoritm and direct digital synthesis (DDS) The CORDIC (which stands for &amp;#34;coordinate rotation digital computer&amp;#34;) algorithm, was developed in 1956 by Jack.E. Volder, to replace the analog resolvers used for missiles navigation by digital computation on digital computer. The algorithm turned out to be very successfull, today it can be found in every pocket calculator, doing the computation of the trigonometrical functions sinus, cosinus and tangens. But the algorithm is not limited to that it can also calculate logarithmic and exponential functions, given the needed modifications.</description>
+    </item>
+    
+    <item>
+      <title>Separating blog and content</title>
+      <link>http://localhost:1313/posts/web/03_separate_form_and_content/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/03_separate_form_and_content/</guid>
+      <description>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
+ In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &amp;#39;hugo&amp;#39; and then do a clone of the repo hugo_content.</description>
+    </item>
+    
     <item>
       <title>X0_multiplication</title>
       <link>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</link>
@@ -14,9 +42,8 @@
       
       <guid>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</guid>
       <description>Multiplication and Divsion Multiplication operations can be implemented in very different ways: Slow, as a serial operation, controlled by a micro program or fast in dedicated hardware.
-The division is a more complex operation, and will be discussed in another post.
-Shift left and shift left For integer numbers that are unsigned.
-For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
+ The division is a more complex operation, and thus will be discussed in another post. Also for multiplication we set the scope to unsigned integer numbers.
+ Shift left and shift right For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
     </item>
     
     <item>
@@ -26,11 +53,11 @@ For multipliers that are powers of two, the operation is very simple and can be 
       
       <guid>http://localhost:1313/docs/digital_logic/00_combinatorial_logic/</guid>
       <description>This course about digital logic is splitted into two big chunks:
-Combinatorial circuits (without memory elements)
-Sequential circuits (with memory elements)
-While combinatorial circuits consists of boolean gates interconnected without feedback function, sequential gates posses a memory function,which makes them able to progress to another state.
-A combinatorial circuit can have n -wide vector of inputs and an m -wide vector of outputs.
-Combinatorial circuits can be described in different ways: As a formula, a circuit, a truth table or a Karnaugh map.</description>
+  Combinatorial circuits (without memory elements)
+  Sequential circuits (with memory elements)
+   
+ While combinatorial circuits consists of boolean gates interconnected without feedback function, sequential gates posses a memory function,which makes them able to progress to another state.
+ A combinatorial circuit can have n -wide vector of inputs and an m -wide vector of outputs.</description>
     </item>
     
     <item>
@@ -43,43 +70,12 @@ Combinatorial circuits can be described in different ways: As a formula, a circu
     </item>
     
     <item>
-      <title>Agenda</title>
-      <link>http://localhost:1313/agenda/</link>
-      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/agenda/</guid>
-      <description>So, you want to learn about electronics, digital logic and how a cpu is able to do what she is doing?
-We’ll get you started here
-- no title specified Combinatorial Logic
-Sequential Logic
-00_combinatorial_logic
-10_sequential_logic
-01_boolean_algebra
-11_clocks,flipflops_and_registers
-02_XOR
-12_automata
-03_binary_system
-13_cpu_control 04_Signs
-14_programmable Logic
-05_ALU
-15_test_logic
-06_Memory
-16_ HDLs (VHDL+Verilog)
-17_Register-Transfer-Level
-Computer Architecture / Processor design
-20_RISC_V 21_ISA, Assembler + Linker
-22_RISC_V_implementation
-Excursions
-X0_Multiplication X1_Division X2_Trigonometric functions (CORDIC)</description>
-    </item>
-    
-    <item>
       <title>07_RISC-V</title>
       <link>http://localhost:1313/docs/digital_logic/07_risc_v/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/docs/digital_logic/07_risc_v/</guid>
-      <description>Digital design meets computer architecture RISC vs CISC and The RISC-V architecture Existing processor types can be classified by their instruction type set: Reduced instruction set computer (RISC), Complex instruction set computer (CISC) and hybrid forms. While mini processors like ARM for embedded systems mostly utilise reduced instruction sets,todays workstation and Server Architectures (x86, x86_64) are hybrids of RISC and CISC. The idea of a reduced instruction set is to avoid big complex instructions and multiple different addressing modes (as those typically used in x86 architectures).</description>
+      <description>Digital design meets computer architecture   RISC vs CISC and The RISC-V architecture Existing processor types can be classified by their instruction type set: Reduced instruction set computer (RISC), Complex instruction set computer (CISC) and hybrid forms. While mini processors like ARM for embedded systems mostly utilise reduced instruction sets,todays workstation and Server Architectures (x86, x86_64) are hybrids of RISC and CISC. The idea of a reduced instruction set is to avoid big complex instructions and multiple different addressing modes (as those typically used in x86 architectures).</description>
     </item>
     
     <item>
@@ -89,7 +85,7 @@ X0_Multiplication X1_Division X2_Trigonometric functions (CORDIC)</description>
       
       <guid>http://localhost:1313/docs/digital_logic/06_memory/</guid>
       <description>Memory Organization In this blog post the author will introduce the different types of semiconductor memory. This is a wide field, so the goal here is to focus on the most important ones and draw the differences between the different types.
-The Memory hierarchy As in computing all is about performance, we first have a look at the memory hierarchy. As you can see in the pyramid below, memory is ordered in layers.</description>
+ The Memory hierarchy As in computing all is about performance, we first have a look at the memory hierarchy. As you can see in the pyramid below, memory is ordered in layers.</description>
     </item>
     
     <item>
@@ -99,7 +95,7 @@ The Memory hierarchy As in computing all is about performance, we first have a l
       
       <guid>http://localhost:1313/docs/digital_logic_2/11_clocks_and_registers/</guid>
       <description>Clocks, Flipflops and registers In this blog post the author will introduce multiple elements needed at a later stage.
-Register-Transfer-Level needs a clock source As for now we only learned about combinatiorial logic, which works without any clock source - every signal is just delayed by the time it needs to travel through the circuit. This is known as asynchronous. But for more sophisticated tasks, sequential circuits, having registers storing the input and output signals are necessary to get correct results.</description>
+ Register-Transfer-Level needs a clock source As for now we only learned about combinatiorial logic, which works without any clock source - every signal is just delayed by the time it needs to travel through the circuit. This is known as asynchronous. But for more sophisticated tasks, sequential circuits, having registers storing the input and output signals are necessary to get correct results.</description>
     </item>
     
     <item>
@@ -118,7 +114,8 @@ Register-Transfer-Level needs a clock source As for now we only learned about co
       
       <guid>http://localhost:1313/docs/digital_logic/04_signs/</guid>
       <description>Extending the binary system While in the previous blog post about addition, the binary numbers had only one interpretation, we extend the system here to include negative (integer) numbers.
-The simplest approach we can think of is to use the most significant bit (MSB) as sign bit, where &amp;#39;0&amp;#39; ist intepreted as sign &amp;#39;+&amp;#39; and &amp;#39;1&amp;#39; is interpreted as &amp;#39;-&amp;#39;. However as we see in the following calculation this does not work as expected:</description>
+ 
+ The simplest approach we can think of is to use the most significant bit (MSB) as sign bit, where &amp;#39;0&amp;#39; ist intepreted as sign &amp;#39;+&amp;#39; and &amp;#39;1&amp;#39; is interpreted as &amp;#39;-&amp;#39;. However as we see in the following calculation this does not work as expected:</description>
     </item>
     
     <item>
@@ -127,7 +124,7 @@ The simplest approach we can think of is to use the most significant bit (MSB) a
       <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/docs/digital_logic/03_binary_system/</guid>
-      <description>The Binary System All computer we act with on a daily base do not know about the decimal system we are using, based on the ten digits at our hands. All they know about are the states on and off. We build an imaginary circuit with a power source a control light - here an LED (Light Emitting Diode) - and a switch, closing the connection let the light flash.</description>
+      <description>The Binary System All computer we act with on a daily base do not know about the decimal system we are using, based on the ten digits at our hands. All they know about are the states on and off. We build an imaginary circuit with a power source a control light - here an LED (Light Emitting Diode) - and a switch, closing the connection let the light flash. An off light counts as zero, and on light counts as one.</description>
     </item>
     
     <item>
@@ -137,9 +134,9 @@ The simplest approach we can think of is to use the most significant bit (MSB) a
       
       <guid>http://localhost:1313/docs/digital_logic/02_xor/</guid>
       <description>XOR As there are a lot of important applications for the exclusive-or (XOR) operation it is dedicated an own blog post. Two of the most important are:
-XOR operations are often used in a Linear Feedback Shift Registers (LFSR). LFSR are a crucial step in scrambler / descrambler respectively, which are used in transmitters / receivers
-Part of an encryption algorithmus
-Last but not least an important part of a halfadder.</description>
+   XOR operations are often used in a Linear Feedback Shift Registers (LFSR). LFSR are a crucial step in scrambler / descrambler respectively, which are used in transmitters / receivers
+  Part of an encryption algorithmus
+  Last but not least an important part of a halfadder.</description>
     </item>
     
     <item>
@@ -149,8 +146,8 @@ Last but not least an important part of a halfadder.</description>
       
       <guid>http://localhost:1313/docs/digital_logic/01_boolean_algebra/</guid>
       <description>Boolean Algebra and Basic Logic Gates We are starting (the journey) with three very basic logic functions (or operations), which despite their simplicity already are valid instructions of a regular CPU:
-NOT, AND and OR
-Logical functions - also called operations, the author will use both terms interchangebly here - can be described in various ways, most often it is described implicit as boolean equation, but it can also be explained explicit in a truth table.</description>
+ NOT, AND and OR
+ Logical functions - also called operations, the author will use both terms interchangebly here - can be described in various ways, most often it is described implicit as boolean equation, but it can also be explained explicit in a truth table.</description>
     </item>
     
     <item>
@@ -160,7 +157,7 @@ Logical functions - also called operations, the author will use both terms inter
       
       <guid>http://localhost:1313/pages/overview/</guid>
       <description>Introduction and overview Introduction and overview
-Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
+ Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
     </item>
     
     <item>
@@ -170,8 +167,9 @@ Every topic of this course is broken up into two parts: A part about the mathema
       
       <guid>http://localhost:1313/pages/about/</guid>
       <description>A simple static blog meant for writing about topics like electronics &amp;amp; computation and - maybe - philosophy.
-Dear reader of my humble blog , I am Sven Wehrend, a scanner personality born 1987, interested in a wide range of different topics reaching from technology over psychology to spirituality.
-I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Master).</description>
+  Dear reader of my humble blog , I am Sven Wehrend, a scanner personality born 1987, interested in a wide range of different topics reaching from technology over psychology to spirituality.
+ I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Master).
+  </description>
     </item>
     
     <item>
@@ -181,8 +179,8 @@ I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Maste
       
       <guid>http://localhost:1313/posts/web/00_setting_up_nikola/</guid>
       <description>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
-To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
-First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
+ To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
+ First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
     </item>
     
     <item>
@@ -201,37 +199,18 @@ First create a directory on our host system, where you want the files stored, e.
       
       <guid>http://localhost:1313/drafts/alu2/</guid>
       <description>title: How does a CPU work? The swiss knife (Part II)
-slug: how-does-a-cpu-work-alu-2
-date: 2022-02-09
-category:
-link:
-description:
-type: text
-Instruction table logic operations description implementation data type / size and
-basic boolean Op
--
-bit
-or
-basic boolean Op
--
-bit
-not
-basic boolean Op
--
-bit
-xor
-complex boolean Op
--
-bit
-shl
-shift left
--
-various
-shr
-shift right
--
-various
-control instructions description data type / size ld</description>
+  slug: how-does-a-cpu-work-alu-2
+  date: 2022-02-09
+  category:
+  link:
+  description:
+  type: text
+   Instruction table     logic operations description implementation data type / size     and
+ basic boolean Op
+ -
+ bit
+   or
+ basic boolean Op</description>
     </item>
     
     <item>
