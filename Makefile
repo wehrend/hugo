@@ -10,5 +10,6 @@ pull:
 up:
 	docker run  -it -v $(pwd_):/src -p 1313:1313 $(version) server  --disableFastRender --renderToDisk --verbose
 
-deploymnent:
+
+deployment:
 	rsync -rav public/ wehrend@giclas.uberspace.de:/var/www/virtual/wehrend/html --delete
