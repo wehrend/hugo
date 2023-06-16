@@ -1,12 +1,18 @@
 baseURL = "http://wehrend.uber.space/"
 languageCode = "en-us"
-title = "Interdependent - Sven Wehrend"
+title = "Bits & pieces - Sven Wehrend"
 theme = "hugo-book"
 
 [[menu.before]]
   name = "Blog"
   url = "/posts/web/"
   weight = 10
+
+[[menu.before]]
+  name = "Synth-Blog"
+  url = "/tags/synth/"
+  weight = 20
+
 
 [[menu.before]]
   name = ""
@@ -18,6 +24,11 @@ theme = "hugo-book"
   name = "Digital Logic 1 (Overview)"
   url = "/pages/overview/"
   weight = 20
+
+[[menu.before]]
+  name = "Digital Logic 2 (Overview)"
+  url = "/pages/overview2/"
+  weight = 25
 
   
 [[menu.after]]

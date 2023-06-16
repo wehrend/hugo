@@ -14,7 +14,7 @@
       
       <guid>http://localhost:1313/posts/web/03_separate_form_and_content/</guid>
       <description>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
- In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &amp;#39;hugo&amp;#39; and then do a clone of the repo hugo_content.</description>
+In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &amp;#39;hugo&amp;#39; and then do a clone of the repo hugo_content.</description>
     </item>
     
     <item>

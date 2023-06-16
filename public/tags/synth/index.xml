@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Synth on Interdependent - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/synth/</link>
+    <description>Recent content in Synth on Interdependent - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/synth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pocket Operator Modular 400 patch ideas</title>
+      <link>http://localhost:1313/posts/web/05_pocket_operator_modular_400/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/05_pocket_operator_modular_400/</guid>
+      <description>An analog modular synthesizer was ever me dream, last week I fulfilled this dream of mine, and ordered the pocket operator modular 400 from the swedish company teenage engineering. Like furniture from the other popular swedish company you first have to build it yourself, before making any sound with it. This took me around 3 to 4 hours. But it was worth it.
+Here are some patch ideas.
+POM 400 Video</description>
+    </item>
+    
+  </channel>
+</rss>

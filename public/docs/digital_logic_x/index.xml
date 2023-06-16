@@ -23,8 +23,8 @@
       
       <guid>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</guid>
       <description>Multiplication and Divsion Multiplication operations can be implemented in very different ways: Slow, as a serial operation, controlled by a micro program or fast in dedicated hardware.
- The division is a more complex operation, and thus will be discussed in another post. Also for multiplication we set the scope to unsigned integer numbers.
- Shift left and shift right For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
+The division is a more complex operation, and thus will be discussed in another post. Also for multiplication we set the scope to unsigned integer numbers.
+Shift left and shift right For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
     </item>
     
   </channel>

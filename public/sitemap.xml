@@ -3,20 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>http://localhost:1313/posts/web/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/audio/</loc>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/synth/</loc>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/web/05_pocket_operator_modular_400/</loc>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/odoo/</loc>
     <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/web/04_odoo_hacks/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web/</loc>

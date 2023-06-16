@@ -14,7 +14,7 @@
       
       <guid>http://localhost:1313/docs/digital_logic_2/11_clocks_and_registers/</guid>
       <description>Clocks, Flipflops and registers In this blog post the author will introduce multiple elements needed at a later stage.
- Register-Transfer-Level needs a clock source As for now we only learned about combinatiorial logic, which works without any clock source - every signal is just delayed by the time it needs to travel through the circuit. This is known as asynchronous. But for more sophisticated tasks, sequential circuits, having registers storing the input and output signals are necessary to get correct results.</description>
+Register-Transfer-Level needs a clock source As for now we only learned about combinatiorial logic, which works without any clock source - every signal is just delayed by the time it needs to travel through the circuit. This is known as asynchronous. But for more sophisticated tasks, sequential circuits, having registers storing the input and output signals are necessary to get correct results.</description>
     </item>
     
     <item>

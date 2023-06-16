@@ -17,7 +17,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.7c6b5ee222efc769ccbbec613246d8421daa1ff5b1e678fa03ba92b7ab6427c4.js" integrity="sha256-fGte4iLvx2nMu&#43;xhMkbYQh2qH/Wx5nj6A7qSt6tkJ8Q=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.aef7ef9b6743176a34b45df23c62b2c983a517c5871b96b2e264e658eb5b7988.js" integrity="sha256-rvfvm2dDF2o0tF3yPGKyyYOlF8WHG5ay4mTmWOtbeYg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -376,7 +376,8 @@ it can also calculate logarithmic and exponential functions, given the needed mo
 0 \\
 1
 \end{bmatrix}
-\]</p>
+\]
+<span class="image"><img src="../images/cordic_circle.svg" alt="cordic circle" width="40%"/></span></p>
 </div>
 <div class="paragraph">
 <p>which we now iterate, by multiplying it with the rotation matrix, given below:</p>
@@ -389,10 +390,77 @@ it can also calculate logarithmic and exponential functions, given the needed mo
 cos(\theta) &amp; -sin(\theta) \\
 sin(\theta) &amp; cos(\theta)
 \end{bmatrix}
+\]
+We use the following two trigonometric identities:</p>
+</div>
+<div class="paragraph">
+<p>\[
+cos(\theta) = \frac{1}{\sqrt{1+tan^2(\theta)}}
 \]</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../images/cordic_circle.svg" alt="cordic circle" width="40%"/></span></p>
+<p>\[
+sin(\theta) = \frac{tan(\theta)}{\sqrt{1+tan^2(\theta)}}
+\]</p>
+</div>
+<div class="paragraph">
+<p>the rotation matrix becomes</p>
+</div>
+<div class="paragraph">
+<p>\[ R_i =   \frac{1}{\sqrt{1+tan^2(\theta)}} \begin{bmatrix}
+1 &amp; -tan(\theta) \\
+tan(\theta) &amp; 1
+\end{bmatrix}
+\]</p>
+</div>
+<div class="paragraph">
+<p>Then the rotation vector $v_{i+1}= R_i v_i$ becomes:</p>
+</div>
+<div class="paragraph">
+<p>\[ \begin{bmatrix}
+x_{i+1} \\
+y_{i+1} \\
+\end{bmatrix} =   \frac{1}{\sqrt{1+tan^2(\theta)}} \begin{bmatrix}
+1 &amp; -tan(\theta) \\
+tan(\theta) &amp; 1
+\end{bmatrix}\begin{bmatrix}
+x_{i} \\
+y_{i} \\
+\end{bmatrix}
+\]</p>
+</div>
+<div class="paragraph">
+<p>We replace the tangens function with a simpler expression, resulting in a bit shift.</p>
+</div>
+<div class="paragraph">
+<p>\[ \begin{bmatrix}
+x_{i+1} \\
+y_{i+1} \\
+\end{bmatrix} =  K_{i} \begin{bmatrix}
+1 &amp; -\sigma 2^{-i} \\
+\sigma 2^{-i} &amp; 1
+\end{bmatrix}\begin{bmatrix}
+x_{i} \\
+y_{i} \\
+\end{bmatrix}
+\]
+where</p>
+</div>
+<div class="paragraph">
+<p>\[ K_{i} =   \frac{1}{\sqrt{1+2^{-2i}}} \]</p>
+</div>
+<div class="paragraph">
+<p>and $\sigma_i$ is used to determine the direction of the rotation. If the angle $\theta_{i}$ is
+positive then $\sigma{i}$ is +1, otherwise -1.</p>
+</div>
+<div class="paragraph">
+<p>The factor Ki can be factored completly for the iterative process.</p>
+</div>
+<div class="paragraph">
+<p>\[ K(n) =   \prod_{i=0}^{n-1}K_{i} = \prod_{i=0}^{n-1} \frac{1}{\sqrt{1+2^{-2i}}} \]</p>
+</div>
+<div class="paragraph">
+<p>\[ K = lim_{n→ \infty} K \approx  0.60725293500888 \]</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../images/dds_principle.svg" alt="dds principle" width="75%"/></span></p>
@@ -408,7 +476,7 @@ sin(\theta) &amp; cos(\theta)
   <div class="flex flex-wrap justify-between">
 
 
-Last update: April 22, 2023 
+Last update: May 1, 2023 
 
 
 </div>
@@ -424,7 +492,7 @@ Last update: April 22, 2023
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
 

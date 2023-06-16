@@ -13,18 +13,37 @@
       
       <guid>http://localhost:1313/drafts/alu2/</guid>
       <description>title: How does a CPU work? The swiss knife (Part II)
-  slug: how-does-a-cpu-work-alu-2
-  date: 2022-02-09
-  category:
-  link:
-  description:
-  type: text
-   Instruction table     logic operations description implementation data type / size     and
- basic boolean Op
- -
- bit
-   or
- basic boolean Op</description>
+slug: how-does-a-cpu-work-alu-2
+date: 2022-02-09
+category:
+link:
+description:
+type: text
+Instruction table logic operations description implementation data type / size and
+basic boolean Op
+-
+bit
+or
+basic boolean Op
+-
+bit
+not
+basic boolean Op
+-
+bit
+xor
+complex boolean Op
+-
+bit
+shl
+shift left
+-
+various
+shr
+shift right
+-
+various
+control instructions description data type / size ld</description>
     </item>
     
   </channel>
