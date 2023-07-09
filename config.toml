@@ -19,8 +19,13 @@ theme = "hugo-book"
   url = "/docs/"
   weight = 10
 
-
+  
 [[menu.before]]
+  name = "Electronics 101"
+  url = "/pages/prequel-short-introduction-to-electronics"
+  weight = 20
+
+[[menu.after]]
   name = "Digital Logic 1 (Overview)"
   url = "/pages/overview/"
   weight = 20
@@ -30,7 +35,6 @@ theme = "hugo-book"
   url = "/pages/overview2/"
   weight = 25
 
-  
 [[menu.after]]
   name = "About"
   url = "/pages/about/"
