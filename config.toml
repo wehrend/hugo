@@ -4,7 +4,7 @@ title = "Bits & pieces - Sven Wehrend"
 theme = "hugo-book"
 
 [[menu.before]]
-  name = "Blog"
+  name = "Web-Blog"
   url = "/posts/web/"
   weight = 10
 
@@ -23,7 +23,13 @@ theme = "hugo-book"
 [[menu.before]]
   name = "Electronics 101"
   url = "/pages/prequel-short-introduction-to-electronics"
-  weight = 20
+  weight = 26
+
+[[menu.before]]
+  name = "Electronics 102"
+  url = "/pages/short-introduction-to-electronics-102"
+  weight = 27
+
 
 [[menu.after]]
   name = "Digital Logic 1 (Overview)"
