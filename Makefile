@@ -1,6 +1,6 @@
 
 # ~/development/hugo/blog#
-version="klakegg/hugo:0.107.0-ext-asciidoctor"
+version="klakegg/hugo:0.111.3-ext-asciidoctor"
 pwd_ = "/home/sven/development/hugo"
 
 pull:

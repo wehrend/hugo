@@ -3,53 +3,100 @@ languageCode = "en-us"
 title = "Bits & pieces - Sven Wehrend"
 theme = "hugo-book"
 
-[[menu.before]]
+[Languages]
+[Languages.en]
+Languagename = 'English'
+[[Languages.menu.before]]
+  name = "Web-Blog"
+  url = "/en/posts/web/"
+  weight = 10
+
+[[Languages.en.menu.before]]
+  name = "Synth-Blog"
+  url = "/en/tags/synth/"
+  weight = 20
+
+
+[[Languages.en.menu.before]]
+  name = ""
+  url = "/en/docs/"
+  weight = 10
+
+
+[[Languages.en.menu.before]]
+  name = "Electronics 101"
+  url = "/en/pages/prequel-short-introduction-to-electronics"
+  weight = 26
+
+[[Languages.en.menu.before]]
+  name = "Electronics 102"
+  url = "/en/pages/short-introduction-to-electronics-102"
+  weight = 27
+
+
+[[Languages.en.menu.after]]
+  name = "Digital Logic 1 (Overview)"
+  url = "/en/pages/overview/"
+  weight = 20
+
+[[Languages.en.menu.before]]
+  name = "Digital Logic 2 (Overview)"
+  url = "/en/pages/overview2/"
+  weight = 25
+
+[[Languages.en.menu.after]]
+  name = "About"
+  url = "/en/pages/about/"
+  weight = 10
+
+[Languages.de]
+Languagename='Deutsch'
+[[Languages.de.menu.before]]
   name = "Web-Blog"
   url = "/posts/web/"
   weight = 10
 
-[[menu.before]]
+[[Languages.de.menu.before]]
   name = "Synth-Blog"
   url = "/tags/synth/"
   weight = 20
 
 
-[[menu.before]]
+[[Languages.de.menu.before]]
   name = ""
   url = "/docs/"
   weight = 10
 
-  
-[[menu.before]]
-  name = "Electronics 101"
+
+[[Languages.de.menu.before]]
+  name = "Elektronik 101"
   url = "/pages/prequel-short-introduction-to-electronics"
   weight = 26
 
-[[menu.before]]
-  name = "Electronics 102"
+[[Languages.de.menu.before]]
+  name = "Elektronik 102"
   url = "/pages/short-introduction-to-electronics-102"
   weight = 27
 
 
-[[menu.after]]
-  name = "Digital Logic 1 (Overview)"
+[[Languages.de.menu.after]]
+  name = "Digitale Logik 1 (Übersicht)"
   url = "/pages/overview/"
   weight = 20
 
-[[menu.before]]
-  name = "Digital Logic 2 (Overview)"
+[[Languages.de.menu.before]]
+  name = "Digitale Logik 2 (Übersicht)"
   url = "/pages/overview2/"
   weight = 25
 
-[[menu.after]]
-  name = "About"
+[[Languages.de.menu.after]]
+  name = "Über mich "
   url = "/pages/about/"
-  weight = 10
+  weight = 35
 
-  
 [[frontmatter]]
     date = "filename"
-  
+
 [params]
   date_format = "2006-01-02"
   # (Optional, default light) Sets color theme: light, dark or auto.

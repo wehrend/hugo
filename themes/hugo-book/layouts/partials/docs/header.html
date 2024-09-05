@@ -7,7 +7,43 @@
 
   <label for="toc-control">
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
+      <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
     {{ end }}
   </label>
 </div>
+
+<ul>
+  <!-- Site Nav Bar -->
+  {{ $currentPage := . }}
+  {{ $menu := .Site.Menus.main }}
+  {{ range $index, $element := $menu }}
+    <li class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
+      <a class="nav-link scroll-to" href="{{ .URL | relLangURL }}">
+        {{ i18n .Identifier | default .Name }}
+      </a>
+    </li>
+  {{ end }}
+
+  <!-- Language Menu -->
+  <li>
+    <select id="selectLanguage" onchange="location = this.value">
+      {{ $siteLanguages := $.Site.Home.AllTranslations }}
+      {{ $pageLang := .Page.Lang }}
+      {{ range .Page.AllTranslations }}
+        {{ $translation := . }}
+        <option value="{{ $translation.RelPermalink }}" {{ if eq $pageLang $translation.Lang }}selected{{ end }}>
+          {{ $translation.Language.LanguageName }}
+        </option>
+      {{ end }}
+    </select>
+  </li>
+
+  <!-- Additional Translations (if needed) -->
+  {{ if .IsTranslated }}
+    {{ with .Translations }}
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>

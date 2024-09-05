@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in blog on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Topics to write about - Wishlist</title>
+      <link>http://localhost:1313/en/posts/web/10_wishlist/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/10_wishlist/</guid>
+      <description>This is a small, incomplete list of topics I’d like to write about in the mid- to far future.
+Caches
+Interrupts
+Out-of-Order execution
+RAW, WAR and WAW conflicts
+Filters (analog and digital)
+Analog computers
+neuronal networks
+the macrobiom</description>
+    </item>
+    
+  </channel>
+</rss>

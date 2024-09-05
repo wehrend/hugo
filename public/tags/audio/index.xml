@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>audio on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/audio/</link>
+    <description>Recent content in audio on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eurorack Synthesizer - Noise Floor</title>
+      <link>http://localhost:1313/en/posts/synth/16_noise_floor/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/16_noise_floor/</guid>
+      <description>On my mobile setup, the NiftyVCase I have collected my diy modules (with excepition to the Doepfer A-124, I had to include for its great sound). It features a kick-drum from erica synths, an even VCO, Sampling Modulator, A*B+C and Rampage from Befaco. As well as the Divebomb III for some delay. Last but not least a Zlon skew lfo and a BCM086 Diode Ladder High pass filter.
+noise floor Audio</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Jam Session</title>
+      <link>http://localhost:1313/en/posts/synth/15_jam_session/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/15_jam_session/</guid>
+      <description>This time, we have a convoluted patch, featuring a new member, the random sequencer from rat-king, which,as the name suggests, delivers nice randomly sequences. Also we have a new mixer module, self-build. We also utilize both VCOs and both LFO modules…​
+jam session Audio</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Another small patch</title>
+      <link>http://localhost:1313/en/posts/synth/14_another_small_patch/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/14_another_small_patch/</guid>
+      <description>So here is another small patch idea for the Doepfer A-100 system, this time featuring the SEM filter from Oberheim, incarnated in the Doepfer modul A-106-5. We also utilize two LFO modules…​
+LFO SEM Patch Audio
+LFO SEM Patch Audio 2
+LFO SEM Patch Audio 3
+To this day I did not find the right audio recorder,and I am recording with my smartphone, so the sound quality is rather bad.</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Another simple patch</title>
+      <link>http://localhost:1313/en/posts/synth/13_another_simple_patch/</link>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/13_another_simple_patch/</guid>
+      <description>So here is another simple patch idea for the Doepfer A-100 system, this time featuring the SEM filter from Oberheim, incarnated in the Doepfer modul A-106-5. We also utilize two A-110 oscillator modules (one standard, one basic), and the LFO.
+SEM Patch Audio
+To this day I did not find the right audio recorder,and I am recording with my smartphone, so the sound quality is rather bad. I am still searching for the ideal recording hardware.</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - More patch ideas</title>
+      <link>http://localhost:1313/en/posts/synth/11_more_patch_ideas/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/11_more_patch_ideas/</guid>
+      <description>So here is another patch idea for the Doepfer A-100 system. The results of the Doepfer oscillators are pithlily &amp;#34;knarzig-kernige&amp;#34; sounds. We utilize two A-110 oscillator modules (one standard, one basic), a ring-modulator (A-114) and a wasp-filter (A-124), together with some utility modules like a sequencer and an LFO.
+pithily…​ Audio</description>
+    </item>
+    
+    <item>
+      <title>Pocket Operator Modular 400 in eurorack</title>
+      <link>http://localhost:1313/en/posts/synth/09_eurorack_modular/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/09_eurorack_modular/</guid>
+      <description>So I bought a low cost eurorack case from doepfer and a set of frontpanels plus power adapter for the pocket operator modular 400 from Oddvolt to put the said machine into a eurorack modular system. I also bought a small, but decent sequencer, since the one from teenage engineering is not very handy to use. I have two further modules on my list, the Doepfer A-119, an input module, as well as the Doepfer A-124, a wasp filter, to complete the setup.</description>
+    </item>
+    
+    <item>
+      <title>The Pocket Operator Modular 400 patch ideas (II)</title>
+      <link>http://localhost:1313/en/posts/synth/06_pocket_operator_modular_400/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/06_pocket_operator_modular_400/</guid>
+      <description>Plong…​ Video
+With the random module we can sample &amp;amp; hold a signal from the input. Its companionship is the noise module. We feed the saw output to the input of the rand module.
+Beep,bleep…​ Video
+sine output → speaker right
+envelope output → sine key
+LFO square → envelope trig
+LFO square → sine fm
+sweeping sinus…​ Video
+We can expand the setup by using the sequencer and utilize the filter.</description>
+    </item>
+    
+    <item>
+      <title>The Pocket Operator Modular 400 patch ideas</title>
+      <link>http://localhost:1313/en/posts/synth/05_pocket_operator_modular_400/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/synth/05_pocket_operator_modular_400/</guid>
+      <description>An analog modular synthesizer was ever me dream, last week I fulfilled this dream of mine, and ordered the pocket operator modular 400 from the swedish company teenage engineering. Like furniture from the other popular swedish company you first have to build it yourself, before making any sound with it. This took me around 3 to 4 hours. But it was worth it.
+Here are some patch ideas. In the first example we simply mix the outputs of all 3 oscillators together and control the sine oscillator with the triangle output of the LFO and the pulse width of the square oscillator with the LFO square.</description>
+    </item>
+    
+  </channel>
+</rss>

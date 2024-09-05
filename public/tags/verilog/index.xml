@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>verilog on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/verilog/</link>
+    <description>Recent content in verilog on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/verilog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FPGA 101: Starting with Quartus and Verilog</title>
+      <link>http://localhost:1313/en/posts/web/23_fpga_beginners_2/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/23_fpga_beginners_2/</guid>
+      <description>So, you decided you want to learn fpga programming and have done the prerequisite from the introduction 0 as well as done the simple logic circuit via quartus’s bdf files. Today we want to show you how to figure out Quartus by doing another hardware equivalent of the hello-World program used in the software world - we do program a binary counter showing of by the LED array we have available on our DE0-nano board.</description>
+    </item>
+    
+  </channel>
+</rss>
