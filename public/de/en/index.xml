@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ens on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/de/en/</link>
+    <description>Recent content in Ens on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/de/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Über</title>
+      <link>http://localhost:1313/de/en/pages/ueber/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/de/en/pages/ueber/</guid>
+      <description>Ein einfaches, statisches Blog, in dem über Themen wie Elektronik, Computer und - vielleicht - Philosophie geschrieben wird.
+Lieber Leser meines bescheidenen Blogs, ich bin Sven Wehrend, eine Scanner-Persönlichkeit, geboren 1987, Ich interessiere mich für ein breites Spektrum an Themen, das von Technik über Psychologie bis hin zu Spiritualität reicht.
+Ich habe Technische Informatik an der HTW Berlin (Bachelor) und der TU Berlin (Master) studiert. &amp;#39;&amp;#39;&amp;#39;</description>
+    </item>
+    
+  </channel>
+</rss>

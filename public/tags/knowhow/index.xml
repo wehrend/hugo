@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>knowhow on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/knowhow/</link>
+    <description>Recent content in knowhow on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/knowhow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analog Computers 101</title>
+      <link>http://localhost:1313/de/posts/web/17_analog_computers_101/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/de/posts/web/17_analog_computers_101/</guid>
+      <description>Today I want to speak about analog computers. In todays times analog computers are leading a shadowy existence, compared to their digital counterparts. But they are wonderous little machines. And that machines I mean wordly because there exists analog mechanical computers that are models from the world and used to compute and predict tides in certain areas of the world . Also the brain is an enourmous analog computer with a comparatively very small enery budget.</description>
+    </item>
+    
+    <item>
+      <title>Analog Computers 101</title>
+      <link>http://localhost:1313/en/posts/web/17_analog_computers_101/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/17_analog_computers_101/</guid>
+      <description>Today I want to speak about analog computers. In todays times analog computers are leading a shadowy existence, compared to their digital counterparts. But they are wonderous little machines. And that machines I mean wordly because there exists analog mechanical computers that are models from the world and used to compute and predict tides in certain areas of the world . Also the brain is an enourmous analog computer with a comparatively very small enery budget.</description>
+    </item>
+    
+    <item>
+      <title>Caches and Caching</title>
+      <link>http://localhost:1313/de/posts/web/12_caches_and_caching/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/de/posts/web/12_caches_and_caching/</guid>
+      <description>When you fire up your browser to visit a website, you most probably did not noticed a very important mechanism underlying the browser and working in the background. Caching. Caches are used everywhere to optimize and improve access times and such in consequence the overall performance (of a site). Caching in the browser for example means, that ideally only the portions of the website that changed are loaded from the www.</description>
+    </item>
+    
+    <item>
+      <title>Caches and Caching</title>
+      <link>http://localhost:1313/en/posts/web/12_caches_and_caching/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/12_caches_and_caching/</guid>
+      <description>When you fire up your browser to visit a website, you most probably did not noticed a very important mechanism underlying the browser and working in the background. Caching. Caches are used everywhere to optimize and improve access times and such in consequence the overall performance (of a site). Caching in the browser for example means, that ideally only the portions of the website that changed are loaded from the www.</description>
+    </item>
+    
+    <item>
+      <title>Why are serial interfaces everywhere - instead of parallel ones</title>
+      <link>http://localhost:1313/de/posts/web/07_serial_interfaces/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/de/posts/web/07_serial_interfaces/</guid>
+      <description>USB, SPI, I²C, Sata - all these interfaces is common that they are serial interfaces. Serial interfaces are todays common. But why is that the case, especially for high-speed communication? it sounds simply counterintuitive: Parallel wires can theoretically send more bits per time than on singular wire can. The answer to that question is complex and multilayered. There are multiple different reasons why serial interfaces are preferred over parallel interfaces.</description>
+    </item>
+    
+    <item>
+      <title>Why are serial interfaces everywhere - instead of parallel ones</title>
+      <link>http://localhost:1313/en/posts/web/07_serial_interfaces/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/07_serial_interfaces/</guid>
+      <description>USB, SPI, I²C, Sata - all these interfaces is common that they are serial interfaces. Serial interfaces are todays common. But why is that the case, especially for high-speed communication? it sounds simply counterintuitive: Parallel wires can theoretically send more bits per time than on singular wire can. The answer to that question is complex and multilayered. There are multiple different reasons why serial interfaces are preferred over parallel interfaces.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,98 +6,100 @@ theme = "hugo-book"
 [Languages]
 [Languages.en]
 Languagename = 'English'
-[[Languages.menu.before]]
+[[Languages.en.menu.before]]
   name = "Web-Blog"
-  url = "/en/posts/web/"
+  contentDjr = "/en/posts/web/"
   weight = 10
 
 [[Languages.en.menu.before]]
   name = "Synth-Blog"
-  url = "/en/tags/synth/"
+  contentDir = "/en/tags/synth/"
   weight = 20
 
 
 [[Languages.en.menu.before]]
   name = ""
-  url = "/en/docs/"
+  contentDir = "/en/docs/"
   weight = 10
 
 
 [[Languages.en.menu.before]]
   name = "Electronics 101"
-  url = "/en/pages/prequel-short-introduction-to-electronics"
+  contentDir = "/en/pages/prequel-short-introduction-to-electronics"
   weight = 26
 
 [[Languages.en.menu.before]]
   name = "Electronics 102"
-  url = "/en/pages/short-introduction-to-electronics-102"
+  contentDir  = "/en/pages/short-introduction-to-electronics-102"
   weight = 27
 
 
 [[Languages.en.menu.after]]
   name = "Digital Logic 1 (Overview)"
-  url = "/en/pages/overview/"
+  contentDir= "/en/pages/overview/"
   weight = 20
 
 [[Languages.en.menu.before]]
   name = "Digital Logic 2 (Overview)"
-  url = "/en/pages/overview2/"
+  contentDir = "/en/pages/overview2/"
   weight = 25
 
 [[Languages.en.menu.after]]
   name = "About"
-  url = "/en/pages/about/"
+  contentDir = "/en/pages/about/"
   weight = 10
 
 [Languages.de]
 Languagename='Deutsch'
 [[Languages.de.menu.before]]
   name = "Web-Blog"
-  url = "/posts/web/"
+  contentDir = "/de/posts/web/"
   weight = 10
 
 [[Languages.de.menu.before]]
   name = "Synth-Blog"
-  url = "/tags/synth/"
+  contentDir = "/de/tags/synth/"
   weight = 20
 
 
 [[Languages.de.menu.before]]
   name = ""
-  url = "/docs/"
+  contentDir = "/de/docs/"
   weight = 10
 
 
 [[Languages.de.menu.before]]
   name = "Elektronik 101"
-  url = "/pages/prequel-short-introduction-to-electronics"
+  contentDir = "/de/pages/prequel-short-introduction-to-electronics"
   weight = 26
 
 [[Languages.de.menu.before]]
   name = "Elektronik 102"
-  url = "/pages/short-introduction-to-electronics-102"
+  contentDir = "/de/pages/short-introduction-to-electronics-102"
   weight = 27
 
 
 [[Languages.de.menu.after]]
   name = "Digitale Logik 1 (Übersicht)"
-  url = "/pages/overview/"
+  contentDir = "/de/pages/overview/"
   weight = 20
 
 [[Languages.de.menu.before]]
   name = "Digitale Logik 2 (Übersicht)"
-  url = "/pages/overview2/"
+  contentDir = "/de/pages/overview2/"
   weight = 25
 
 [[Languages.de.menu.after]]
   name = "Über mich "
-  url = "/pages/about/"
+  contentDir = "/de/pages/about/"
   weight = 35
 
 [[frontmatter]]
     date = "filename"
 
 [params]
+
+  BookSection = "/en/docs"
   date_format = "2006-01-02"
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences

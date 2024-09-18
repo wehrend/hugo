@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analog on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/analog/</link>
+    <description>Recent content in analog on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/analog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Op-Amps introduction</title>
+      <link>http://localhost:1313/de/posts/web/18_op-amps_introduction/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/de/posts/web/18_op-amps_introduction/</guid>
+      <description>Today I want to speak about op-amps. These wonderful, but mysterious components, we have heavely often appearing in circuit schematica of analog or analog / digital hybrid circuits. We want to demistify these components.
+There are two basic thumb rules when handling ideal op-amp circuit. (Real-world op-amp circuits are a bit more complicated, but we will discuss this later).
+1. The first thumb rule is that Vout is essentially the difference of the voltage values at the both inputs, multiplied with an arbitrary but high amplification factor A.</description>
+    </item>
+    
+    <item>
+      <title>Op-Amps introduction</title>
+      <link>http://localhost:1313/en/posts/web/18_op-amps_introduction/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/18_op-amps_introduction/</guid>
+      <description>Today I want to speak about op-amps. These wonderful, but mysterious components, we have heavely often appearing in circuit schematica of analog or analog / digital hybrid circuits. We want to demistify these components.
+There are two basic thumb rules when handling ideal op-amp circuit. (Real-world op-amp circuits are a bit more complicated, but we will discuss this later).
+1. The first thumb rule is that Vout is essentially the difference of the voltage values at the both inputs, multiplied with an arbitrary but high amplification factor A.</description>
+    </item>
+    
+    <item>
+      <title>Analog Computers 101</title>
+      <link>http://localhost:1313/de/posts/web/17_analog_computers_101/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/de/posts/web/17_analog_computers_101/</guid>
+      <description>Today I want to speak about analog computers. In todays times analog computers are leading a shadowy existence, compared to their digital counterparts. But they are wonderous little machines. And that machines I mean wordly because there exists analog mechanical computers that are models from the world and used to compute and predict tides in certain areas of the world . Also the brain is an enourmous analog computer with a comparatively very small enery budget.</description>
+    </item>
+    
+    <item>
+      <title>Analog Computers 101</title>
+      <link>http://localhost:1313/en/posts/web/17_analog_computers_101/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/web/17_analog_computers_101/</guid>
+      <description>Today I want to speak about analog computers. In todays times analog computers are leading a shadowy existence, compared to their digital counterparts. But they are wonderous little machines. And that machines I mean wordly because there exists analog mechanical computers that are models from the world and used to compute and predict tides in certain areas of the world . Also the brain is an enourmous analog computer with a comparatively very small enery budget.</description>
+    </item>
+    
+  </channel>
+</rss>
