@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Logic X on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/docs/digital_logic_x/</link>
+    <description>Recent content in Digital Logic X on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/docs/digital_logic_x/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X2_cordic</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x2_cordic/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x2_cordic/</guid>
+      <description>The CORDIC algoritm and direct digital synthesis (DDS) The CORDIC (which stands for &amp;#34;coordinate rotation digital computer&amp;#34;) algorithm, was developed in 1956 by Jack.E. Volder, to replace the analog resolvers used for missiles navigation by digital computation on digital computer. The algorithm turned out to be very successfull, today it can be found in every pocket calculator, doing the computation of the trigonometrical functions sinus, cosinus and tangens. But the algorithm is not limited to that it can also calculate logarithmic and exponential functions, given the needed modifications.</description>
+    </item>
+    
+    <item>
+      <title>X0_multiplication</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</guid>
+      <description>Multiplication and Divsion Multiplication operations can be implemented in very different ways: Slow, as a serial operation, controlled by a micro program or fast in dedicated hardware.
+The division is a more complex operation, and thus will be discussed in another post. Also for multiplication we set the scope to unsigned integer numbers.
+Shift left and shift right For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
+    </item>
+    
+  </channel>
+</rss>

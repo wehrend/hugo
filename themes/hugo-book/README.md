@@ -1,12 +1,12 @@
 # Hugo Book Theme
 
-[![Hugo](https://img.shields.io/badge/hugo-0.68-blue.svg)](https://gohugo.io)
+[![Hugo](https://img.shields.io/badge/hugo-0.124-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Build with Hugo](https://github.com/alex-shpak/hugo-book/workflows/Build%20with%20Hugo/badge.svg)
 
 ### [Hugo](https://gohugo.io) documentation theme as simple as plain book
 
-![Screenshot](https://github.com/alex-shpak/hugo-book/blob/master/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/alex-shpak/hugo-book/master/images/screenshot.png)
 
 - [Features](#features)
 - [Requirements](#requirements)
@@ -33,8 +33,8 @@
 
 ## Requirements
 
-- Hugo 0.68 or higher
-- Hugo extended version, read more [here](https://gohugo.io/news/0.48-relnotes/)
+- Hugo 0.124 or higher
+- Hugo extended version, [Installation Instructions](https://gohugo.io/installation/)
 
 ## Installation
 
@@ -60,7 +60,7 @@ Start with initializing hugo modules, if not done yet:
 hugo mod init github.com/repo/path
 ```
 
-Navigate to your hugo project root and add [module] section to your `config.toml`:
+Navigate to your hugo project root and add [module] section to your `hugo.toml`:
 
 ```toml
 [module]
@@ -83,7 +83,7 @@ Below is an example on how to create a new site from scratch:
 hugo new site mydocs; cd mydocs
 git init
 git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
-cp -R themes/hugo-book/exampleSite/content .
+cp -R themes/hugo-book/exampleSite/content.en/* ./content
 ```
 
 ```sh
@@ -97,7 +97,7 @@ hugo server --minify --theme hugo-book
 By default, the theme will render pages from the `content/docs` section as a menu in a tree structure.  
 You can set `title` and `weight` in the front matter of pages to adjust the order and titles in the menu.
 
-### Leaf bundle menu (Deprecated)
+### Leaf bundle menu (Deprecated, to be removed in June 2022)
 
 You can also use leaf bundle and the content of its `index.md` file as menu.  
 Given you have the following file structure:
@@ -127,8 +127,8 @@ headless = true
 
 And Enable it by setting `BookMenuBundle: /menu` in Site configuration.
 
-- [Example menu](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/content/menu/index.md)
-- [Example config file](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml)
+- [Example menu](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/content.en/menu/index.md)
+- [Example config file](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/hugo.yaml)
 - [Leaf bundles](https://gohugo.io/content-management/page-bundles/)
 
 ## Blog
@@ -140,7 +140,7 @@ A blog is not the primary usecase of this theme, so it has only minimal features
 
 ### Site Configuration
 
-There are a few configuration options that you can add to your `config.toml` file.  
+There are a few configuration options that you can add to your `hugo.toml` file.  
 You can also see the `yaml` example [here](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml).
 
 ```toml
@@ -179,6 +179,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
+  # Deprecated, to be removed in June 2022
   BookMenuBundle = '/menu'
 
   # (Optional, default docs) Specify section of content to render as menu
@@ -260,6 +261,9 @@ bookComments = true
 
 # (Optional) Set to 'false' to exclude page from search index.
 bookSearchExclude = true
+
+# (Optional) Set explicit href attribute for this page in a menu (if BookMenuBundle not set)
+bookHref = ''
 ```
 
 ### Partials
@@ -292,7 +296,7 @@ In addition to this, there are several empty partials you can override to easily
 
 ### Plugins
 
-There are a few features implemented as plugable `scss` styles. Usually these are features that don't make it to the core but can still be useful.
+There are a few features implemented as pluggable `scss` styles. Usually these are features that don't make it to the core but can still be useful.
 
 | Plugin                            | Description                                                 |
 | --------------------------------- | ----------------------------------------------------------- |

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>modelsim on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/modelsim/</link>
+    <description>Recent content in modelsim on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/modelsim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FPGA 101: Starting with HDLS</title>
+      <link>http://localhost:1313/posts/web/21_fpga_beginners_0/</link>
+      <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/21_fpga_beginners_0/</guid>
+      <description>Today I want to start a blog post series about hardware programming. We start with an introduction to hardware programming with the FPGA-board DE0 Nano from former Altera now Intel. You see a picture of the small board below. It seems you can still order this board, but I have not tested.
+We will show how to setup the environment, in the first step we will (show how to) download and install quartus on a Debian distribution, and configure the programmer.</description>
+    </item>
+    
+  </channel>
+</rss>

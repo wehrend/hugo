@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agenda on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Agenda on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compiling Kicad on Debian Bullseye</title>
+      <link>http://localhost:1313/posts/web/27_compiling_kicad_on_debian_bullseye/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/27_compiling_kicad_on_debian_bullseye/</guid>
+      <description>With my new hobby, there came the desire to learn to build and design my own PCB. With that in mind, I began to use the open source ecad solution Kicad. Now I became interested in participating in this project, but, to compile the code you have endure a few challenges - you know, collecting the dependencies,installing them, choose the right branch whiche compiles down and so on. Here I want to show you my experience with that.</description>
+    </item>
+    
+    <item>
+      <title>FPGA 101: Get the Nandland Go board ready on Debian Bullseye</title>
+      <link>http://localhost:1313/posts/web/26_get_the_nandlab_go_board_ready_on_debian/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/26_get_the_nandlab_go_board_ready_on_debian/</guid>
+      <description>Hi there,
+finally this week the nandland go board I ordered from the developer Russell Merrick a month ago arrived. It took a detour due to some shipping problems, but this is not about that, so. I had to face quite a few obstacles to get this running on my Debian Bullseye.
+Serial Connection via USB First of all, to connect to the board via FTDI usb as suggested on Debian Bullseye you have to first add your user to the group &amp;#39;dialout&amp;#39;, this is done like below:</description>
+    </item>
+    
+    <item>
+      <title>Build your own synthesizer modules</title>
+      <link>http://localhost:1313/posts/synth/25_build_your_own_modules/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/25_build_your_own_modules/</guid>
+      <description>Introduction Hi, today I want to share with you the basic knowledge of DIYing your own synthesizer modules - those do not need of the eurorack standard although in my case they are.
+If you get started with eurorack format or any other modular like synth standard, but especially the eurorack standard - you will be most likely overwhelmed about the sheer number of manufacturers and available. You can have a simple look here on ModularGrid.</description>
+    </item>
+    
+    <item>
+      <title>A favorite hobby of mine: Lustiges Taschenbuch Nr. 162</title>
+      <link>http://localhost:1313/posts/web/ltb162/25_ltb162/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/ltb162/25_ltb162/</guid>
+      <description>It is about time, to share another favorite of mine with you, and this is duckburg and the duck universe. I take the LTB (Lustiges Taschenbuch) Nr. 162 as an example from the golden era of the comic series &amp;#34;Lustiges Taschenbuch&amp;#34;
+Der goldene Totempfahl (The golden totem pole) In the story &amp;#34;Der goldene Totempfahl&amp;#34; english the golden totem pole, uncle scrooge is making a movie about his life, the story plays in the county of Dawson, where they are getting lost after a storm, they meet the indianer &amp;#34;großer Elch&amp;#34; english &amp;#34;big moose&amp;#34; and are searching for the gold nuggets big moose saved for uncle scrooge back in time.</description>
+    </item>
+    
+    <item>
+      <title>FPGA 101: DE10-nano board: Hello World</title>
+      <link>http://localhost:1313/posts/web/24_fpga_beginners_3/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/24_fpga_beginners_3/</guid>
+      <description>Today I want to show you, how to connect to the DE10-nano board, the successor of the DE0-nano board. It is a bit bigger, costs nearly 300 bucks, but also supports Linux out-of-the-box. There is an Angstrom Linux installed on the SD-card.
+To connect to the board via the UART interface, power-up the board with the wall-wart,enter the sd-card to start the linux booting, and finally connect the micro-b usb cable (like shown below) with the PC.</description>
+    </item>
+    
+    <item>
+      <title>FPGA 101: Starting with Quartus and Verilog</title>
+      <link>http://localhost:1313/posts/web/23_fpga_beginners_2/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/23_fpga_beginners_2/</guid>
+      <description>So, you decided you want to learn fpga programming and have done the prerequisite from the introduction 0 as well as done the simple logic circuit via quartus’s bdf files. Today we want to show you how to figure out Quartus by doing another hardware equivalent of the hello-World program used in the software world - we do program a binary counter showing of by the LED array we have available on our DE0-nano board.</description>
+    </item>
+    
+    <item>
+      <title>FPGA 101: Starting with Quartus</title>
+      <link>http://localhost:1313/posts/web/22_fpga_beginners_1/</link>
+      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/22_fpga_beginners_1/</guid>
+      <description>So, you decided you want to learn fpga programming and have done the prerequisite from the last blog post. Today we want to show you how to figure out Quartus by doing a hardware equivalent of the hello-World program used in the software world - we call it AndGate because it is simply that - an and gate feed by to push-buttons as input and a status-LED as output. This way we will make use of the Block Diagram Files (bdf) from Quartus.</description>
+    </item>
+    
+    <item>
+      <title>FPGA 101: Starting with HDLS</title>
+      <link>http://localhost:1313/posts/web/21_fpga_beginners_0/</link>
+      <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/21_fpga_beginners_0/</guid>
+      <description>Today I want to start a blog post series about hardware programming. We start with an introduction to hardware programming with the FPGA-board DE0 Nano from former Altera now Intel. You see a picture of the small board below. It seems you can still order this board, but I have not tested.
+We will show how to setup the environment, in the first step we will (show how to) download and install quartus on a Debian distribution, and configure the programmer.</description>
+    </item>
+    
+    <item>
+      <title>Reducing Rare Earth Dependence: The Quest for Alternative Magnetic Materials</title>
+      <link>http://localhost:1313/posts/web/20_reducing_rare_earth_elements/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/20_reducing_rare_earth_elements/</guid>
+      <description>Introduction Rare earth elements have long been the backbone of high-tech magnets, with metals like neodymium and dysprosium playing pivotal roles in various industries. However, the scarcity and rising demand for these valuable resources have prompted researchers to seek alternative solutions. In an effort to reduce our reliance on rare earth magnets, scientists are exploring innovative materials and alloy combinations. Among the promising contenders is cerium, an abundant and accessible rare earth element, showing potential to replace or augment neodymium magnets.</description>
+    </item>
+    
+    <item>
+      <title>Unlocking the Secrets of Rare Earth Elements: The Remarkable Case of Neodymium</title>
+      <link>http://localhost:1313/posts/web/19_rare_earth_elements/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/19_rare_earth_elements/</guid>
+      <description>Introduction Rare earth elements, often shrouded in mystery, play a crucial role in our modern world. From smartphones to electric vehicles, renewable energy technologies, and even defense systems, these elements are the unsung heroes that make our daily lives more sustainable, efficient, and connected. In this article, we’ll delve into the fascinating world of rare earth elements, with a focus on the versatile element, neodymium.
+The Rare Earth Elements: An Overview Rare earth elements (REEs) are a group of seventeen chemical elements that occupy the lanthanide series of the periodic table, along with scandium and yttrium.</description>
+    </item>
+    
+    <item>
+      <title>Op-Amps introduction</title>
+      <link>http://localhost:1313/posts/web/18_op-amps_introduction/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/18_op-amps_introduction/</guid>
+      <description>Today I want to speak about op-amps. These wonderful, but mysterious components, we have heavely often appearing in circuit schematica of analog or analog / digital hybrid circuits. We want to demistify these components.
+There are two basic thumb rules when handling ideal op-amp circuit. (Real-world op-amp circuits are a bit more complicated, but we will discuss this later).
+1. The first thumb rule is that Vout is essentially the difference of the voltage values at the both inputs, multiplied with an arbitrary but high amplification factor A.</description>
+    </item>
+    
+    <item>
+      <title>Analog Computers 101</title>
+      <link>http://localhost:1313/posts/web/17_analog_computers_101/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/17_analog_computers_101/</guid>
+      <description>Today I want to speak about analog computers. In todays times analog computers are leading a shadowy existence, compared to their digital counterparts. But they are wonderous little machines. And that machines I mean wordly because there exists analog mechanical computers that are models from the world and used to compute and predict tides in certain areas of the world . Also the brain is an enourmous analog computer with a comparatively very small enery budget.</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Noise Floor</title>
+      <link>http://localhost:1313/posts/synth/16_noise_floor/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/16_noise_floor/</guid>
+      <description>On my mobile setup, the NiftyVCase I have collected my diy modules (with excepition to the Doepfer A-124, I had to include for its great sound). It features a kick-drum from erica synths, an even VCO, Sampling Modulator, A*B+C and Rampage from Befaco. As well as the Divebomb III for some delay. Last but not least a Zlon skew lfo and a BCM086 Diode Ladder High pass filter.
+noise floor Audio</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Jam Session</title>
+      <link>http://localhost:1313/posts/synth/15_jam_session/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/15_jam_session/</guid>
+      <description>This time, we have a convoluted patch, featuring a new member, the random sequencer from rat-king, which,as the name suggests, delivers nice randomly sequences. Also we have a new mixer module, self-build. We also utilize both VCOs and both LFO modules…​
+jam session Audio</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Another small patch</title>
+      <link>http://localhost:1313/posts/synth/14_another_small_patch/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/14_another_small_patch/</guid>
+      <description>So here is another small patch idea for the Doepfer A-100 system, this time featuring the SEM filter from Oberheim, incarnated in the Doepfer modul A-106-5. We also utilize two LFO modules…​
+LFO SEM Patch Audio
+LFO SEM Patch Audio 2
+LFO SEM Patch Audio 3
+To this day I did not find the right audio recorder,and I am recording with my smartphone, so the sound quality is rather bad.</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - Another simple patch</title>
+      <link>http://localhost:1313/posts/synth/13_another_simple_patch/</link>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/13_another_simple_patch/</guid>
+      <description>So here is another simple patch idea for the Doepfer A-100 system, this time featuring the SEM filter from Oberheim, incarnated in the Doepfer modul A-106-5. We also utilize two A-110 oscillator modules (one standard, one basic), and the LFO.
+SEM Patch Audio
+To this day I did not find the right audio recorder,and I am recording with my smartphone, so the sound quality is rather bad. I am still searching for the ideal recording hardware.</description>
+    </item>
+    
+    <item>
+      <title>Caches and Caching</title>
+      <link>http://localhost:1313/posts/web/12_caches_and_caching/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/12_caches_and_caching/</guid>
+      <description>When you fire up your browser to visit a website, you most probably did not noticed a very important mechanism underlying the browser and working in the background. Caching. Caches are used everywhere to optimize and improve access times and such in consequence the overall performance (of a site). Caching in the browser for example means, that ideally only the portions of the website that changed are loaded from the www.</description>
+    </item>
+    
+    <item>
+      <title>Eurorack Synthesizer - More patch ideas</title>
+      <link>http://localhost:1313/posts/synth/11_more_patch_ideas/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/11_more_patch_ideas/</guid>
+      <description>So here is another patch idea for the Doepfer A-100 system. The results of the Doepfer oscillators are pithlily &amp;#34;knarzig-kernige&amp;#34; sounds. We utilize two A-110 oscillator modules (one standard, one basic), a ring-modulator (A-114) and a wasp-filter (A-124), together with some utility modules like a sequencer and an LFO.
+pithily…​ Audio</description>
+    </item>
+    
+    <item>
+      <title>Pocket Operator Modular 400 in eurorack</title>
+      <link>http://localhost:1313/posts/synth/09_eurorack_modular/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/09_eurorack_modular/</guid>
+      <description>So I bought a low cost eurorack case from doepfer and a set of frontpanels plus power adapter for the pocket operator modular 400 from Oddvolt to put the said machine into a eurorack modular system. I also bought a small, but decent sequencer, since the one from teenage engineering is not very handy to use. I have two further modules on my list, the Doepfer A-119, an input module, as well as the Doepfer A-124, a wasp filter, to complete the setup.</description>
+    </item>
+    
+    <item>
+      <title>Topics to write about - Wishlist</title>
+      <link>http://localhost:1313/posts/web/10_wishlist/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/10_wishlist/</guid>
+      <description>This is a small, incomplete list of topics I’d like to write about in the mid- to far future.
+Caches
+Interrupts
+Out-of-Order execution
+RAW, WAR and WAW conflicts
+Filters (analog and digital)
+Analog computers
+neuronal networks
+the macrobiom</description>
+    </item>
+    
+    <item>
+      <title>Religion vs. spirituality - why I prefer the latter</title>
+      <link>http://localhost:1313/posts/web/08_religion_spirituality/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/08_religion_spirituality/</guid>
+      <description>What I have learned about religions and spirituality over the last years and decades boils down to one simple statement: Religion is about right and wrong and old, outdated dogmas, while spirituality simply says &amp;#34;It is how it is&amp;#34;. For spirituality, there is no right or wrong, only the single moment in the present in which we dwell. I find this viewpoint quite amazing. From what I found, it leads to a more awakened state.</description>
+    </item>
+    
+    <item>
+      <title>Why are serial interfaces everywhere - instead of parallel ones</title>
+      <link>http://localhost:1313/posts/web/07_serial_interfaces/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/07_serial_interfaces/</guid>
+      <description>USB, SPI, I²C, Sata - all these interfaces is common that they are serial interfaces. Serial interfaces are todays common. But why is that the case, especially for high-speed communication? it sounds simply counterintuitive: Parallel wires can theoretically send more bits per time than on singular wire can. The answer to that question is complex and multilayered. There are multiple different reasons why serial interfaces are preferred over parallel interfaces.</description>
+    </item>
+    
+    <item>
+      <title>How does a CPU work 2? Overview</title>
+      <link>http://localhost:1313/pages/overview2/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/overview2/</guid>
+      <description>From Combinatorial to Sequential Logic - Introduction Introduction to Sequential Logic
+We get from purely conmbinatorial logic circuits wihout any form of memeory to sequential logic circuits with some type of memory (mostly flipflops)
+Clocks,Flipflops and registers Clocks,flipflops and registers
+We make a leap into the area of sequential logic and introduce some concepts vital for the sequential logics, like clock, flipflops and registers
+Automata Automata
+We introduce the two (three) different automata Mealy, Moore (and Medwedjew).</description>
+    </item>
+    
+    <item>
+      <title>The Pocket Operator Modular 400 patch ideas (II)</title>
+      <link>http://localhost:1313/posts/synth/06_pocket_operator_modular_400/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/06_pocket_operator_modular_400/</guid>
+      <description>Plong…​ Video
+With the random module we can sample &amp;amp; hold a signal from the input. Its companionship is the noise module. We feed the saw output to the input of the rand module.
+Beep,bleep…​ Video
+sine output → speaker right
+envelope output → sine key
+LFO square → envelope trig
+LFO square → sine fm
+sweeping sinus…​ Video
+We can expand the setup by using the sequencer and utilize the filter.</description>
+    </item>
+    
+    <item>
+      <title>10_sequential_logic</title>
+      <link>http://localhost:1313/docs/digital_logic_2/10_sequential_logic/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_2/10_sequential_logic/</guid>
+      <description>Sequential Logic Complementary to Combinatorial logic, sequential logic contains some type of memory, making the behaviour state-dependent. We need to feed it a clock signal.
+Mealy and Moore Automata (synchronous) There are two different types of finite automata in the digital logic. Those are:
+The mealy automata, which is dependent on the input and the state
+The moore automata, which is only dependent on the state
+Synchronous and Asynchronous sequential Logic There are two different types of sequential logic, the synchronous sequential logic with one central clock, as well as the asnychonous logic which has multiple clock domains.</description>
+    </item>
+    
+    <item>
+      <title>The Pocket Operator Modular 400 patch ideas</title>
+      <link>http://localhost:1313/posts/synth/05_pocket_operator_modular_400/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/05_pocket_operator_modular_400/</guid>
+      <description>An analog modular synthesizer was ever me dream, last week I fulfilled this dream of mine, and ordered the pocket operator modular 400 from the swedish company teenage engineering. Like furniture from the other popular swedish company you first have to build it yourself, before making any sound with it. This took me around 3 to 4 hours. But it was worth it.
+Here are some patch ideas. In the first example we simply mix the outputs of all 3 oscillators together and control the sine oscillator with the triangle output of the LFO and the pulse width of the square oscillator with the LFO square.</description>
+    </item>
+    
+    <item>
+      <title>Odoo hacks: Remove Lock-Button from Odoo v12</title>
+      <link>http://localhost:1313/posts/web/04_odoo_hacks/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/04_odoo_hacks/</guid>
+      <description>Today I want to introduce a solution for a usability-problem I had in Odoo recently. In Odoo 12 there is a lock button next to the edit / save button, and you have to click both to (1) unlock the page and (2) make it editable. This should be done in one step, effectively removing the locking mechanism used in the Delivery Orders (class StockPicking) and Manufacturing Orders (class MrpProduction).</description>
+    </item>
+    
+    <item>
+      <title>X2_cordic</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x2_cordic/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x2_cordic/</guid>
+      <description>The CORDIC algoritm and direct digital synthesis (DDS) The CORDIC (which stands for &amp;#34;coordinate rotation digital computer&amp;#34;) algorithm, was developed in 1956 by Jack.E. Volder, to replace the analog resolvers used for missiles navigation by digital computation on digital computer. The algorithm turned out to be very successfull, today it can be found in every pocket calculator, doing the computation of the trigonometrical functions sinus, cosinus and tangens. But the algorithm is not limited to that it can also calculate logarithmic and exponential functions, given the needed modifications.</description>
+    </item>
+    
+    <item>
+      <title>Separating blog and content</title>
+      <link>http://localhost:1313/posts/web/03_separate_form_and_content/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/03_separate_form_and_content/</guid>
+      <description>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
+In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &amp;#39;hugo&amp;#39; and then do a clone of the repo hugo_content.</description>
+    </item>
+    
+    <item>
+      <title>X0_multiplication</title>
+      <link>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_x/x0_multiplication/</guid>
+      <description>Multiplication and Divsion Multiplication operations can be implemented in very different ways: Slow, as a serial operation, controlled by a micro program or fast in dedicated hardware.
+The division is a more complex operation, and thus will be discussed in another post. Also for multiplication we set the scope to unsigned integer numbers.
+Shift left and shift right For multipliers that are powers of two, the operation is very simple and can be implemented via a shift left.</description>
+    </item>
+    
+    <item>
+      <title>00_combinatorial_logic</title>
+      <link>http://localhost:1313/docs/digital_logic/00_combinatorial_logic/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/00_combinatorial_logic/</guid>
+      <description>This course about digital logic is splitted into two big chunks:
+Combinatorial circuits (without memory elements)
+Sequential circuits (with memory elements)
+While combinatorial circuits consists of boolean gates interconnected without feedback function, sequential gates posses a memory function,which makes them able to progress to another state.
+A combinatorial circuit can have n -wide vector of inputs and an m -wide vector of outputs.
+Combinatorial circuits can be described in different ways: As a formula, a circuit, a truth table or a Karnaugh map.</description>
+    </item>
+    
+    <item>
+      <title>Moving to Hugo</title>
+      <link>http://localhost:1313/posts/web/02_moving-to-hugo/</link>
+      <pubDate>Fri, 15 Apr 2022 12:17:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/02_moving-to-hugo/</guid>
+      <description>Since one week my blog is build on the static-site-generator Hugo. I wanted to move to Hugo far earlier, due to the wide variety of themes. However this required the move from Asciidoc to Asciidoctor, and I experienced a few problems with the integration of Asciidoctor into my existing workflow. As the approach of rendering the latex-equations in the asciidoc-documents no loger worked, I decided to move on to client-based rendering of formulas, like done in KaTex and Mathjax.</description>
+    </item>
+    
+    <item>
+      <title>07_RISC-V</title>
+      <link>http://localhost:1313/docs/digital_logic/07_risc_v/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/07_risc_v/</guid>
+      <description>Digital design meets computer architecture RISC vs CISC and The RISC-V architecture Existing processor types can be classified by their instruction type set: Reduced instruction set computer (RISC), Complex instruction set computer (CISC) and hybrid forms. While mini processors like ARM for embedded systems mostly utilise reduced instruction sets,todays workstation and Server Architectures (x86, x86_64) are hybrids of RISC and CISC. The idea of a reduced instruction set is to avoid big complex instructions and multiple different addressing modes (as those typically used in x86 architectures).</description>
+    </item>
+    
+    <item>
+      <title>06_Memory</title>
+      <link>http://localhost:1313/docs/digital_logic/06_memory/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/06_memory/</guid>
+      <description>Memory Organization In this blog post the author will introduce the different types of semiconductor memory. This is a wide field, so the goal here is to focus on the most important ones and draw the differences between the different types.
+The Memory hierarchy As in computing all is about performance, we first have a look at the memory hierarchy. As you can see in the pyramid below, memory is ordered in layers.</description>
+    </item>
+    
+    <item>
+      <title>11_Clocks_flipflops_and_registers</title>
+      <link>http://localhost:1313/docs/digital_logic_2/11_clocks_and_registers/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_2/11_clocks_and_registers/</guid>
+      <description>Clocks, Flipflops and registers In this blog post the author will introduce multiple elements needed at a later stage.
+Register-Transfer-Level needs a clock source As for now we only learned about combinatiorial logic, which works without any clock source - every signal is just delayed by the time it needs to travel through the circuit. This is known as asynchronous. But for more sophisticated tasks, sequential circuits, having registers storing the input and output signals are necessary to get correct results.</description>
+    </item>
+    
+    <item>
+      <title>05_ALU</title>
+      <link>http://localhost:1313/docs/digital_logic/05_alu/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/05_alu/</guid>
+      <description>The ALU, the swiss knife of every cpu Today the author wants to introduce an important part of every cpu: The arithmetic logic unit (ALU), we already know about some functions presented in the blog posts before. In this post we want to close the gaps systematically. Time for a short recap: The logic functions &amp;#39;and&amp;#39;,&amp;#39;or&amp;#39;,&amp;#39;not&amp;#39; and &amp;#39;xor&amp;#39; were introduced, also the arithmetic functions &amp;#39;add&amp;#39; and &amp;#39;sub&amp;#39; for integers were shown.</description>
+    </item>
+    
+    <item>
+      <title>04_Signs</title>
+      <link>http://localhost:1313/docs/digital_logic/04_signs/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/04_signs/</guid>
+      <description>Extending the binary system While in the previous blog post about addition, the binary numbers had only one interpretation, we extend the system here to include negative (integer) numbers.
+The simplest approach we can think of is to use the most significant bit (MSB) as sign bit, where &amp;#39;0&amp;#39; ist intepreted as sign &amp;#39;+&amp;#39; and &amp;#39;1&amp;#39; is interpreted as &amp;#39;-&amp;#39;. However as we see in the following calculation this does not work as expected:</description>
+    </item>
+    
+    <item>
+      <title>03_binary_system</title>
+      <link>http://localhost:1313/docs/digital_logic/03_binary_system/</link>
+      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/03_binary_system/</guid>
+      <description>The Binary System All computer we act with on a daily base do not know about the decimal system we are using, based on the ten digits at our hands. All they know about are the states on and off. We build an imaginary circuit with a power source a control light - here an LED (Light Emitting Diode) - and a switch, closing the connection let the light flash.</description>
+    </item>
+    
+    <item>
+      <title>02_XOR</title>
+      <link>http://localhost:1313/docs/digital_logic/02_xor/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/02_xor/</guid>
+      <description>XOR As there are a lot of important applications for the exclusive-or (XOR) operation it is dedicated an own blog post. Two of the most important are:
+XOR operations are often used in a Linear Feedback Shift Registers (LFSR). LFSR are a crucial step in scrambler / descrambler respectively, which are used in transmitters / receivers
+Part of an encryption algorithmus
+Last but not least an important part of a halfadder.</description>
+    </item>
+    
+    <item>
+      <title>01_boolean_algebra</title>
+      <link>http://localhost:1313/docs/digital_logic/01_boolean_algebra/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic/01_boolean_algebra/</guid>
+      <description>Boolean Algebra and Basic Logic Gates We are starting (the journey) with three very basic logic functions (or operations), which despite their simplicity already are valid instructions of a regular CPU:
+NOT, AND and OR
+Logical functions - also called operations, the author will use both terms interchangebly here - can be described in various ways, most often it is described implicit as boolean equation, but it can also be explained explicit in a truth table.</description>
+    </item>
+    
+    <item>
+      <title>How does a CPU work? Overview</title>
+      <link>http://localhost:1313/pages/overview/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/overview/</guid>
+      <description>Introduction and overview Introduction and overview
+Every topic of this course is broken up into two parts: A part about the mathematical side of digital logic, ideally almost independent from implementation details and a more concrete part handling this very details. In the concrete part we will mostly discuss the implementation on an electrical layer, though there are still other solutions possible based on fluid dynamics, or optical gates, most computers and logic gates are still based on electronics and semiconductor technology and this will not change with quantum computing, which is mostly tied to / adjunct to probability theory.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description> A simple static blog meant for writing about topics like electronics &amp;amp; computation and - maybe - philosophy.
+Dear reader of my humble blog , I am Sven Wehrend, a scanner personality born 1987, interested in a wide range of different topics reaching from technology over psychology to spirituality.
+I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Master).
+A german version can be found here. </description>
+    </item>
+    
+    <item>
+      <title>Setting up a static blog with Nikola</title>
+      <link>http://localhost:1313/posts/web/00_setting_up_nikola/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/00_setting_up_nikola/</guid>
+      <description>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.
+To make things a bit more interesting and at the same time easier we will use Nikola in a Docker container. So I require an almost basic understanding for Docker here.
+First create a directory on our host system, where you want the files stored, e.g. &amp;#39;blog&amp;#39; in your home directory.</description>
+    </item>
+    
+    <item>
+      <title>Über</title>
+      <link>http://localhost:1313/pages/ueber/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/ueber/</guid>
+      <description> Ein einfaches, statisches Blog, in dem über Themen wie Elektronik, Computer und - vielleicht - Philosophie geschrieben wird.
+Lieber Leser meines bescheidenen Blogs, ich bin Sven Wehrend, eine Scanner-Persönlichkeit, geboren 1987, Ich interessiere mich für ein breites Spektrum an Themen, von Technik über Psychologie bis hin zu Spiritualität.
+Ich habe Technische Informatik an der HTW Berlin (Bachelor) und der TU Berlin (Master) studiert.
+Aus dem englischen übersetzt mit deepl.com. </description>
+    </item>
+    
+    <item>
+      <title>Writing about math with Asciidoc</title>
+      <link>http://localhost:1313/posts/web/01_writing-about-math-with-asciidoc/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/web/01_writing-about-math-with-asciidoc/</guid>
+      <description>While drafting a blog post, part of a series of posts intended to be published in the future, I discovered a lack of my tooling in Nikola. When adding mathematical formulas, I realized that there is no default-way of rendering images from those math formulas, and inserting them as image-tags into the html. Instead math formulas are handled via JS, which I try to reduce to an absolute minimum on my site.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/drafts/alu2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/drafts/alu2/</guid>
+      <description>title: How does a CPU work? The swiss knife (Part II)
+slug: how-does-a-cpu-work-alu-2
+date: 2022-02-09
+category:
+link:
+description:
+type: text
+Instruction table logic operations description implementation data type / size and
+basic boolean Op
+-
+bit
+or
+basic boolean Op
+-
+bit
+not
+basic boolean Op
+-
+bit
+xor
+complex boolean Op
+-
+bit
+shl
+shift left
+-
+various
+shr
+shift right
+-
+various
+control instructions description data type / size ld</description>
+    </item>
+    
+    <item>
+      <title>Digital Logic 2</title>
+      <link>http://localhost:1313/docs/digital_logic_2/images/how_does_cpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/digital_logic_2/images/how_does_cpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prequel: Introduction to electronics</title>
+      <link>http://localhost:1313/pages/prequel-short-introduction-to-electronics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/prequel-short-introduction-to-electronics/</guid>
+      <description>While I was about to write the implementation part of the boolean algebra post, the basic logic gates, the writing process got quickly out of hand and I caught myself to write more about less connected topics like explaining basic electronic components and their implementation on silicon than the actual content, here shall be the place for those excursions. This is not meant to be a complete reference more a supplement to existing literature.</description>
+    </item>
+    
+    <item>
+      <title>Prequel: Introduction to electronics - 102</title>
+      <link>http://localhost:1313/pages/short-introduction-to-electronics-102/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/short-introduction-to-electronics-102/</guid>
+      <description>After reviewing and extensively describing the most important component, the resistor, in the first part, now we want to have a look at the next important component, the capacitor. Capacitor are also passive components, meaning they do not amplify a signal.
+Electrostatic field If we take two metal planes and park them side by side, with a small thin layer of a non-conducting substance in-between, we created an electrostatic field.</description>
+    </item>
+    
+  </channel>
+</rss>

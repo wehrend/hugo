@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DIY on Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/tags/diy/</link>
+    <description>Recent content in DIY on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build your own synthesizer modules</title>
+      <link>http://localhost:1313/posts/synth/25_build_your_own_modules/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/synth/25_build_your_own_modules/</guid>
+      <description>Introduction Hi, today I want to share with you the basic knowledge of DIYing your own synthesizer modules - those do not need of the eurorack standard although in my case they are.
+If you get started with eurorack format or any other modular like synth standard, but especially the eurorack standard - you will be most likely overwhelmed about the sheer number of manufacturers and available. You can have a simple look here on ModularGrid.</description>
+    </item>
+    
+  </channel>
+</rss>
