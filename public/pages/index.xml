@@ -37,10 +37,10 @@ Every topic of this course is broken up into two parts: A part about the mathema
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/pages/about/</guid>
-      <description> A simple static blog meant for writing about topics like electronics &amp;amp; computation and - maybe - philosophy.
+      <description>A simple static blog meant for writing about topics like electronics &amp;amp; computation and - maybe - philosophy.
 Dear reader of my humble blog , I am Sven Wehrend, a scanner personality born 1987, interested in a wide range of different topics reaching from technology over psychology to spirituality.
 I studied Computer Engineering at the HTW Berlin (Bachelor) and TU Berlin (Master).
-A german version can be found here. </description>
+A german version can be found here.</description>
     </item>
     
     <item>
@@ -53,6 +53,25 @@ A german version can be found here. </description>
 Lieber Leser meines bescheidenen Blogs, ich bin Sven Wehrend, eine Scanner-Persönlichkeit, geboren 1987, Ich interessiere mich für ein breites Spektrum an Themen, von Technik über Psychologie bis hin zu Spiritualität.
 Ich habe Technische Informatik an der HTW Berlin (Bachelor) und der TU Berlin (Master) studiert.
 Aus dem englischen übersetzt mit deepl.com. </description>
+    </item>
+    
+    <item>
+      <title>Prequel: Einführung in die Elektrotechnik - 102</title>
+      <link>http://localhost:1313/pages/short-introduction-to-electronics-102-de/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/short-introduction-to-electronics-102-de/</guid>
+      <description>Zeitsensitive Komponenten Nachdem wir im ersten Teil das wichtigste Bauteil, den Widerstand, betrachtet und ausführlich beschrieben haben Widerstand, im ersten Teil ausführlich beschrieben wurde, wollen wir uns nun das nächste wichtige Bauteil, den Kondensator, werfen. Kondensatoren sind ebenfalls passive Bauelemente, das heißt sie verstärken ein Signal nicht.
+Elektrostatisches Feld Nimmt man zwei Metallflächen und stellt sie nebeneinander, mit einer kleinen dünnen Schicht einer nichtleitenden Substanz dazwischen, entsteht ein elektrostatisches Feld.</description>
+    </item>
+    
+    <item>
+      <title>Prequel: Introduction to electronics</title>
+      <link>http://localhost:1313/pages/prequel-short-introduction-to-electronics-de/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/prequel-short-introduction-to-electronics-de/</guid>
+      <description>Als ich just dabei war, den Implementierungsteil der Booleschen Algebra zu schreiben, die grundlegenden logischen Gatter, lief der Schreibprozess schnell aus dem Ruder und ich ertappte mich dabei, dass ich mehr über weniger zusammenhängende Themen schrieb Themen zu schreiben, wie z.B. die Erläuterung grundlegender elektronischer Komponenten und deren Implementierung auf Silizium, als über den eigentlichen Inhalt, hier soll der Platz für diese Ausflüge sein. Dies soll kein vollständiges Nachschlagewerk sein, eher eine Ergänzung zu bestehenden Literatur.</description>
     </item>
     
     <item>
@@ -70,7 +89,7 @@ Aus dem englischen übersetzt mit deepl.com. </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/pages/short-introduction-to-electronics-102/</guid>
-      <description>After reviewing and extensively describing the most important component, the resistor, in the first part, now we want to have a look at the next important component, the capacitor. Capacitor are also passive components, meaning they do not amplify a signal.
+      <description>Time-sensitive components After reviewing and extensively describing the most important component, the resistor, in the first part, now we want to have a look at the next important component, the capacitor. Capacitor are also passive components, meaning they do not amplify a signal.
 Electrostatic field If we take two metal planes and park them side by side, with a small thin layer of a non-conducting substance in-between, we created an electrostatic field.</description>
     </item>
     

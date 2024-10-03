@@ -41,9 +41,24 @@ theme = "hugo-book"
   url = "/pages/overview2/"
   weight = 25
 
+[[menu.before]]
+  name = "Elektronik 101"
+  url = "/pages/prequel-short-introduction-to-electronics-de"
+  weight = 19
+
+[[menu.before]]
+  name = "Elektronik 102"
+  url = "/pages/short-introduction-to-electronics-102-de"
+  weight = 20
+
 [[menu.after]]
   name = "About"
   url = "/pages/about/"
+  weight = 10
+
+[[menu.after]]
+  name = "Über mich"
+  url = "/pages/ueber/"
   weight = 10
 
   
