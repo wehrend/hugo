@@ -1,434 +1,18 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
-&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN&#34;
-        &#34;http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd&#34;&gt;
-
-
-
-    
-    - no title specified
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-    
-        
-        
-        
-    
-    
-         
-         
-         
-    
-    
-         
-         
-         
-    
-    
-        Combinatorial Logic">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/digital_logic/agenda3/">
-  <meta property="og:site_name" content="Bits & pieces - Sven Wehrend">
-  <meta property="og:title" content="Bits & pieces - Sven Wehrend">
-  <meta property="og:description" content="&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN&#34; &#34;http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd&#34;&gt; - no title specified Combinatorial Logic">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-<title>Agenda3 | Bits &amp; pieces - Sven Wehrend</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="http://localhost:1313/docs/digital_logic/agenda3/">
-<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
-  <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.b6836219a0b36038d7e5796d8429744c626a261f7156028337a14d5b99507781.js" integrity="sha256-toNiGaCzYDjX5XlthCl0TGJqJh9xVgKDN6FNW5lQd4E=" crossorigin="anonymous"></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Bits &amp; pieces - Sven Wehrend</span>
-  </a>
-</h2>
-
-
-<div class="book-search hidden">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-<script>document.querySelector(".book-search").classList.remove("hidden")</script>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>Digital Logic 2</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic_2/10_sequential_logic/" class="">10_sequential_logic</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic_2/11_clocks_and_registers/" class="">11_Clocks_flipflops_and_registers</a>
-  
-
-        </li>
-      
-    
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>Digital Logic X</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic_x/X2_cordic/" class="">X2_cordic</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic_x/X0_multiplication/" class="">X0_multiplication</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>Digital Logic</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/00_combinatorial_logic/" class="">00_combinatorial_logic</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/07_RISC_V/" class="">07_RISC-V</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/06_memory/" class="">06_Memory</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/05_alu/" class="">05_ALU</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/04_signs/" class="">04_Signs</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/03_binary_system/" class="">03_binary_system</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/02_xor/" class="">02_XOR</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/01_boolean_algebra/" class="">01_boolean_algebra</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/agenda2/" class="">Agenda2</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/digital_logic/agenda3/" class="active">Agenda3</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-  
-<ul>
-  
-  <li>
-    <a href="/docs/digital_logic_2/images/how_does_cpu/"  >
-        Digital Logic 2
-      </a>
-  </li>
-  
-  <li>
-    <a href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener">
-        Github
-      </a>
-  </li>
-  
-  <li>
-    <a href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener">
-        Hugo Themes
-      </a>
-  </li>
-  
-</ul>
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>Agenda3</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown book-article"><?xml version="1.0" encoding="UTF-8"?>
+---
+title: Agenda 
+date: 2022-04-15
+tags: 
+category: 
+link: 
+description: 
+type: text
+---
+
+*Hallo?*
+
+*We'll get you started here*
+{{< rawhtml >}}
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
         "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -514,14 +98,15 @@ https://github.com/alex-shpak/hugo-book
     <tr class="ro1">
         <td style="text-align:left;width:1.6598in; " class="ce7"><p><a
                 href="./../docs/digital_logic/00_combinatorial_logic/">00_combinatorial_logic</a></p></td>
-        <td style="text-align:left;width:2.1283in; " class="ce18"><p>10_sequential_logic</p></td>
+        <td style="text-align:left;width:2.1283in; " class="ce18"><a
+                href="./../docs/digital_logic_2/10_sequential_logic/"><p>10_sequential_logic</a></p></td>
         <td style="text-align:left;width:0.889in; " class="Default"> </td>
     </tr>
     <tr class="ro1">
         <td style="text-align:left;width:1.6598in; " class="ce7"><p><span class="T1"><a
                 href="./../docs/digital_logic/01_boolean_algebra/">01_boolean_algebra</a></span></p></td>
         <td style="text-align:left;width:2.1283in; " class="ce18"><p><a
-                href="./../digital_logic_2/11_clocks_and_registers.adoc">11_clocks,flipflops_and_registers</a></p></td>
+                href="./../docs/digital_logic_2/11_clocks_and_registers/">11_clocks,flipflops_and_registers</a></p></td>
         <td style="text-align:left;width:0.889in; " class="Default"> </td>
     </tr>
     <tr class="ro1">
@@ -621,7 +206,8 @@ https://github.com/alex-shpak/hugo-book
         <td style="text-align:left;width:0.889in; " class="Default"> </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:1.6598in; " class="ce14"><p>X2_Trigonometric functions (CORDIC)</p></td>
+        <td style="text-align:left;width:1.6598in; " class="ce14"><a
+                href="./../docs/digital_logic_x/x2_cordic"><p>X2_Trigonometric functions (CORDIC)</a></p></td>
         <td style="text-align:left;width:2.1283in; " class="ce14"> </td>
         <td style="text-align:left;width:0.889in; " class="Default"> </td>
     </tr>
@@ -662,73 +248,18 @@ https://github.com/alex-shpak/hugo-book
     </tr>
 </table>
 </body>
-</html></article>
- 
-      
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-  <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/digital_logic/agenda3.html" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="" />
-      <span>Edit this page</span>
-    </a>
-  </div>
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
+{{< /rawhtml >}}
+<!-- Debugging: Ausgabe von .Site.Languages -->
+<div>
+  <h2>Debugging: Verfügbare Sprachen</h2>
+  <ul>
+    {{ range .Site.Languages }}
+      <li>
+        Sprache: {{ .LanguageName }} ({{ .Lang }})
+        <br> Verzeichnis: {{ .ContentDir }}
+        <br> Gewichtung: {{ .Weight }}
+      </li>
+    {{ end }}
+  </ul>
+</div>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Multilingual Hugo Example</title>
+    <title>Bits &amp; pieces - Sven Wehrend</title>
     <link>http://localhost:1313/docs/digital_logic/</link>
-    <description>Recent content on Multilingual Hugo Example</description>
+    <description>Recent content on Bits &amp; pieces - Sven Wehrend</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,9 @@
     </item>
     <item>
       <title>07_RISC-V</title>
-      <link>http://localhost:1313/docs/digital_logic/07_risc_v/</link>
+      <link>http://localhost:1313/docs/digital_logic/07_RISC_V/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/digital_logic/07_risc_v/</guid>
+      <guid>http://localhost:1313/docs/digital_logic/07_RISC_V/</guid>
       <description>&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_digital_design_meets_computer_architecture&#34;&gt;Digital design meets computer architecture&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;_risc_vs_cisc_and_the_risc_v_architecture&#34; class=&#34;sect0&#34;&gt;RISC vs CISC and The RISC-V architecture&lt;/h1&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Existing processor types can be classified by their instruction type set:&#xA;Reduced instruction set computer (RISC), Complex instruction set computer (CISC) and hybrid forms.&#xA;While mini processors like ARM for embedded systems mostly utilise reduced instruction&#xA;sets,todays workstation and Server Architectures (x86, x86_64) are hybrids of RISC and CISC.&#xA;The idea of a reduced instruction set is to avoid big complex instructions and multiple different&#xA;addressing modes (as those typically used in x86 architectures).&#xA;Advantages of a RISC architecture are shorter pipelines which allows faster clocking.&#xA;RISC architectures follow a simple scheme: &amp;#39;Fetch → Decode → Fetch Operands → Execute → Write Back&amp;#39;&#xA;Also instructions have a constant length, memory operations are divided from arithmetic operations,&#xA;which is known as Load/Store-architecture. RISC-V is an open standard for the instruction set archtitecture (ISA).&#xA;Most of this post is referenced from the popular book Computer Organization and Design (RISC-V) Edition by Hennessey and Patterson.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>

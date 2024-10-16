@@ -18,7 +18,7 @@ the repo hugo_content.
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/posts/web/03_separate_form_and_content/">
-  <meta property="og:site_name" content="Multilingual Hugo Example">
+  <meta property="og:site_name" content="Bits & pieces - Sven Wehrend">
   <meta property="og:title" content="Separating blog and content">
   <meta property="og:description" content=" As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since a blog and its content itself are different entities, I wanted to handle them as such, that led me to a cleanup of the original source code for blog, where I moved teh content folder into a different repo, called hugo_content, the former repo I called hugo_blog. ---
 In my case, this means you have to clone the repo hugo_blog first go inside the new directory (cd hugo ), checkout its branch &#39;hugo&#39; and then do a clone of the repo hugo_content.">
@@ -29,13 +29,15 @@ In my case, this means you have to clone the repo hugo_blog first go inside the 
     <meta property="article:modified_time" content="2023-02-04T00:00:00+00:00">
     <meta property="article:tag" content="Web">
     <meta property="article:tag" content="Hugo">
-<title>Separating blog and content | Multilingual Hugo Example</title>
+<title>Separating blog and content | Bits &amp; pieces - Sven Wehrend</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="http://localhost:1313/posts/web/03_separate_form_and_content/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.b2d126665a80c060e2102929a7db90485726a07165310f509a744ef307af77a1.js" integrity="sha256-stEmZlqAwGDiECkpp9uQSFcmoHFlMQ9QmnRO8wevd6E=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b6836219a0b36038d7e5796d8429744c626a261f7156028337a14d5b99507781.js" integrity="sha256-toNiGaCzYDjX5XlthCl0TGJqJh9xVgKDN6FNW5lQd4E=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -51,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Multilingual Hugo Example</span>
+  <a class="flex align-center" href="/"><span>Bits &amp; pieces - Sven Wehrend</span>
   </a>
 </h2>
 
@@ -146,7 +148,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/digital_logic_x/x2_cordic/" class="">X2_cordic</a>
+    <a href="/docs/digital_logic_x/X2_cordic/" class="">X2_cordic</a>
   
 
         </li>
@@ -159,7 +161,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/digital_logic_x/x0_multiplication/" class="">X0_multiplication</a>
+    <a href="/docs/digital_logic_x/X0_multiplication/" class="">X0_multiplication</a>
   
 
         </li>
@@ -203,7 +205,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/digital_logic/07_risc_v/" class="">07_RISC-V</a>
+    <a href="/docs/digital_logic/07_RISC_V/" class="">07_RISC-V</a>
   
 
         </li>
@@ -339,6 +341,18 @@ https://github.com/alex-shpak/hugo-book
       </a>
   </li>
   
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
 </ul>
 
 
@@ -370,10 +384,21 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+  <aside class="hidden clearfix">
+    
+  
+
+
+
+
+  </aside>
   
  
       </header>
@@ -403,6 +428,13 @@ the repo hugo_content.</p>
 
 
 
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/posts/web/03_separate_form_and_content.adoc" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
 
 </div>
 
@@ -426,6 +458,17 @@ the repo hugo_content.</p>
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+
+
+
+ 
+      </div>
+    </aside>
     
   </main>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Multilingual Hugo Example</title>
+    <title>Tags on Bits &amp; pieces - Sven Wehrend</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Multilingual Hugo Example</description>
+    <description>Recent content in Tags on Bits &amp; pieces - Sven Wehrend</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
@@ -45,9 +45,9 @@
     </item>
     <item>
       <title>IceCube2</title>
-      <link>http://localhost:1313/tags/icecube2/</link>
+      <link>http://localhost:1313/tags/IceCube2/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/icecube2/</guid>
+      <guid>http://localhost:1313/tags/IceCube2/</guid>
       <description></description>
     </item>
     <item>
@@ -59,30 +59,30 @@
     </item>
     <item>
       <title>Lattice</title>
-      <link>http://localhost:1313/tags/lattice/</link>
+      <link>http://localhost:1313/tags/Lattice/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lattice/</guid>
+      <guid>http://localhost:1313/tags/Lattice/</guid>
       <description></description>
     </item>
     <item>
       <title>Nandland Go</title>
-      <link>http://localhost:1313/tags/nandland-go/</link>
+      <link>http://localhost:1313/tags/Nandland-Go/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nandland-go/</guid>
+      <guid>http://localhost:1313/tags/Nandland-Go/</guid>
       <description></description>
     </item>
     <item>
       <title>DIY</title>
-      <link>http://localhost:1313/tags/diy/</link>
+      <link>http://localhost:1313/tags/DIY/</link>
       <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/diy/</guid>
+      <guid>http://localhost:1313/tags/DIY/</guid>
       <description></description>
     </item>
     <item>
       <title>Synth</title>
-      <link>http://localhost:1313/tags/synth/</link>
+      <link>http://localhost:1313/tags/Synth/</link>
       <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/synth/</guid>
+      <guid>http://localhost:1313/tags/Synth/</guid>
       <description></description>
     </item>
     <item>
@@ -94,9 +94,9 @@
     </item>
     <item>
       <title>LTB</title>
-      <link>http://localhost:1313/tags/ltb/</link>
+      <link>http://localhost:1313/tags/LTB/</link>
       <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ltb/</guid>
+      <guid>http://localhost:1313/tags/LTB/</guid>
       <description></description>
     </item>
     <item>
@@ -164,9 +164,9 @@
     </item>
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
+      <link>http://localhost:1313/tags/Web/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
+      <guid>http://localhost:1313/tags/Web/</guid>
       <description></description>
     </item>
     <item>
@@ -199,23 +199,23 @@
     </item>
     <item>
       <title>Odoo</title>
-      <link>http://localhost:1313/tags/odoo/</link>
+      <link>http://localhost:1313/tags/Odoo/</link>
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/odoo/</guid>
+      <guid>http://localhost:1313/tags/Odoo/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
+      <link>http://localhost:1313/tags/Hugo/</link>
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/Hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Nikola</title>
-      <link>http://localhost:1313/tags/nikola/</link>
+      <link>http://localhost:1313/tags/Nikola/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nikola/</guid>
+      <guid>http://localhost:1313/tags/Nikola/</guid>
       <description></description>
     </item>
   </channel>

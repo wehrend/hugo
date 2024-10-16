@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Multilingual Hugo Example</title>
+    <title>Bits &amp; pieces - Sven Wehrend</title>
     <link>http://localhost:1313/posts/web/</link>
-    <description>Recent content on Multilingual Hugo Example</description>
+    <description>Recent content on Bits &amp; pieces - Sven Wehrend</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compiling Kicad on Debian Bullseye</title>
-      <link>http://localhost:1313/posts/web/27_compiling_kicad_on_debian_bullseye/</link>
+      <link>http://localhost:1313/posts/web/27_compiling_kicad_on_Debian_bullseye/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/web/27_compiling_kicad_on_debian_bullseye/</guid>
+      <guid>http://localhost:1313/posts/web/27_compiling_kicad_on_Debian_bullseye/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;With my new hobby, there came the desire to learn to build and design my own PCB. With that in mind, I began to use the&#xA;open source ecad solution Kicad. Now I became interested in participating in this project, but, to compile the code you&#xA;have endure a few challenges - you know, collecting the dependencies,installing them, choose the right branch whiche compiles down&#xA;and so on. Here I want to show you my experience with that.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>FPGA 101: Get the Nandland Go board ready on Debian Bullseye</title>
-      <link>http://localhost:1313/posts/web/26_get_the_nandlab_go_board_ready_on_debian/</link>
+      <link>http://localhost:1313/posts/web/26_get_the_nandlab_go_board_ready_on_Debian/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/web/26_get_the_nandlab_go_board_ready_on_debian/</guid>
+      <guid>http://localhost:1313/posts/web/26_get_the_nandlab_go_board_ready_on_Debian/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Hi there,&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;finally this week the &lt;a href=&#34;https://nandland.com/the-go-board/&#34;&gt;nandland go board&lt;/a&gt; I ordered from the developer Russell Merrick a month ago arrived.&#xA;It took a detour due to some shipping problems, but this is not about that, so.&#xA;I had to face quite a few obstacles to get this running on my Debian Bullseye.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_serial_connection_via_usb&#34;&gt;Serial Connection via USB&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;First of all, to connect&#xA;to the board via FTDI usb as suggested on Debian Bullseye you have to first add your user to the group&#xA;&amp;#39;dialout&amp;#39;, this is done like below:&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>A favorite hobby of mine: Lustiges Taschenbuch Nr. 162</title>
-      <link>http://localhost:1313/posts/web/ltb162/25_ltb162/</link>
+      <link>http://localhost:1313/posts/web/ltb162/25_LTB162/</link>
       <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/web/ltb162/25_ltb162/</guid>
+      <guid>http://localhost:1313/posts/web/ltb162/25_LTB162/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;It is about time, to share another favorite of mine with you, and this is duckburg and the duck universe.&#xA;I take the LTB (Lustiges Taschenbuch) Nr. 162 as an example from the golden era of the comic series &amp;#34;Lustiges&#xA;Taschenbuch&amp;#34;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;span class=&#34;image&#34;&gt;&lt;img src=&#34;../title.jpg&#34; alt=&#34;Title&#34;/&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;span class=&#34;image&#34;&gt;&lt;img src=&#34;../content.jpg&#34; alt=&#34;ToC&#34;/&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_der_goldene_totempfahl_the_golden_totem_pole&#34;&gt;Der goldene Totempfahl (The golden totem pole)&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;In the story &amp;#34;Der goldene Totempfahl&amp;#34; english the golden totem pole, uncle scrooge is making a movie about his life,&#xA;the story plays in the county of Dawson, where they are getting lost after a storm, they meet the indianer &amp;#34;großer Elch&amp;#34;&#xA;english &amp;#34;big moose&amp;#34; and are searching for the gold nuggets big moose saved for uncle scrooge back in time.&#xA;The movie ends with big moose ending as a movie star.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
@@ -129,9 +129,9 @@
     </item>
     <item>
       <title>Moving to Hugo</title>
-      <link>http://localhost:1313/posts/web/02_moving-to-hugo/</link>
+      <link>http://localhost:1313/posts/web/02_moving-to-Hugo/</link>
       <pubDate>Fri, 15 Apr 2022 12:17:41 +0000</pubDate>
-      <guid>http://localhost:1313/posts/web/02_moving-to-hugo/</guid>
+      <guid>http://localhost:1313/posts/web/02_moving-to-Hugo/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Since one week my blog is build on the static-site-generator &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&#xA;I wanted to move to Hugo far earlier, due to the wide variety of themes.&#xA;However this required the move from Asciidoc to &lt;a href=&#34;https://asciidoctor.org/&#34;&gt;Asciidoctor&lt;/a&gt;,&#xA;and I experienced a few problems with the integration of Asciidoctor into my existing workflow.&#xA;As the approach of rendering the latex-equations in the asciidoc-documents&#xA;no loger worked, I decided to move on to client-based rendering of formulas,&#xA;like done in &lt;a href=&#34;https://gohugo.io/Katex&#34;&gt;KaTex&lt;/a&gt; and &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;Mathjax&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
