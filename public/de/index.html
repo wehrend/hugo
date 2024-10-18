@@ -96,6 +96,43 @@ https://github.com/alex-shpak/hugo-book
 <script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
+  
+  
+
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Deutsch
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="http://localhost:1313/en/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+  
+
 
 
 
@@ -428,19 +465,6 @@ https://github.com/alex-shpak/hugo-book
 </html>
 
 </p>
-<!-- Debugging: Ausgabe von .Site.Languages -->
-<div>
-  <h2>Debugging: Verfügbare Sprachen</h2>
-  <ul>
-    {{ range .Site.Languages }}
-      <li>
-        Sprache: {{ .LanguageName }} ({{ .Lang }})
-        <br> Verzeichnis: {{ .ContentDir }}
-        <br> Gewichtung: {{ .Weight }}
-      </li>
-    {{ end }}
-  </ul>
-</div>
 </article>
  
       
@@ -449,6 +473,12 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/77f24f77275d04d66b56e06ae824f2b02a052003" title='Zuletzt geändert von Sven Wehrend | Oktober 16, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>Oktober 16, 2024</span>
+    </a>
+  </div>
 
 
 

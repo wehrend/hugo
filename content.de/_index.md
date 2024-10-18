@@ -250,16 +250,3 @@ type: text
 </body>
 </html>
 {{< /rawhtml >}}
-<!-- Debugging: Ausgabe von .Site.Languages -->
-<div>
-  <h2>Debugging: Verfügbare Sprachen</h2>
-  <ul>
-    {{ range .Site.Languages }}
-      <li>
-        Sprache: {{ .LanguageName }} ({{ .Lang }})
-        <br> Verzeichnis: {{ .ContentDir }}
-        <br> Gewichtung: {{ .Weight }}
-      </li>
-    {{ end }}
-  </ul>
-</div>
