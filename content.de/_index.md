@@ -1,6 +1,6 @@
 ---
 title: Agenda 
-date: 2022-04-15
+date: 2024-10-18
 tags: 
 category: 
 link: 
@@ -8,9 +8,9 @@ description:
 type: text
 ---
 
-*Hallo?*
+*Du willst also etwas über Elektronik, digitale Logik und darüber lernen, wie eine CPU das macht, was sie macht?
 
-*We'll get you started here*
+*Wir helfen dir hier auf die Sprünge*
 {{< rawhtml >}}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
