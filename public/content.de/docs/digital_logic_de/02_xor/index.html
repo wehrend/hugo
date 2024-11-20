@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+XOR
+
+
+Da es viele wichtige Anwendungen für die Exklusiv-Oder (XOR) Operation gibt
+ist ihr ein eigener Blog-Beitrag gewidmet. Zwei der wichtigsten sind:
+
+
+
+
+XOR-Operationen werden häufig in linearen rückgekoppelten Schieberegistern (LFSR) verwendet.
+LFSR sind ein entscheidender Schritt in Scramblern bzw. Descramblern,
+die in Sendern/Empfängern verwendet werden
+
+
+Teil eines Verschlüsselungsalgorithmus
+
+
+Und nicht zuletzt ein wichtiger Teil eines Halbaddierers.
+
+
+
+
+Die Exklusiv-Oder-Operation xor, die auch als Antivalenz bezeichnet wird
+wird als A ⊕ B = Q bezeichnet. Ihre Wahrheitstabelle ist unten dargestellt
+">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/content.de/docs/digital_logic_de/02_xor/">
+  <meta property="og:site_name" content="Bits & pieces - Sven Wehrend">
+  <meta property="og:title" content="02_XOR">
+  <meta property="og:description" content="XOR Da es viele wichtige Anwendungen für die Exklusiv-Oder (XOR) Operation gibt ist ihr ein eigener Blog-Beitrag gewidmet. Zwei der wichtigsten sind:
+XOR-Operationen werden häufig in linearen rückgekoppelten Schieberegistern (LFSR) verwendet. LFSR sind ein entscheidender Schritt in Scramblern bzw. Descramblern, die in Sendern/Empfängern verwendet werden
+Teil eines Verschlüsselungsalgorithmus
+Und nicht zuletzt ein wichtiger Teil eines Halbaddierers.
+Die Exklusiv-Oder-Operation xor, die auch als Antivalenz bezeichnet wird wird als A ⊕ B = Q bezeichnet. Ihre Wahrheitstabelle ist unten dargestellt">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="content.de">
+    <meta property="article:published_time" content="2024-10-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-24T00:00:00+00:00">
+<title>02_XOR | Bits &amp; pieces - Sven Wehrend</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.f588e691ff757da942890356a82e6dfbc956f3829c4b9b947a5f389870235998.js" integrity="sha256-9Yjmkf91falCiQNWqC5t&#43;8lW84KcS5uUel84mHAjWZg=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Bits &amp; pieces - Sven Wehrend</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="http://localhost:1313/de/">
+          Deutsch
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        Web-Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        Synth-Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        Digital Logic 2 (Overview)
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        Electronics 101
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        Electronics 102
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        About
+      </a>
+  </li>
+  
+  <li>
+    <a href="/content.de/docs/digital_logic_2/images/how_does_cpu/" >
+        Digital Logic 2
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        Digital Logic 1 (Overview)
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>02_XOR</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+<ul>
+  
+  
+  
+  
+
+  
+  <li>
+    <select id="selectLanguage" onchange="location = this.value">
+      
+      
+      
+        
+        <option value="/content.de/docs/digital_logic_de/02_xor/" selected>
+          English
+        </option>
+      
+    </select>
+  </li>
+
+  
+  
+</ul>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><div class="sect1">
+<h2 id="_xor">XOR</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Da es viele wichtige Anwendungen für die Exklusiv-Oder (XOR) Operation gibt
+ist ihr ein eigener Blog-Beitrag gewidmet. Zwei der wichtigsten sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>XOR-Operationen werden häufig in linearen rückgekoppelten Schieberegistern (LFSR) verwendet.
+LFSR sind ein entscheidender Schritt in Scramblern bzw. Descramblern,
+die in Sendern/Empfängern verwendet werden</p>
+</li>
+<li>
+<p>Teil eines Verschlüsselungsalgorithmus</p>
+</li>
+<li>
+<p>Und nicht zuletzt ein wichtiger Teil eines Halbaddierers.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Exklusiv-Oder-Operation xor, die auch als Antivalenz bezeichnet wird
+wird als A ⊕ B = Q bezeichnet. Ihre Wahrheitstabelle ist unten dargestellt</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3334%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Q</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="image"><img src="../images/how_does_cpu/xor_symbol.svg" alt="xor symbol" width="250"/></span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CMOS XOR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../images/how_does_cpu/xor_cmos.svg" alt="xor cmos" width="800"/></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"># Transistor: 12</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_einige_anwendungen">Einige Anwendungen</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_linear_feedback_shift_register_lsfr">Linear Feedback Shift Register (LSFR)</h3>
+<div class="paragraph">
+<p>Wie oben beschrieben, werden XOR-Gatter in linearen rückgekoppelten Schieberegistern (Linear Feedback Shift Registers, LFSR) verwendet.
+LFSR werden häufig zur Erzeugung von Testmustern verwendet.
+Der Autor hat ein einfaches Beispiel für ein 3-Bit-LFSR ausgewählt, das in einem
+<a href="https://www.ti.com/lit/an/scta036a/scta036a.pdf">White Paper von Texas Instruments</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../images/how_does_cpu/lfsr.svg" alt="lfsr" width="800"/></span></p>
+</div>
+<div class="paragraph">
+<p>Für dieses Beispiel müssen wir einen großen Sprung machen und uns in den Bereich der sequentiellen Schaltungen begeben.
+Das sind Schaltungen, die eine Rückkopplung nutzen. Das gewählte Beispiel erzeugt pseudo-zufällige
+Testmuster entsprechend der untenstehenden Tabelle. Die Register werden mit dem Seed-Wert 111 gefüttert,
+nach 8 Taktzyklen wiederholen sich die Muster erneut.
+Echte Testmustergeneratoren haben natürlich eine viel höhere Bitbreite.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CLK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FF1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FF2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FF3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_halbaddierer">Halbaddierer</h3>
+<div class="paragraph">
+<p>Im nächsten Blogpost tauchen wir tiefer in die Anwendung der Halbaddirer ein.
+Die Halbaddierer bestehen im Wesentlichen aus den beiden folgenden Gleichungen
+für die Summe (unter Verwendung des XOR ) und den Übertrag (unter Verwendung eines einfachen AND).</p>
+</div>
+<div class="paragraph">
+<p>[„latex“,„../images/half-adder.svg“,imgfmt=„svg“, width=„40%“]
+\[
+\begin{array}{c}
+c = x \land y \\
+s = x \oplus y
+\end{array}
+\]</p>
+</div>
+<div class="paragraph">
+<p>Übersetzt mit DeepL.com (kostenlose Version)</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+Last update: November 20, 2024 
+
+
+</div>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+        
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

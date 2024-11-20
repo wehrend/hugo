@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bits &amp; pieces - Sven Wehrend</title>
+    <link>http://localhost:1313/content.de/pages/</link>
+    <description>Recent content on Bits &amp; pieces - Sven Wehrend</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/content.de/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prequel: Introduction to electronics - 102</title>
+      <link>http://localhost:1313/content.de/pages/short-introduction-to-electronics-102/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content.de/pages/short-introduction-to-electronics-102/</guid>
+      <description>&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_zeitkritische_komponenten&#34;&gt;Zeitkritische Komponenten&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Nachdem wir im ersten Teil das wichtigste Bauteil, den Widerstand, betrachtet und ausführlich beschrieben haben&#xA;Widerstand, im ersten Teil ausführlich beschrieben wurde, wollen wir uns nun das nächste wichtige&#xA;Bauteil, den Kondensator, werfen. Kondensatoren sind ebenfalls passive Bauelemente, das heißt&#xA;sie verstärken ein Signal nicht.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;sect2&#34;&gt;&#xA;&lt;h3 id=&#34;_elektrostatisches_feld&#34;&gt;Elektrostatisches Feld&lt;/h3&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Nimmt man zwei Metallflächen und stellt sie nebeneinander, mit einer kleinen dünnen Schicht einer nichtleitenden&#xA;Substanz dazwischen, entsteht ein elektrostatisches Feld.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>How does a CPU work 2? Overview</title>
+      <link>http://localhost:1313/content.de/pages/overview2/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content.de/pages/overview2/</guid>
+      <description>&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_wie_funktioniert_eine_cpu_2_inhaltsverzeichnis&#34;&gt;Wie funktioniert eine CPU 2 - Inhaltsverzeichnis&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_von_der_kombinatorischen_zur_sequentiellen_logik_einführung&#34;&gt;&lt;strong&gt;Von der Kombinatorischen zur Sequentiellen Logik - Einführung&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://wehrend.uber.space/docs/digital_logic_2/10_sequential_logic&#34;&gt;Einführung in die sequentielle Logik&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Wir gelangen von rein kombinatorischen Logikschaltungen ohne irgendeine Form von Speicher zu sequentiellen Logikschaltungen mit einer Art von Speicher (meist Flipflops).&#xA;Speicher (meist Flipflops)&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_taktgeber_flipflops_und_register&#34;&gt;&lt;strong&gt;Taktgeber, Flipflops und Register&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://wehrend.uber.space/docs/digital_logic_2/11_clocks_and_registers/&#34;&gt;Taktgeber, Flipflops und Register&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Wir machen einen Sprung in den Bereich der sequentiellen Logik und führen einige für die sequentielle Logik wichtige Konzepte ein,&#xA;wie Taktgeber, Flipflops und Register&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Prequel: Introduction to electronics</title>
+      <link>http://localhost:1313/content.de/pages/prequel-short-introduction-to-electronics/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content.de/pages/prequel-short-introduction-to-electronics/</guid>
+      <description>&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_einführung_in_die_elektronik&#34;&gt;Einführung in die Elektronik&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;hr/&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Als ich just dabei war, den Implementierungsteil der Booleschen Algebra zu schreiben, die grundlegenden logischen&#xA;Gatter, lief der Schreibprozess schnell aus dem Ruder und ich ertappte mich dabei, dass ich mehr über weniger zusammenhängende Themen schrieb&#xA;Themen zu schreiben, wie z.B. die Erläuterung grundlegender elektronischer Komponenten und deren Implementierung auf Silizium, als über den eigentlichen Inhalt,&#xA;hier soll der Platz für diese Ausflüge sein. Dies soll kein vollständiges Nachschlagewerk sein, eher eine Ergänzung zu&#xA;bestehenden Literatur.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>How does a CPU work? Overview</title>
+      <link>http://localhost:1313/content.de/pages/overview/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content.de/pages/overview/</guid>
+      <description>&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_wie_funktioniert_eine_cpu_inhaltsverzeichnis&#34;&gt;Wie funktioniert eine CPU - Inhaltsverzeichnis&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;sect1&#34;&gt;&#xA;&lt;h2 id=&#34;_einführung_und_überblick&#34;&gt;&lt;strong&gt;Einführung und Überblick&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;sectionbody&#34;&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;em&gt;Einführung und Überblick&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Jedes Thema dieses Kurses ist in zwei Teile gegliedert:&#xA;Ein Teil über die mathematische Seite der digitalen Logik,&#xA;idealerweise fast unabhängig von den Implementierungsdetails&#xA;und einen konkreteren Teil, der genau diese Details behandelt.&#xA;Im konkreten Teil werden wir hauptsächlich die Implementierung&#xA;auf der elektrischen Ebene diskutieren, obwohl es auch andere Lösungen&#xA;gibt, die zum Beispieil auf&#xA;&lt;a href=&#34;https://erik-engheim.medium.com/microprocessors-running-on-air-a47a702dd41f&#34;&gt;Fluiddynamik&lt;/a&gt;,&#xA;oder &lt;a href=&#34;https://www.photonics.com/Articles/All-Optical_Logic_Gates_Show_Promise_for_Optical/a63226&#34;&gt;optische Gatter&lt;/a&gt;&#xA;beruhen. die meisten Computer und Logikgatter jedoch basieren immer noch&#xA;auf Elektronik und Halbleitertechnologie, und das wird sich auch mit  dem&#xA;&lt;a href=&#34;https://www.azom.com/article.aspx?ArticleID=17173&#34;&gt;Quantencomputer&lt;/a&gt;,welche  größtenteils&#xA;an die Wahrscheinlichkeitstheorie gebunden ist nicht substantiell ändern.Jedoch werden sich mit dem Quantencomputing&#xA;werden sich jedoch die Grundlagen, die der Autor hier beschreibt, komplett ändern.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/content.de/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content.de/pages/about/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Ein einfaches, statisches Blog, in dem über Themen wie Elektronik, Computer und - vielleicht - Philosophie geschrieben wird.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr/&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Lieber Leser meines bescheidenen Blogs, ich bin Sven Wehrend, eine Scanner-Persönlichkeit, geboren 1987,&#xA;Ich interessiere mich für eine Vielzahl von Themen, die von Technik über Psychologie bis hin zu Spiritualität reichen.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Ich habe Technische Informatik an der HTW Berlin (Bachelor) und der TU Berlin (Master) studiert.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr/&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Übersetzt mit DeepL.com (kostenlose Version)&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
