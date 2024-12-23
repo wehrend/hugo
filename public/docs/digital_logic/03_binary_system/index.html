@@ -683,7 +683,7 @@ applied to evaluate combinatorial circuits</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph /images/sum-equations svg">
+<div class="paragraph image">
 <p>\[
 \begin{aligned}
 s &amp; = (\overline{c_{in}} \land \overline{A} \land B) \lor (\overline{c_{in}} \land A \land {\overline{B}}) \lor (c_{in} \land \overline{A} \land \overline{B}) \lor (c_{in} \land A \land B) \\
@@ -693,7 +693,7 @@ s &amp; = (\overline{c_{in}} \land \overline{A} \land B) \lor (\overline{c_{in}}
 \end{aligned}
 \]</p>
 </div>
-<div class="paragraph /images/carry-equations svg">
+<div class="paragraph image">
 <p>\[
 \begin{aligned}
 c_{out} &amp; = \overline{c_{in}}(A \land B) \lor c_{in}(\overline{A} \land B) \lor c_{in}(A \land \overline{B}) \lor c_{in}(A \land B) \\
@@ -767,7 +767,7 @@ without the carry, we evaluate the half-adder cell.</p>
 <p>As we can see, the halfadder consists only of the two gates &#39;AND&#39; and &#39;XOR&#39;.
 Two halfadder and a separate &#39;OR&#39;-gate for the carry-signal result in a fulladder.</p>
 </div>
-<div class="paragraph /images/half-adder svg">
+<div class="paragraph image">
 <p>\[
 \begin{array}{c}
 c = x \land y \\
@@ -790,7 +790,7 @@ the carry-Lookahead has been developed.
 The signals, (g)enerate and (p)ropagate are defined as follows
 (i being the index of the significance):</p>
 </div>
-<div class="paragraph /images/generate_propagate svg">
+<div class="paragraph image">
 <p>\[
 \begin{array}{c}
 g_{i} = a_{i} \land b_{i} \\
@@ -801,12 +801,12 @@ p_{i} = a_{i} \lor b_{i}
 <div class="paragraph">
 <p>From these helper signals the next carry-value is calculated:</p>
 </div>
-<div class="paragraph /images/carry_lookahead svg">
+<div class="paragraph image">
 <p>\[
 c_{i+1} = g_{i} \lor c_{i} \land p_{i}
 \]</p>
 </div>
-<div class="paragraph /images/carry_lookaheads svg">
+<div class="paragraph image">
 <p>\[
 \begin{aligned}
 c_{1} &amp; = g_{0} \lor c_{0}p_{0} \\

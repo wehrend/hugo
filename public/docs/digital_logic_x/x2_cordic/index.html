@@ -446,7 +446,7 @@ it can also calculate logarithmic and exponential functions, given the needed mo
 <div class="paragraph">
 <p>In the image below, V0 shows the start vector</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[v_{0}=\begin{bmatrix}
 0 \\
 1
@@ -457,10 +457,10 @@ it can also calculate logarithmic and exponential functions, given the needed mo
 <div class="paragraph">
 <p>which we now iterate, by multiplying it with the rotation matrix, given below:</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[v_{i+1}= R_i v_i\]</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ R_i = \begin{bmatrix}
 cos(\theta) &amp; -sin(\theta) \\
 sin(\theta) &amp; cos(\theta)
@@ -468,12 +468,12 @@ sin(\theta) &amp; cos(\theta)
 \]
 We use the following two trigonometric identities:</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[
 cos(\theta) = \frac{1}{\sqrt{1+tan^2(\theta)}}
 \]</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[
 sin(\theta) = \frac{tan(\theta)}{\sqrt{1+tan^2(\theta)}}
 \]</p>
@@ -481,7 +481,7 @@ sin(\theta) = \frac{tan(\theta)}{\sqrt{1+tan^2(\theta)}}
 <div class="paragraph">
 <p>the rotation matrix becomes</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ R_i =   \frac{1}{\sqrt{1+tan^2(\theta)}} \begin{bmatrix}
 1 &amp; -tan(\theta) \\
 tan(\theta) &amp; 1
@@ -491,7 +491,7 @@ tan(\theta) &amp; 1
 <div class="paragraph">
 <p>Then the rotation vector $v_{i+1}= R_i v_i$ becomes:</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ \begin{bmatrix}
 x_{i+1} \\
 y_{i+1} \\
@@ -507,7 +507,7 @@ y_{i} \\
 <div class="paragraph">
 <p>We replace the tangens function with a simpler expression, resulting in a bit shift.</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ \begin{bmatrix}
 x_{i+1} \\
 y_{i+1} \\
@@ -521,7 +521,7 @@ y_{i} \\
 \]
 where</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ K_{i} =   \frac{1}{\sqrt{1+2^{-2i}}} \]</p>
 </div>
 <div class="paragraph">
@@ -531,10 +531,10 @@ positive then $\sigma{i}$ is +1, otherwise -1.</p>
 <div class="paragraph">
 <p>The factor Ki can be factored completly for the iterative process.</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ K(n) =   \prod_{i=0}^{n-1}K_{i} = \prod_{i=0}^{n-1} \frac{1}{\sqrt{1+2^{-2i}}} \]</p>
 </div>
-<div class="paragraph">
+<div class="paragraph image">
 <p>\[ K = lim_{n→ \infty} K \approx  0.60725293500888 \]</p>
 </div>
 <div class="paragraph">
