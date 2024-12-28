@@ -3,54 +3,95 @@ languageCode = "en-us"
 title = "Bits & pieces - Sven Wehrend"
 theme = "hugo-book"
 
-[[menu.before]]
+[languages.en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 1
+
+[languages.de]
+  languageName = "Deutsch"
+  contentDir = "content/de"
+  weight = 2
+
+
+[[languages.en.menu.before]]
   name = "Web-Blog"
   url = "/posts/web/"
   weight = 10
 
-[[menu.before]]
+[[languages.en.menu.before]]
   name = "Synth-Blog"
   url = "/tags/synth/"
   weight = 20
 
 
-[[menu.before]]
+[[languages.en.menu.before]]
   name = ""
   url = "/docs/"
   weight = 10
 
-  
-[[menu.before]]
+
+[[languages.en.menu.before]]
   name = "Electronics 101"
   url = "/pages/prequel-short-introduction-to-electronics"
   weight = 26
 
-[[menu.before]]
+[[languages.en.menu.before]]
   name = "Electronics 102"
   url = "/pages/short-introduction-to-electronics-102"
   weight = 27
 
 
-[[menu.after]]
+[[languages.en.menu.after]]
   name = "Digital Logic 1 (Overview)"
   url = "/pages/overview/"
   weight = 20
 
-[[menu.before]]
+[[languages.en.menu.before]]
   name = "Digital Logic 2 (Overview)"
   url = "/pages/overview2/"
   weight = 25
 
-[languages.en]
-  languageName = "English"
-  contentDir = "content"
-  weight = 1
 
-[languages.de]
-  languageName = "Deutsch"
-  contentDir = "content.de"
-  weight = 2
-  
+[[languages.de.menu.before]]
+  name = "Web-Blog"
+  url = "/posts/web/"
+  weight = 10
+
+[[languages.de.menu.before]]
+  name = "Synth-Blog"
+  url = "/tags/synth/"
+  weight = 20
+
+
+[[languages.de.menu.before]]
+  name = ""
+  url = "/docs/"
+  weight = 10
+
+
+[[languages.de.menu.before]]
+  name = "Elektronik 101"
+  url = "/de/pages/prequel-short-introduction-to-electronics"
+  weight = 26
+
+[[languages.de.menu.before]]
+  name = "Elektronik 102"
+  url = "/de/pages/short-introduction-to-electronics-102"
+  weight = 27
+
+
+[[languages.de.menu.after]]
+  name = "Digitale Logik 1 (Übersicht)"
+  url = "/de/pages/overview/"
+  weight = 20
+
+[[languages.de.menu.before]]
+  name = "Digitale Logik 2 (Übersicht)"
+  url = "/de/pages/overview2/"
+  weight = 25
+
+
 [params]
   date_format = "2006-01-02"
   # (Optional, default light) Sets color theme: light, dark or auto.

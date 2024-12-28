@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/posts/web/">
   <meta property="og:site_name" content="Bits & pieces - Sven Wehrend">
   <meta property="og:title" content="Bits & pieces - Sven Wehrend">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 <title>Web | Bits &amp; pieces - Sven Wehrend</title>
+<link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.7babc1977deff139bd763bcce00a3f86273a7f2bf57a4d9f2333b2984732a051.js" integrity="sha256-e6vBl33v8Tm9djvM4Ao/hic6fyv1ek2fIzOymEcyoFE=" crossorigin="anonymous"></script>
+<link rel="canonical" href="http://localhost:1313/posts/web/">
+  <link rel="alternate" hreflang="de" href="http://localhost:1313/de/posts/web/" title="Web">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.9b8ca87c420afd444c02fe6d794e0f72a2441e3dc9ca3bf680ae3b2beda276dd.js" integrity="sha256-m4yofEIK/URMAv5teU4PcqJEHj3Jyjv2gK47K&#43;2idt0=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/web/index.xml" title="Bits & pieces - Sven Wehrend" />
 <!--
 Made with Book Theme
@@ -37,11 +40,48 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/de/posts/web/">
+          Deutsch
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
 
 
 
@@ -52,37 +92,37 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="/docs/" target="_blank" rel="noopener">
+    <a href="/docs/"  target="_blank" rel="noopener">
         
       </a>
   </li>
   
   <li>
-    <a href="/posts/web/" target="_blank" rel="noopener">
+    <a href="/posts/web/"  target="_blank" rel="noopener">
         Web-Blog
       </a>
   </li>
   
   <li>
-    <a href="/tags/synth/" target="_blank" rel="noopener">
+    <a href="/tags/synth/"  target="_blank" rel="noopener">
         Synth-Blog
       </a>
   </li>
   
   <li>
-    <a href="/pages/overview2/" target="_blank" rel="noopener">
+    <a href="/pages/overview2/"  target="_blank" rel="noopener">
         Digital Logic 2 (Overview)
       </a>
   </li>
   
   <li>
-    <a href="/pages/prequel-short-introduction-to-electronics" target="_blank" rel="noopener">
+    <a href="/pages/prequel-short-introduction-to-electronics"  target="_blank" rel="noopener">
         Electronics 101
       </a>
   </li>
   
   <li>
-    <a href="/pages/short-introduction-to-electronics-102" target="_blank" rel="noopener">
+    <a href="/pages/short-introduction-to-electronics-102"  target="_blank" rel="noopener">
         Electronics 102
       </a>
   </li>
@@ -94,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
+
 
 
 
@@ -354,19 +394,13 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="/pages/about/" target="_blank" rel="noopener">
-        About
-      </a>
-  </li>
-  
-  <li>
-    <a href="/docs/digital_logic_2/images/how_does_cpu/" >
+    <a href="/docs/digital_logic_2/images/how_does_cpu/"  >
         Digital Logic 2
       </a>
   </li>
   
   <li>
-    <a href="/pages/overview/" target="_blank" rel="noopener">
+    <a href="/pages/overview/"  target="_blank" rel="noopener">
         Digital Logic 1 (Overview)
       </a>
   </li>
@@ -380,6 +414,7 @@ https://github.com/alex-shpak/hugo-book
 
 </nav>
 
+<a href="/about">About</a>
 
 
 
@@ -398,7 +433,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Web</strong>
+  <h3>Web</h3>
 
   <label for="toc-control">
     
@@ -418,14 +453,17 @@ https://github.com/alex-shpak/hugo-book
       <a href="/posts/web/17_analog_computers_101/">Analog Computers 101</a>
     </h2>
     
-  <h5>September 24, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>September 24, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/knowhow/">Knowhow</a>, 
       <a href="/tags/analog/">Analog</a>, 
@@ -434,9 +472,10 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="sect1">
+<h2 id="_analog_computers">Analog Computers</h2>
+<div class="sectionbody">
+<div class="paragraph">
 <p>Today I want to speak about analog computers. In todays times analog computers are leading a shadowy existence,
 compared to their digital counterparts. But they are wonderous little machines. And that machines I mean
 wordly because there exists analog mechanical computers that are models from the world and used to
@@ -452,7 +491,7 @@ counterparts.</p>
 </div>
         <a href="/posts/web/17_analog_computers_101/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -460,14 +499,17 @@ counterparts.</p>
       <a href="/posts/web/12_caches_and_caching/">Caches and Caching</a>
     </h2>
     
-  <h5>June 10, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>June 10, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/knowhow/">Knowhow</a>, 
       <a href="/tags/web/">Web</a>
@@ -475,9 +517,7 @@ counterparts.</p>
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>When you fire up your browser to visit a website, you most probably did not noticed a very
 important mechanism underlying the browser and working in the background. Caching.
 Caches are used everywhere to optimize and improve access times and such in consequence
@@ -489,7 +529,7 @@ There are two types of very different caches in the computer</p>
 </div>
         <a href="/posts/web/12_caches_and_caching/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -497,14 +537,17 @@ There are two types of very different caches in the computer</p>
       <a href="/posts/web/10_wishlist/">Topics to write about - Wishlist</a>
     </h2>
     
-  <h5>May 21, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>May 21, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/web/">Web</a>, 
       <a href="/tags/blog/">Blog</a>
@@ -512,9 +555,7 @@ There are two types of very different caches in the computer</p>
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>This is a small, incomplete list of topics I’d like to write about in the mid- to far future.</p>
 </div>
 <div class="ulist">
@@ -545,7 +586,7 @@ There are two types of very different caches in the computer</p>
 </li>
 </ul>
 </div>
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -553,23 +594,24 @@ There are two types of very different caches in the computer</p>
       <a href="/posts/web/08_religion_spirituality/">Religion vs. spirituality - why I prefer the latter</a>
     </h2>
     
-  <h5>May 18, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>May 18, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/consciousness/">Consciousness</a>
   </div>
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>What I have learned about religions and spirituality over the last years and decades boils down to one
 simple statement: Religion is about right and wrong and old, outdated dogmas, while spirituality
 simply says &#34;It is how it is&#34;. For spirituality, there is no right or wrong, only the single moment in the present
@@ -577,7 +619,7 @@ in which we dwell. I find this viewpoint quite amazing. From what I found, it le
 </div>
         <a href="/posts/web/08_religion_spirituality/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -585,14 +627,17 @@ in which we dwell. I find this viewpoint quite amazing. From what I found, it le
       <a href="/posts/web/07_serial_interfaces/">Why are serial interfaces everywhere - instead of parallel ones</a>
     </h2>
     
-  <h5>May 18, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>May 18, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/electronic/">Electronic</a>, 
       <a href="/tags/knowhow/">Knowhow</a>
@@ -600,9 +645,7 @@ in which we dwell. I find this viewpoint quite amazing. From what I found, it le
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>USB, SPI, I²C, Sata - all these interfaces is common that they are serial interfaces. Serial interfaces are todays common.
 But why is that the case, especially for high-speed communication? it sounds simply counterintuitive: Parallel wires
 can theoretically send more bits per time than on singular wire can.
@@ -616,7 +659,7 @@ Simply put the additional logic implemented in chips to convert the serial signa
 </div>
         <a href="/posts/web/07_serial_interfaces/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -624,14 +667,17 @@ Simply put the additional logic implemented in chips to convert the serial signa
       <a href="/posts/web/04_odoo_hacks/">Odoo hacks: Remove Lock-Button from Odoo v12</a>
     </h2>
     
-  <h5>April 22, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>April 22, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/web/">Web</a>, 
       <a href="/tags/odoo/">Odoo</a>
@@ -639,9 +685,7 @@ Simply put the additional logic implemented in chips to convert the serial signa
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>Today I want to introduce a solution for a usability-problem I had in Odoo recently.
 In Odoo 12 there is a lock button next to the edit / save button, and you have to click
 both to (1) unlock the page and (2) make it editable. This should be done in one
@@ -651,7 +695,7 @@ as well as a dedicated web-controller. The soliution is presented below.</p>
 </div>
         <a href="/posts/web/04_odoo_hacks/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -659,14 +703,17 @@ as well as a dedicated web-controller. The soliution is presented below.</p>
       <a href="/posts/web/03_separate_form_and_content/">Separating blog and content</a>
     </h2>
     
-  <h5>February 4, 2023</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>February 4, 2023</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/web/">Web</a>, 
       <a href="/tags/hugo/">Hugo</a>
@@ -674,9 +721,7 @@ as well as a dedicated web-controller. The soliution is presented below.</p>
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>As the blog grow bigger and after the move to odoo, I noticed a gap in the workflow,since
 a blog and its content itself are different entities, I wanted to handle them as such,
 that led me to a cleanup of the original source code for blog, where I moved teh content folder
@@ -690,7 +735,7 @@ the repo hugo_content.</p>
 </div>
         <a href="/posts/web/03_separate_form_and_content/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -698,14 +743,17 @@ the repo hugo_content.</p>
       <a href="/posts/web/02_moving-to-hugo/">Moving to Hugo</a>
     </h2>
     
-  <h5>April 15, 2022</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>April 15, 2022</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/web/">Web</a>, 
       <a href="/tags/hugo/">Hugo</a>
@@ -713,9 +761,7 @@ the repo hugo_content.</p>
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>Since one week my blog is build on the static-site-generator <a href="https://gohugo.io/">Hugo</a>.
 I wanted to move to Hugo far earlier, due to the wide variety of themes.
 However this required the move from Asciidoc to <a href="https://asciidoctor.org/">Asciidoctor</a>,
@@ -726,7 +772,7 @@ like done in <a href="https://gohugo.io/Katex">KaTex</a> and <a href="https://ww
 </div>
         <a href="/posts/web/02_moving-to-hugo/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -734,14 +780,17 @@ like done in <a href="https://gohugo.io/Katex">KaTex</a> and <a href="https://ww
       <a href="/posts/web/00_setting_up_nikola/">Setting up a static blog with Nikola</a>
     </h2>
     
-  <h5>December 12, 2020</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>December 12, 2020</span>
+  </div>
 
 
 
   
 
   
-  <div>
+  <div class="text-small">
     
       <a href="/tags/web/">Web</a>, 
       <a href="/tags/nikola/">Nikola</a>
@@ -749,9 +798,7 @@ like done in <a href="https://gohugo.io/Katex">KaTex</a> and <a href="https://ww
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>I picked up Nikola some months ago as I was searching for a simple static-site-generator to setup a blog with minimal effort.</p>
 </div>
 <div class="paragraph">
@@ -763,7 +810,7 @@ So I require an almost basic understanding for Docker here.</p>
 </div>
         <a href="/posts/web/00_setting_up_nikola/">...</a>
       
-    </p>
+    </div>
   </article>
   
   <article class="markdown book-post">
@@ -771,7 +818,10 @@ So I require an almost basic understanding for Docker here.</p>
       <a href="/posts/web/01_writing-about-math-with-asciidoc/">Writing about math with Asciidoc</a>
     </h2>
     
-  <h5>December 12, 2020</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>December 12, 2020</span>
+  </div>
 
 
 
@@ -780,9 +830,7 @@ So I require an almost basic understanding for Docker here.</p>
   
 
 
-
-
-    <p><div class="paragraph">
+    <div class="book-post-content"><div class="paragraph">
 <p>While drafting a blog post, part of a series of posts intended to be published in the future,
 I discovered a lack of my tooling in Nikola. When adding mathematical formulas,
 I realized that there is no default-way of rendering images from those math formulas,
@@ -797,7 +845,7 @@ in ruby supporting different display formats. Ideal for the content I had in min
 </div>
         <a href="/posts/web/01_writing-about-math-with-asciidoc/">...</a>
       
-    </p>
+    </div>
   </article>
   
 
@@ -830,24 +878,14 @@ in ruby supporting different display formats. Ideal for the content I had in min
   <div class="flex flex-wrap justify-between">
 
 
-Last update: December 23, 2024 
+
 
 
 </div>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-        
 
 
 
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
