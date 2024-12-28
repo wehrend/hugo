@@ -41,14 +41,15 @@ theme = "hugo-book"
   url = "/pages/overview2/"
   weight = 25
 
-[[menu.after]]
-  name = "About"
-  url = "/pages/about/"
-  weight = 10
+[languages.en]
+  languageName = "English"
+  contentDir = "content"
+  weight = 1
 
-  
-[[frontmatter]]
-    date = "filename"
+[languages.de]
+  languageName = "Deutsch"
+  contentDir = "content.de"
+  weight = 2
   
 [params]
   date_format = "2006-01-02"
