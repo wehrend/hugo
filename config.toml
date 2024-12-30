@@ -52,6 +52,11 @@ theme = "hugo-book"
   url = "/pages/overview2/"
   weight = 25
 
+[[languages.en.menu.before]]
+  name = "Synthesizer-DIY"
+  url = "/posts/synth/25_build_your_own_modules/"
+  weight = 26
+
 
 [[languages.de.menu.before]]
   name = "Web-Blog"
@@ -91,6 +96,11 @@ theme = "hugo-book"
   url = "/de/pages/overview2/"
   weight = 25
 
+
+[[languages.de.menu.before]]
+  name = "Synthesizer-DIY"
+  url = "/de/posts/synth/25_build_your_own_modules/"
+  weight = 26
 
 [params]
   date_format = "2006-01-02"
