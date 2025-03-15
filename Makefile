@@ -1,18 +1,25 @@
 
 # ~/development/hugo/blog#
-version="klakegg/hugo:0.107.0-ext-asciidoctor"
-pwd_ = "/home/sven/development/hugo"
-
-pull:
-	docker login
-	docker pull $(version)
 
 up:
-	docker run  -it -v $(pwd_):/src -p 1313:1313 $(version) server  --disableFastRender --renderToDisk --verbose
+	hugo serve --disableFastRender --renderStaticToDisk --ignoreCache --config ./content/config.toml
 
-
+# Deployment-Prozess mit besserem Fehler-Handling
 deployment:
-	rsync -rav public/ wehrend@giclas.uberspace.de:/var/www/virtual/wehrend/html --delete
+	@echo "Building site..."
+	hugo -D -d ./wehrend.github.io --config ./content/config.toml
+	@if [ -n "$$(git status --porcelain)" ]; then \
+		echo "Adding changes..."; \
+		git add .; \
+		echo "Committing changes..."; \
+		git commit -m "Deploying to GitHub Pages"; \
+		echo "Pushing to GitHub..."; \
+		git push origin main; \
+	else \
+		echo "No changes to commit."; \
+	fi
 
 cleanup:
-	rm -rf public/
+	@echo "Cleaning up..."
+	rm -rf ./wehrend.github.io
+	@echo "Cleanup complete."
