@@ -6,15 +6,8 @@
     <description>Recent content on Bits &amp; pieces - Sven Wehrend</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://wehrend.uber.space/posts/web/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test Test Test</title>
-      <link>http://wehrend.uber.space/posts/web/30_test_test_test/</link>
-      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://wehrend.uber.space/posts/web/30_test_test_test/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Lorem ipsum&lt;/p&gt;&#xA;&lt;/div&gt;</description>
-    </item>
     <item>
       <title>Modify the Odoo Frontend</title>
       <link>http://wehrend.uber.space/posts/web/29_odoo_with_frontend/</link>
