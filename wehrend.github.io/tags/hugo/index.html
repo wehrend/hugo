@@ -16,7 +16,7 @@
   <link rel="alternate" hreflang="de" href="http://wehrend.uber.space/de/tags/hugo/" title="Hugo">
 <link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d1f9ccc1ad2fff6cfc4d1ef8ee5d5a3093e87e2a89d3517e615be608956d570a.js" integrity="sha256-0fnMwa0v/2z8TR747l1aMJPofiqJ01F&#43;YVvmCJVtVwo=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.9a724565fda4360b42ddca9ff3056bf39dd4da14fc2f722ce4a197939183d1d8.js" integrity="sha256-mnJFZf2kNgtC3cqf8wVr853U2hT8L3Is5KGXk5GD0dg=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="http://wehrend.uber.space/tags/hugo/index.xml" title="Bits & pieces - Sven Wehrend" />
 <!--
 Made with Book Theme
@@ -448,6 +448,72 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/web/30_move_to_gh_pages/">Move Hugo Web-presence to GH-Pages</a>
+    </h2>
+    
+  <h5>March 16, 2025</h5>
+
+
+
+  
+
+  
+  <div>
+    
+      <a href="/tags/web/">Web</a>, 
+      <a href="/tags/hugo/">Hugo</a>, 
+      <a href="/tags/github-pages/">Github-Pages</a>
+  </div>
+  
+
+
+
+
+    <p><div class="paragraph">
+<p>Hi there,
+a few months ago I decided, I would want to go to a form of webspace where I dont have to spend money.
+Although its only a few bucks, I thought it would be time to move on…​
+So this is basically a tutorial to move over to github pages…​</p>
+</div>
+<div class="paragraph">
+<p>We start with the Makefile. My new setup looks like the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># ~/development/hugo/blog#
+include credentials.mk
+
+up:
+	hugo serve --disableFastRender --renderStaticToDisk --ignoreCache --config ./content/config.toml
+
+deployment:
+	@echo &#34;Building site...&#34;
+	hugo -D -d ./wehrend.github.io --config ./content/config.toml
+	@if [ -n &#34;$$(git status --porcelain)&#34; ]; then \
+		echo &#34;Adding changes...&#34;; \
+		git add .; \
+		read -p &#34;Enter commit message: &#34; COMMIT_MSG; \
+		echo &#34;Committing changes...&#34;; \
+		git commit -m &#34;$$COMMIT_MSG&#34;; \
+		echo &#34;Pushing to GitHub...&#34;; \
+		git push https://$(GIT_USER):$(GIT_PASS)@github.com/wehrend/hugo_blog.git main; \
+	else \
+		echo &#34;No changes to commit.&#34;; \
+	fi
+
+
+cleanup:
+	@echo &#34;Cleaning up...&#34;
+	rm -rf ./wehrend.github.io
+	@echo &#34;Cleanup complete.&#34;</code></pre>
+</div>
+        <a href="/posts/web/30_move_to_gh_pages/">...</a>
+      
+    </p>
+  </article>
   
   <article class="markdown book-post">
     <h2>

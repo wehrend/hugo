@@ -6,8 +6,15 @@
     <description>Recent content on Bits &amp; pieces - Sven Wehrend</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://wehrend.uber.space/posts/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Move Hugo Web-presence to GH-Pages</title>
+      <link>http://wehrend.uber.space/posts/web/30_move_to_gh_pages/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://wehrend.uber.space/posts/web/30_move_to_gh_pages/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Hi there,&#xA;a few months ago I decided, I would want to go to a form of webspace where I dont have to spend money.&#xA;Although its only a few bucks, I thought it would be time to move on…​&#xA;So this is basically a tutorial to move over to github pages…​&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;We start with the Makefile. My new setup looks like the following:&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;listingblock&#34;&gt;&#xA;&lt;div class=&#34;content&#34;&gt;&#xA;&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;# ~/development/hugo/blog#&#xA;include credentials.mk&#xA;&#xA;up:&#xA;&#x9;hugo serve --disableFastRender --renderStaticToDisk --ignoreCache --config ./content/config.toml&#xA;&#xA;deployment:&#xA;&#x9;@echo &amp;#34;Building site...&amp;#34;&#xA;&#x9;hugo -D -d ./wehrend.github.io --config ./content/config.toml&#xA;&#x9;@if [ -n &amp;#34;$$(git status --porcelain)&amp;#34; ]; then \&#xA;&#x9;&#x9;echo &amp;#34;Adding changes...&amp;#34;; \&#xA;&#x9;&#x9;git add .; \&#xA;&#x9;&#x9;read -p &amp;#34;Enter commit message: &amp;#34; COMMIT_MSG; \&#xA;&#x9;&#x9;echo &amp;#34;Committing changes...&amp;#34;; \&#xA;&#x9;&#x9;git commit -m &amp;#34;$$COMMIT_MSG&amp;#34;; \&#xA;&#x9;&#x9;echo &amp;#34;Pushing to GitHub...&amp;#34;; \&#xA;&#x9;&#x9;git push https://$(GIT_USER):$(GIT_PASS)@github.com/wehrend/hugo_blog.git main; \&#xA;&#x9;else \&#xA;&#x9;&#x9;echo &amp;#34;No changes to commit.&amp;#34;; \&#xA;&#x9;fi&#xA;&#xA;&#xA;cleanup:&#xA;&#x9;@echo &amp;#34;Cleaning up...&amp;#34;&#xA;&#x9;rm -rf ./wehrend.github.io&#xA;&#x9;@echo &amp;#34;Cleanup complete.&amp;#34;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>Modify the Odoo Frontend</title>
       <link>http://wehrend.uber.space/posts/web/29_odoo_with_frontend/</link>
