@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="How to build your own synthesizer modules">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/posts/synth/25_build_your_own_modules/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://wehrend.uber.space/posts/synth/25_build_your_own_modules/">
   <meta property="og:site_name" content="Bits & pieces - Sven Wehrend">
   <meta property="og:title" content="Build your own synthesizer modules">
   <meta property="og:description" content="How to build your own synthesizer modules">
@@ -19,10 +19,10 @@
 <title>Build your own synthesizer modules | Bits &amp; pieces - Sven Wehrend</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-  <link rel="alternate" hreflang="de" href="http://localhost:1313/de/posts/synth/25_build_your_own_modules/" title="Build your own synthesizer modules">
+  <link rel="alternate" hreflang="de" href="http://wehrend.uber.space/de/posts/synth/25_build_your_own_modules/" title="Build your own synthesizer modules">
 <link rel="stylesheet" href="/book.min.a638a97f489029f3eda833b0905717d5a2da0b571423db855dd7ce4336238e77.css" integrity="sha256-pjipf0iQKfPtqDOwkFcX1aLaC1cUI9uFXdfOQzYjjnc=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d38372e17319af88086fea6c23b9dd967632a4d592408fc538d869fd2607c724.js" integrity="sha256-04Ny4XMZr4gIb&#43;psI7ndlnYypNWSQI/FONhp/SYHxyQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d1f9ccc1ad2fff6cfc4d1ef8ee5d5a3093e87e2a89d3517e615be608956d570a.js" integrity="sha256-0fnMwa0v/2z8TR747l1aMJPofiqJ01F&#43;YVvmCJVtVwo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -76,7 +76,7 @@ https://github.com/alex-shpak/hugo-book
     <ul>
       
       <li>
-        <a href="http://localhost:1313/de/posts/synth/25_build_your_own_modules/">
+        <a href="http://wehrend.uber.space/de/posts/synth/25_build_your_own_modules/">
           Deutsch
         </a>
       </li>
@@ -454,205 +454,169 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><div class="sect1">
-<h2 id="_einleitung">Einleitung</h2>
+<h2 id="_introduction">Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hallo,
-heute möchte ich Ihnen das Grundwissen über den Selbstbau Ihrer eigenen Synthesizermodule vermitteln – diese benötigen
-nicht den Eurorack-Standard, obwohl sie in meinem Fall dazugehören.</p>
+<p>Hi,
+today I want to share with you the basic knowledge of DIYing your own synthesizer modules - those do not need of the eurorack standard although in my case they are.</p>
 </div>
 <div class="paragraph">
-<p>Wenn Sie mit <a href="https://sdiy.info/wiki/Eurorack">eurorack format</a> oder einem anderen modularen Synthesizer-Standard beginnen,
-insbesondere aber mit dem Eurorack-Standard, werden Sie höchstwahrscheinlich von
-die schiere Anzahl der Hersteller und verfügbaren Produkte überwältigt sein. Einen einfachen Überblick erhalten Sie hier
-auf <a href="https://www.modulargrid.net/e/modules/browser">ModularGrid</a>.
-Sie brauchen ein paar Wochen oder sogar Monate, um sich durch einige Testberichte auf <a href="https://www.amazona.de/">Amzona.de</a>
-zu lesen oder Synthesizer-Läden wie <a href="https://schneidersladen.de/">SchneidersLaden</a> besuchen, um sich einen groben Überblick
-über die Vielfalt des Marktes zu verschaffen.</p>
+<p>If you get started with <a href="https://sdiy.info/wiki/Eurorack">eurorack format</a> or any other modular like synth standard, but especially the eurorack standard - you will be most likely overwhelmed about
+the sheer number of manufacturers and available. You can have a simple look here on <a href="https://www.modulargrid.net/e/modules/browser">ModularGrid</a>.
+You need a few weeks or even months, spending time reading some test articles on <a href="https://www.amazona.de/">Amzona.de</a> , or visiting Synthesizer Stores like
+<a href="https://schneidersladen.de/">SchneidersLaden</a> to get a rough idea of the diversity of the market.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_warum_selbstbau">Warum Selbstbau?</h2>
+<h2 id="_why_diy">Why DIY?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Aber warum in aller Welt sollte man sich für den Selbstbau entscheiden und Module selbst bauen, wenn es doch bereits so
-viele Optionen mit fertig montierten Modulen zu einem guten Preis gibt Module selbst zu bauen?
-Dafür kann es mehrere Gründe geben:
-- Selbstbau ist billiger als fertig erhältliche Module, obwohl dies
-<a href="https://www.modwiggler.com/forum/viewtopic.php?t=278889&amp;hilit=diy+costs">debattierbar</a> ist, da man hohe Anfangskosten für
-Werkzeuge und Material hat.
-- Selbermachen ist interessant, weil man viel darüber lernt, wie die Module funktionieren, wie Elektronik im Allgemeinen
-funktioniert, und mit der Zeit wird man schließlich besser darin, Fehler zu erkennen und zu beheben.</p>
+<p>But why in the world, if you have so many options already available of readily assembled modules to a good price tag, would you choose to get into DYI and build
+modules for yourself?
+There can be multiple reasons:
+- DYI is cheaper than readily available modules, although this is quiet <a href="https://www.modwiggler.com/forum/viewtopic.php?t=278889&amp;hilit=diy+costs">debatable</a>, since you have big initial costs for tooling and stuff.
+- DYI is interesting because you learn a lot how the modules work, how electronics in general works, and with time you get eventually better in detecting and fixing the errors you make</p>
 </div>
 <div class="paragraph">
-<p>Es lohnt sich auf jeden Fall, wenn man ein Hobby wie Elektronik in Betracht ziehen möchte, und ich persönlich denke,
-dass ein modularer Synthesizer der beste Weg ist, um als Hobby mit Elektronik und Audioschaltungen in Kontakt zu kommen.</p>
+<p>Is definitely worthwhile if you want to consider a hobby like electronics, and personally I think a modular synthesizer is the best way to get in contact with electronics and audio circuits as a hobby.</p>
 </div>
 <div class="paragraph">
-<p>Als Nächstes werden wir kurz besprechen, welche Werkzeuge, Komponenten und Verbrauchsmaterialien Sie benötigen, um mit
-diesem Hobby zu beginnen. Nur kurz, da dies auf verschiedene Arten und Weisen im Internet unter
-<a href="https://northcoastsynthesis.com/news/tools-for-getting-started-with-sdiy/">NorthCoastSynthesis</a> diskutiert wird.
-Außerdem werde ich den Umfang auf Module beschränken, nicht auf Gehäuse und Netzteile, da dies ein ganz anderes Thema ist,
-und außerdem sollten Sie niemals ein eigenes Netzteil bauen, wenn Sie nicht wissen, was Sie tun.
-Halten Sie sich vom Stromnetz fern!!</p>
+<p>Next, we will briefly discuss what tools, components and consumables you need to start with this hobby. Only briefly, since this is discussed in multiple ways and forms in the <a href="https://northcoastsynthesis.com/news/tools-for-getting-started-with-sdiy/">internet</a>.
+Also, I will narrow the scope down to modules,not case and power supply,since this is a whole other topic, and besides you should never build own power supply if you do not know what you are doing. Stay away from the mains!</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ausrüstung">Ausrüstung</h2>
+<h2 id="_equipment">Equipment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hier ist eine Liste der Werkzeuge, die Sie auf jeden Fall als Grundausstattung benötigen:</p>
+<p>So here is the list of tools you will definitely need as a basic set:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>eine Lötstation und Lötmaterialien</p>
+<p>a solder station and solder supplies</p>
 </li>
 <li>
-<p>ein Digitalmultimeter oder Multimeter zum Messen von Widerständen, Spannungen und Strömen</p>
+<p>a DMM or multimeter to measure resistors, voltages and currents</p>
 </li>
 <li>
-<p>eine dritte Hand (die das Löten erleichtert)</p>
+<p>a third hand (that eases your process of soldering by means)</p>
 </li>
 <li>
-<p>ein Seitenschneider/Drahtschneider</p>
+<p>a side cutter / wire cutter</p>
 </li>
 <li>
-<p>eine Elektronikzange</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Als Lot für THT (Durchsteckmontage, womit Sie beginnen sollten) sollten Sie bleifreies Lot mit einem Durchmesser von 1
-mm bestellen</p>
+<p>an electronic pliers</p>
 </li>
 <li>
-<p>Einen gut beleuchteten Arbeitsplatz</p>
+<p>as solder for THT (through hole, which you should begin with) you should order some lead-free solder with 1mm diameter</p>
 </li>
 <li>
-<p>Je nach Werkbank eine Lötunterlage, um zu verhindern, dass Ihre Werkbank verbrannt wird!</p>
+<p>a good illuminated workplace</p>
 </li>
-</ul>
-</div>
+<li>
+<p>depending on your workbench a soldering mat, to prevent your bench from being burned!</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Dies sind die absoluten Grundlagen (das Digitalmultimeter könnte man theoretisch weglassen, aber es nützt einem nichts,
-da es billig ist und man es für grundlegende Tests benötigt)
-Und ich wette, ich habe noch etwas vergessen.</p>
+<p>These are the absolute essentials (you could theoreticaly miss out the DMM but it wont do you any good, since its cheap and you need it for basic testing)
+And,also, I bet, I forgot something.</p>
 </div>
 <div class="paragraph">
-<p>Wenn Sie in die Welt der SMD-/SMT-Technologie einsteigen möchten (wir wollen hier nur die Größe 0805 verwenden/
-beschreiben), benötigen Sie zusätzlich:</p>
+<p>If you want to enter the world of smd /smt technology (we want to use / describe only size 0805 here) you would additionally need:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>als Lot für SMD-Löten bleifreies Lot mit einem Durchmesser von 0,3 mm</p>
+<p>as solder for smd soldering lead-free solder of diameter 0.3mm</p>
 </li>
 <li>
-<p>Pinzette</p>
+<p>tweezers</p>
 </li>
 <li>
-<p>und optional eine Lupe, aber wie gesagt, diese sind optional (z. B. habe ich sie noch nicht benötigt, da 0805 relativ
-groß ist)</p>
+<p>and optional some magnification glasses, but as said those are optional (e.g. I did not needed them yet, since 0805 is relatively big)</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_testen_des_moduls">Testen des Moduls</h2>
+<h2 id="_testing_your_module">Testing your module</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das war es soweit zum Bau, aber man braucht auch etwas Ausrüstung zum Testen. Es ist sinnvoll, das Modul zunächst
-in einem separaten Rack mit separater Stromversorgung zu testen, bevor man es in das Eurorack-Gehäuse einbaut und im
-Falle einer Fehlfunktion andere Module beschädigt.
-Hier macht ein kleiner Pod absolut Sinn <a href="https://www.thomann.de/de/4ms_pod32_powered.htm">4ms pod32</a>.</p>
+<p>That is so far for the building part, but you also need some equipment for testing. It makes sense to first test
+the module in a separate rack with a separate power supply before putting it into your eurorack case and eventually in case of malfunctioning harm other modules.
+Here a small pod makes totally sense <a href="https://www.thomann.de/de/4ms_pod32_powered.htm">4ms pod32</a>.</p>
 </div>
 <div class="paragraph">
-<p>Außerdem benötigen Sie wahrscheinlich eine Eingangsquelle für Ihr Modul wie CV-, Audio- oder Gate-Signale. Verwenden Sie
-aus diesem Grund einen einfachen Oszillator (CV, Audio) oder Sequenzer (Gate):
-Hier kommen <a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-vco/">Erica Synth Pico VCO</a> oder
-<a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-vco2/">Erica Synth Pico VCO2</a> in den Sinn.</p>
+<p>Also, you need probably some input source for your module like cv, audio or gate signals, use a simple oscillator (cv,audio) or sequencer (gate) for that reason:
+Here <a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-vco/">Erica Synth Pico VCO</a> or
+<a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-vco2/">Erica Synth Pico VCO2</a> comes to mind.</p>
 </div>
 <div class="paragraph">
-<p>Außerdem benötigen Sie ein Ausgangsmodul. Eigentlich können Sie mit diesem Bausatz wirklich anfangen, es ist ein
-einfacher Verstärker mit eingebautem Lautsprecher
+<p>Also, you need some output module, actually you can really start with this kit its an easy amplifier with a built-in speaker
 <a href="https://www.exploding-shed.com/clacktronics-mini-speaker-kit/100596">CLACKTRONICS - MINI SPEAKER KIT</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_verpolungsschutz">Verpolungsschutz</h2>
+<h2 id="_reverse_polarity_protection">Reverse Polarity protection</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In diesem Zusammenhang möchte ich Sie auch daran erinnern, bei Ihren Konstruktionen immer
-<a href="https://www.allaboutcircuits.com/technical-articles/how-to-protect-your-circuits-using-only-a-diode/">Verpolungsschutzdioden</a>
-zu verwenden.
-Verwenden Sie hierfür 1N5817 (THT) oder MBR0540T1 (SMD). Ich konnte kein Bild finden, also habe ich es von einigen
-Befaco-Schaltplänen kopiert. Seien Sie also gnädig mit mir und ignorieren Sie die 100-nF-Kondensatoren.</p>
+<p>In this regard I also want to remind you to always use <a href="https://www.allaboutcircuits.com/technical-articles/how-to-protect-your-circuits-using-only-a-diode/">reverse polarity protection diodes</a> in your builds.
+Use 1N5817 (THT) or MBR0540T1 (smd) for this matter. I could not find a picture so I copied from some befaco schematics so bear with me and ignore the 100nF capacitors.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../reverse_polarity_protection.png" alt="Verpolungsschutz"/></span></p>
+<p><span class="image"><img src="../reverse_polarity_protection.png" alt="Reverse polarity protection"/></span></p>
 </div>
 <div class="paragraph">
-<p>Dieses Bild mag für Sie noch keinen Sinn ergeben, aber das wird sich ändern, sobald Sie lernen, Elektronikschaltpläne zu
-lesen (was Sie tun sollten, wenn Sie dieses Hobby in Betracht ziehen).</p>
+<p>While this picture might make not sense to you yet, it will as soon as you get learning to read electronics schematics (which you should if you wanna consider this hobby).</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_einige_hersteller_und_module_für_den_anfang">Einige Hersteller und Module für den Anfang</h2>
+<h2 id="_some_manufactures_and_modules_to_start">Some Manufactures and Modules to start</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Kommen wir nun zum Kern dieses Blog-Beitrags: Welche Hersteller und Module sollten Sie als Anfänger in Betracht ziehen?</p>
+<p>Lets finally go to the heart of this blog post, which manufactures and modules should you consider as a beginner?</p>
 </div>
 <div class="paragraph">
-<p>Ich persönlich habe meine Reise mit der gut dokumentierten <a href="https://www.ericasynths.lv/shop/diy-kits-1/">erica synths edu series</a>
-begonnen, dann ein paar <a href="https://shop.befaco.org/183-full-kits">befaco modules</a> (auch gut dokumentiert, auch etwas billiger
-bei exploding shed, was die Versandkosten betrifft ) und dann
-<a href="https://www.nonlinearcircuits.com/modules">Module von NonlinearCircuits (NLC)</a> (ebenso gut dokumentiert), aber es gibt keinen
-besonderen Grund, sie in dieser Reihenfolge zu machen.</p>
+<p>I personally started my journey with the well documented <a href="https://www.ericasynths.lv/shop/diy-kits-1/">erica synths edu series</a>, then a few <a href="https://shop.befaco.org/183-full-kits">befaco modules</a> (also well documented,also a bit cheaper over on exploding shed, regarding on shipping
+costs) and then <a href="https://www.nonlinearcircuits.com/modules">modules from NonlinearCircuits (NLC)</a>  (same well documented), but there is no particular reason to do them in this order.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_fazit_und_links">Fazit und Links</h2>
+<h2 id="_conclusion_and_links">Conclusion and links</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Zusammenfassend lässt sich sagen, dass die Welt der Eurorack-Synthesizer und -Module ein lohnendes (wenn auch
-geldaufwendiges) Unterfangen ist, bei dem man unbedingt mitmachen sollte, wenn man
-das Bedürfnis oder den Drang dazu verspüren.</p>
+<p>In conclusion the world of eurorack synthesizers and modules is a worthwhile (albeit money-consuming) endeavour, where you should totally go on the bandwagon if you
+have the need or urge to do so.</p>
 </div>
 <div class="paragraph">
-<p>Zu guter Letzt noch ein paar Links, damit Sie wissen, wo Sie nach Inspiration und DIY-Kits suchen können:</p>
+<p>Last but not least some links thrown, so you know where to start looking for inspiration and DIY kits:</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.exploding-shed.com/diy-kits/">exploding Shed</a>, ein Unternehmen mit Sitz in Leipzig, Deutschland</p>
+<p><a href="https://www.exploding-shed.com/diy-kits/">exploding shed</a>, a company based in Leipzig Germany</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.3u-shop.de/">3U Shop</a>, mit Sitz in Petershagen bei Berlin, Deutschland</p>
+<p><a href="https://www.3u-shop.de/">3U Shop</a>, based in Petershagen near Berlin, Germany</p>
 </div>
 <div class="paragraph">
-<p><a href="https://ppvmedien.de/Synthesizer-Klangerzeugung">Synthesizer – So funktioniert elektronische Klangerzeugung von
-Florian Anwander</a> Das Buch, das mich zu diesem Hobby gebracht hat [Deutsch]</p>
+<p><a href="https://ppvmedien.de/Synthesizer-Klangerzeugung">Synthesizer – So funktioniert elektronische Klangerzeugung by Florian Anwander</a> The book that brought me into this hobby [German]</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.modwiggler.com/forum/ucp.php?mode=register">MuffWiggler Ein sehr schönes Synthesizer-Forum</a></p>
+<p><a href="https://www.modwiggler.com/forum/ucp.php?mode=register">MuffWiggler A very nice synthesizer forum</a></p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_also_verbreitet_den_sound">Also, verbreitet den Sound!</h2>
-<div class="sectionbody">
+<h1 id="_so_spread_the_sound" class="sect0">So, spread the sound!</h1>
 <div class="paragraph">
-<p>(Noch zu tun:
-einige Bilder hinzufügen.)</p>
-</div>
-</div>
+<p>( Still Todo:
+adding some pictures.)</p>
 </div>
 </article>
  
