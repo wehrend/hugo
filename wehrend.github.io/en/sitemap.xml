@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://wehrend.uber.space/posts/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://wehrend.uber.space/posts/web/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -26,51 +26,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://wehrend.uber.space/posts/web/"
-                />
-  </url><url>
-    <loc>http://wehrend.uber.space/tags/github-pages/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://wehrend.uber.space/tags/hugo/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://wehrend.uber.space/de/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://wehrend.uber.space/tags/hugo/"
-                />
-  </url><url>
-    <loc>http://wehrend.uber.space/posts/web/30_move_to_gh_pages/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://wehrend.uber.space/tags/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://wehrend.uber.space/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://wehrend.uber.space/tags/"
-                />
-  </url><url>
-    <loc>http://wehrend.uber.space/tags/web/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://wehrend.uber.space/de/tags/web/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://wehrend.uber.space/tags/web/"
                 />
   </url><url>
     <loc>http://wehrend.uber.space/tags/frontend/</loc>
@@ -90,6 +45,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://wehrend.uber.space/tags/odoo/"
+                />
+  </url><url>
+    <loc>http://wehrend.uber.space/tags/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://wehrend.uber.space/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://wehrend.uber.space/tags/"
+                />
+  </url><url>
+    <loc>http://wehrend.uber.space/tags/web/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://wehrend.uber.space/de/tags/web/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://wehrend.uber.space/tags/web/"
                 />
   </url><url>
     <loc>http://wehrend.uber.space/tags/debian/</loc>
@@ -816,6 +797,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://wehrend.uber.space/docs/digital_logic_x/x2_cordic/"
+                />
+  </url><url>
+    <loc>http://wehrend.uber.space/tags/hugo/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://wehrend.uber.space/de/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://wehrend.uber.space/tags/hugo/"
                 />
   </url><url>
     <loc>http://wehrend.uber.space/posts/web/03_separate_form_and_content/</loc>
